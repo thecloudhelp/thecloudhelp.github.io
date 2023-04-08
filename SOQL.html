@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html style="font-size: 14px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="SOQL, Salesforce, Learn SOQL">
+    <meta name="description" content="">
+    <title>Learn SOQL in Salesforce </title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="SOQL.css" media="screen">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 5.6.2, nicepage.com">
+    <meta property="og:title" content="Free Learn SOQL in Salesforce ">
+    <meta property="og:description" content="Learn SOQL in Salesforce ">
+    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/myproject-c0609.appspot.com/o/soql%2F12.png?alt=media&amp;token=9b1a3e7f-36c2-4869-b38a-770b710a23c6">
+    <link rel="icon" href="images/favicon.png">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "SFDC help",
+		"logo": "images/favicon.png?rand=f885",
+		"sameAs": [
+				"https://facebook.com/name",
+				"https://twitter.com/name",
+				"https://instagram.com/name"
+		]
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Learn SOQL in Salesforce ">
+    <meta name="twitter:description" content="SFDC help">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body class="u-body u-overlap u-overlap-transparent u-xl-mode" data-lang="en"><header class="u-align-center-sm u-align-center-xs u-box-shadow u-clearfix u-header u-sticky u-sticky-21ea u-header" id="sec-f7d7" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm u-sheet-1">
+        <a href="https://nicepage.com" class="u-enable-responsive u-image u-logo u-image-1" data-image-width="500" data-image-height="500">
+          <img src="images/favicon.png?rand=f885" class="u-logo-image u-logo-image-1">
+        </a>
+        <div class="u-enable-responsive u-social-icons u-spacing-9 u-social-icons-1">
+          <a class="u-social-url" title="facebook" target="_blank" href="https://facebook.com/name"><span class="u-file-icon u-icon u-social-facebook u-social-icon u-text-white u-icon-1"><img src="images/220353-dec630ea.png" alt=""></span>
+          </a>
+          <a class="u-social-url" title="twitter" target="_blank" href="https://twitter.com/name"><span class="u-file-icon u-icon u-social-icon u-social-twitter u-text-white u-icon-2"><img src="images/3767319-aac05a76.png" alt=""></span>
+          </a>
+          <a class="u-social-url" title="instagram" target="_blank" href="https://instagram.com/name"><span class="u-file-icon u-icon u-social-icon u-social-instagram u-text-white u-icon-3"><img src="images/220343-650313e3.png" alt=""></span>
+          </a>
+        </div>
+        <nav class="u-align-center u-menu u-menu-one-level u-offcanvas u-menu-1" data-submenu-level="with-reload" data-responsive-from="MD">
+          <div class="menu-collapse" style="font-size: 1rem;">
+            <a class="u-button-style u-custom-active-color u-custom-text-active-color u-file-icon u-nav-link u-text-white u-file-icon-4" href="#">
+              <img src="images/9652559-7ec88f65.png" alt="">
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-spacing-2 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-active-custom-color-4 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-hover-custom-color-3 u-nav-link u-text-active-white u-text-hover-custom-color-4 u-text-white" href="Home.html" style="padding: 10px 20px;">Home</a>
+</li><li class="u-nav-item"><a class="u-active-custom-color-4 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-hover-custom-color-3 u-nav-link u-text-active-white u-text-hover-custom-color-4 u-text-white" href="SOQL.html" style="padding: 10px 20px;">SOQL</a>
+</li><li class="u-nav-item"><a class="u-active-custom-color-4 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-hover-custom-color-3 u-nav-link u-text-active-white u-text-hover-custom-color-4 u-text-white" href="LWC.html" style="padding: 10px 20px;">LWC</a>
+</li><li class="u-nav-item"><a class="u-active-custom-color-4 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-hover-custom-color-3 u-nav-link u-text-active-white u-text-hover-custom-color-4 u-text-white" href="QNA.html" style="padding: 10px 9px 10px 20px;">Interview Q&amp;A</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-align-center u-black u-container-style u-inner-container-layout u-sidenav u-sidenav-1" data-offcanvas-width="390">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close u-menu-close-1"></div>
+                <ul class="u-align-left u-nav u-popupmenu-items u-text-white u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html" style="padding-top: 8px; padding-bottom: 8px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="SOQL.html" style="padding-top: 8px; padding-bottom: 8px;">SOQL</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="LWC.html" style="padding-top: 8px; padding-bottom: 8px;">LWC</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="QNA.html" style="padding-top: 8px; padding-bottom: 8px;">Interview Q&amp;A</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div><style class="u-sticky-style" data-style-id="21ea">.u-sticky-fixed.u-sticky-21ea, .u-body.u-sticky-fixed .u-sticky-21ea {
+box-shadow: 2px 2px 8px 0px rgba(128,128,128,1) !important
+}</style></header>
+    <section class="u-align-left u-clearfix u-gradient u-section-1" id="sec-ff1c">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="fr-view u-align-center u-clearfix u-rich-text u-text u-text-1">
+          <h1>
+            <span class="u-text-palette-4-base" style="font-size: 3rem;font-family: 'Delicious Handrawn', cursive;">What is SOQL?</span>
+          </h1>
+          <p style="font-family: 'Delicious Handrawn', cursive;">
+            <span class="u-custom-font u-font-roboto" style="font-size: 120x,font-family: 'Delicious Handrawn', cursive;" >SOQL (Salesforce Object Query Language) is a powerful querying language that allows users to retrieve and manipulate data from Salesforce databases. It is designed to work with Salesforce's multi-tenant architecture and can be used to query one or more objects.</span>
+          </p>
+        </div>
+        <img class="u-align-center u-image u-image-contain u-image-default u-image-1" src="images/BlackFinanceMoneyCoachYouTubeThumbnail1.png" alt="" data-image-width="1280" data-image-height="720">
+        <p class="u-align-center u-custom-font u-font-roboto u-text u-text-2">
+          <span style="font-size: 3.78571rem; font-weight: 700;" class="u-text-palette-3-base"> Why SOQL?</span>
+          <span class="u-text-palette-3-base">
+            <br>
+          </span>
+          <span style="font-size: 1.14286rem;"> With SOQL, you can retrieve a specific set of data, filter results based on certain criteria, and sort the results returned by the query<br>
+            <br>&nbsp;You can also use SOQL to traverse objects and fetch data from related objects.SOQL is similar in syntax to SQL (Structured Query Language), But there are some differences.&nbsp;<br>
+            <br>For example, SOQL is tailored to work specifically with Salesforce data and objects. It includes special keywords and functions that allow users to take full advantage of Salesforce's data model and relationships between objects.<br>
+            <br>Developers and administrators who work with Salesforce use SOQL extensively to create custom reports, dashboards, and list views.&nbsp;<br>
+            <br>They can also use SOQL to build custom integrations and automate business processes.Learning SOQL is essential for anyone who wants to take their Salesforce skills to the next level. Whether you are a beginner or an experienced Salesforce user, mastering SOQL will enable you to work more efficiently and effectively with your Salesforce data.
+          </span>
+        </p>
+        <img class="u-align-center u-image u-image-contain u-image-default u-image-2" src="images/94756913-0.png" alt="" data-image-width="1280" data-image-height="720">
+        <div class="fr-view u-align-center u-clearfix u-rich-text u-text u-text-3" data-animation-name="customAnimationIn" data-animation-duration="1000">
+          <h1 style="text-align: center;">
+            <span class="u-text-palette-2-base">Write your first SOQL Query</span>
+          </h1>
+          <h1 style="text-align: center;">
+            <span style="font-weight: 700;">
+              <span style="font-size: 1.5rem;">How to open Developer Console in Salesforce?</span>
+            </span>
+          </h1>
+          <p style="text-align: center;">If you're new to Salesforce and SOQL, writing your first query can be intimidating. But don't worry, with a few simple steps, you can write your first SOQL query in no time&nbsp;</p>
+          <p style="text-align: center;">
+            <br>
+          </p>
+        </div>
+        <ul class="u-align-left u-custom-font u-custom-list u-font-roboto u-text u-text-4">
+          <li>
+            <div class="u-list-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512" id="svg-7b19" style="font-size: 1em; margin: -1em;"><path d="m365.5 309c-35.7.7-70.2-13-95.8-38-22.2-21.6-52.2-33.4-83.2-32.7-26.1-.3-51.6 7.8-72.6 23.3-2.7 2.1-6 3.2-9.4 3.3-4.5 0-8.9-2-11.8-5.5-3-3.4-4.6-7.8-4.5-12.3v-198.8c0-4.9 1.9-9.5 5.4-13 25.4-23.1 58.6-35.8 92.9-35.3 35.8-.8 70.4 12.9 96 38 22.2 21.6 52.1 33.3 83 32.7 21.3.2 42.2-5.1 60.8-15.4 2.3-1.4 5-2.2 7.7-2.2 9.3.4 16.6 8.3 16.2 17.7v200.8c.2 6-2.7 11.6-7.6 15-22.9 14.9-49.8 22.7-77.1 22.4z" fill="#e64c3c"></path><path d="m79.5 0c9.8 0 17.7 7.9 17.7 17.7v476.7c0 9.8-7.9 17.7-17.7 17.7-9.8 0-17.7-7.9-17.7-17.7v-476.7c0-9.8 7.9-17.7 17.7-17.7z" fill="#cbb292"></path></svg>
+            </div> Step 1: Log in to your Salesforce account and open the Developer Console. This is where you'll write and execute your SOQL query.
+          </li>
+          <li>
+            <div class="u-list-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512" id="svg-7b19" style="font-size: 1em; margin: -1em;"><path d="m365.5 309c-35.7.7-70.2-13-95.8-38-22.2-21.6-52.2-33.4-83.2-32.7-26.1-.3-51.6 7.8-72.6 23.3-2.7 2.1-6 3.2-9.4 3.3-4.5 0-8.9-2-11.8-5.5-3-3.4-4.6-7.8-4.5-12.3v-198.8c0-4.9 1.9-9.5 5.4-13 25.4-23.1 58.6-35.8 92.9-35.3 35.8-.8 70.4 12.9 96 38 22.2 21.6 52.1 33.3 83 32.7 21.3.2 42.2-5.1 60.8-15.4 2.3-1.4 5-2.2 7.7-2.2 9.3.4 16.6 8.3 16.2 17.7v200.8c.2 6-2.7 11.6-7.6 15-22.9 14.9-49.8 22.7-77.1 22.4z" fill="#e64c3c"></path><path d="m79.5 0c9.8 0 17.7 7.9 17.7 17.7v476.7c0 9.8-7.9 17.7-17.7 17.7-9.8 0-17.7-7.9-17.7-17.7v-476.7c0-9.8 7.9-17.7 17.7-17.7z" fill="#cbb292"></path></svg>
+            </div>Step 2: Identify the object you want to query. For example, if you want to query accounts, your object will be "Account".
+          </li>
+          <li>
+            <div class="u-list-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512" id="svg-7b19" style="font-size: 1em; margin: -1em;"><path d="m365.5 309c-35.7.7-70.2-13-95.8-38-22.2-21.6-52.2-33.4-83.2-32.7-26.1-.3-51.6 7.8-72.6 23.3-2.7 2.1-6 3.2-9.4 3.3-4.5 0-8.9-2-11.8-5.5-3-3.4-4.6-7.8-4.5-12.3v-198.8c0-4.9 1.9-9.5 5.4-13 25.4-23.1 58.6-35.8 92.9-35.3 35.8-.8 70.4 12.9 96 38 22.2 21.6 52.1 33.3 83 32.7 21.3.2 42.2-5.1 60.8-15.4 2.3-1.4 5-2.2 7.7-2.2 9.3.4 16.6 8.3 16.2 17.7v200.8c.2 6-2.7 11.6-7.6 15-22.9 14.9-49.8 22.7-77.1 22.4z" fill="#e64c3c"></path><path d="m79.5 0c9.8 0 17.7 7.9 17.7 17.7v476.7c0 9.8-7.9 17.7-17.7 17.7-9.8 0-17.7-7.9-17.7-17.7v-476.7c0-9.8 7.9-17.7 17.7-17.7z" fill="#cbb292"></path></svg>
+            </div>Step 3: Decide which fields you want to retrieve. For example, if you want to retrieve the account name and account owner, you'll include the "Name" and "Owner" fields in your query.
+          </li>
+          <li>
+            <div class="u-list-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512" id="svg-7b19" style="font-size: 1em; margin: -1em;"><path d="m365.5 309c-35.7.7-70.2-13-95.8-38-22.2-21.6-52.2-33.4-83.2-32.7-26.1-.3-51.6 7.8-72.6 23.3-2.7 2.1-6 3.2-9.4 3.3-4.5 0-8.9-2-11.8-5.5-3-3.4-4.6-7.8-4.5-12.3v-198.8c0-4.9 1.9-9.5 5.4-13 25.4-23.1 58.6-35.8 92.9-35.3 35.8-.8 70.4 12.9 96 38 22.2 21.6 52.1 33.3 83 32.7 21.3.2 42.2-5.1 60.8-15.4 2.3-1.4 5-2.2 7.7-2.2 9.3.4 16.6 8.3 16.2 17.7v200.8c.2 6-2.7 11.6-7.6 15-22.9 14.9-49.8 22.7-77.1 22.4z" fill="#e64c3c"></path><path d="m79.5 0c9.8 0 17.7 7.9 17.7 17.7v476.7c0 9.8-7.9 17.7-17.7 17.7-9.8 0-17.7-7.9-17.7-17.7v-476.7c0-9.8 7.9-17.7 17.7-17.7z" fill="#cbb292"></path></svg>
+            </div>Step 4: Write your query. Your query will look something like this:&nbsp;"SELECT Name, Owner FROM Account".&nbsp;This tells Salesforce to retrieve the account name and owner fields from the account object.
+          </li>
+          <li>
+            <div class="u-list-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512" id="svg-7b19" style="font-size: 1em; margin: -1em;"><path d="m365.5 309c-35.7.7-70.2-13-95.8-38-22.2-21.6-52.2-33.4-83.2-32.7-26.1-.3-51.6 7.8-72.6 23.3-2.7 2.1-6 3.2-9.4 3.3-4.5 0-8.9-2-11.8-5.5-3-3.4-4.6-7.8-4.5-12.3v-198.8c0-4.9 1.9-9.5 5.4-13 25.4-23.1 58.6-35.8 92.9-35.3 35.8-.8 70.4 12.9 96 38 22.2 21.6 52.1 33.3 83 32.7 21.3.2 42.2-5.1 60.8-15.4 2.3-1.4 5-2.2 7.7-2.2 9.3.4 16.6 8.3 16.2 17.7v200.8c.2 6-2.7 11.6-7.6 15-22.9 14.9-49.8 22.7-77.1 22.4z" fill="#e64c3c"></path><path d="m79.5 0c9.8 0 17.7 7.9 17.7 17.7v476.7c0 9.8-7.9 17.7-17.7 17.7-9.8 0-17.7-7.9-17.7-17.7v-476.7c0-9.8 7.9-17.7 17.7-17.7z" fill="#cbb292"></path></svg>
+            </div>Step 5: Run your query. Once you've written your query, click "Execute" to run it. You'll see the results of your query in the "Query Results" pane at the bottom of the Developer Console.
+          </li>
+          <li>
+            <div class="u-list-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512" id="svg-7b19" style="font-size: 1em; margin: -1em;"><path d="m365.5 309c-35.7.7-70.2-13-95.8-38-22.2-21.6-52.2-33.4-83.2-32.7-26.1-.3-51.6 7.8-72.6 23.3-2.7 2.1-6 3.2-9.4 3.3-4.5 0-8.9-2-11.8-5.5-3-3.4-4.6-7.8-4.5-12.3v-198.8c0-4.9 1.9-9.5 5.4-13 25.4-23.1 58.6-35.8 92.9-35.3 35.8-.8 70.4 12.9 96 38 22.2 21.6 52.1 33.3 83 32.7 21.3.2 42.2-5.1 60.8-15.4 2.3-1.4 5-2.2 7.7-2.2 9.3.4 16.6 8.3 16.2 17.7v200.8c.2 6-2.7 11.6-7.6 15-22.9 14.9-49.8 22.7-77.1 22.4z" fill="#e64c3c"></path><path d="m79.5 0c9.8 0 17.7 7.9 17.7 17.7v476.7c0 9.8-7.9 17.7-17.7 17.7-9.8 0-17.7-7.9-17.7-17.7v-476.7c0-9.8 7.9-17.7 17.7-17.7z" fill="#cbb292"></path></svg>
+            </div>Congratulations🎉🎉, you've written your first SOQL query! This is just the beginning, as you can use SOQL to retrieve and manipulate data in a variety of ways. With more experience, you can write more complex queries and take full advantage of Salesforce's data model and relationships between objects.
+          </li>
+        </ul>
+        <div class="u-carousel u-expanded-width-xs u-gallery u-layout-carousel u-lightbox u-no-transition u-show-text-none u-gallery-1" data-interval="5000" data-u-ride="carousel" id="carousel-9387">
+          <ol class="u-absolute-hcenter u-carousel-indicators u-carousel-indicators-1">
+            <li data-u-target="#carousel-9387" data-u-slide-to="0" class="u-active u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+            <li data-u-target="#carousel-9387" data-u-slide-to="1" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+          </ol>
+          <div class="u-carousel-inner u-gallery-inner" role="listbox">
+            <div class="u-active u-carousel-item u-gallery-item u-carousel-item-1">
+              <div class="u-back-slide" data-image-width="1637" data-image-height="877">
+                <img class="u-back-image u-expanded" src="https://firebasestorage.googleapis.com/v0/b/myproject-c0609.appspot.com/o/soql%2FScreenshot%202023-04-06%2023a3616.png?alt=media&amp;token=61237150-7bb9-4f47-8a9f-3a793affd427">
+              </div>
+              <div class="u-container-align-center u-over-slide u-over-slide-1">
+                <h3 class="u-align-center u-gallery-heading" style="width: 550px; margin-right: -285px; margin-left: -285px;"></h3>
+                <p class="u-align-center u-gallery-text" style="width: 550px; margin-right: -285px; margin-left: -285px;"></p>
+              </div>
+            </div>
+            <div class="u-carousel-item u-gallery-item u-carousel-item-2">
+              <div class="u-back-slide" data-image-width="1682" data-image-height="907">
+                <img class="u-back-image u-expanded" src="https://firebasestorage.googleapis.com/v0/b/myproject-c0609.appspot.com/o/soql%2FScreenshot%202023-04-06%20233616.png?alt=media&amp;token=e978456c-6053-47e7-b437-71d491b2b1f2">
+              </div>
+              <div class="u-container-align-center u-over-slide u-over-slide-2">
+                <h3 class="u-align-center u-gallery-heading"></h3>
+                <p class="u-align-center u-gallery-text"></p>
+              </div>
+            </div>
+          </div>
+          <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-grey-70 u-hidden u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-carousel-control-1" href="#carousel-9387" role="button" data-u-slide="prev">
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+            </span>
+          </a>
+          <a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-grey-70 u-hidden u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-carousel-control-2" href="#carousel-9387" role="button" data-u-slide="next">
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+            </span>
+          </a>
+        </div>
+        <div class="fr-view u-align-center u-clearfix u-rich-text u-text u-text-5" data-animation-name="customAnimationIn" data-animation-duration="1000">
+          <h1>
+            <span class="u-text-custom-color-3">Select statement in SOQL</span>
+          </h1>
+          <p id="isPasted" style="text-align: center;">The SELECT statement is a fundamental component of SOQL. It is used to retrieve specific fields from one or more Salesforce objects. The SELECT statement is similar to the SELECT statement in SQL, but with some important differences.</p>
+          <p style="text-align: center;">To use the SELECT statement in SOQL, you must first specify the object you want to query. For example, if you want to retrieve data from the Account object, your query would start with "SELECT" followed by the fields you want to retrieve and the object you want to retrieve them from. For example, the following query retrieves the Account Name and Account Owner fields from the Account object:</p>
+        </div>
+        <div class="u-clearfix u-custom-html u-expanded-width-xs u-custom-html-1" data-animation-name="customAnimationIn" data-animation-duration="1000">
+          <style>.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.text {
+  font-size: 20px;
+  font-weight: ;
+  color: #333;
+}
+.copy-btn {
+  background-color: #1a66ff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.copy-btn:hover {
+  background-color: #3e8e41;
+} </style>
+          <div class="container">
+            <div class="text">SELECT Name, Owner FROM Account </div>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <script>const copyBtn = document.querySelector('.copy-btn');
+const copyText = document.querySelector('.text');
+copyBtn.addEventListener('click', () => {
+  const tempInput = document.createElement('input');
+  tempInput.value = copyText.textContent;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand('copy');
+  document.body.removeChild(tempInput);
+  
+  copyBtn.textContent = 'Copied!';
+  setTimeout(() => {
+    copyBtn.textContent = 'Copy';
+  }, 2000);
+}); </script>
+        </div>
+        <img class="u-align-center u-expanded-width u-image u-image-contain u-image-default u-image-3" src="images/2.png" alt="" data-image-width="1280" data-image-height="720">
+        <div class="fr-view u-align-center u-clearfix u-rich-text u-text u-text-6">
+          <p style="text-align: center;">You can also use the SELECT statement to retrieve fields from related objects. For example, if you want to retrieve the Contact Name and Account Name for all contacts associated with an account, you can use a parent-child subquery. The following query retrieves the Contact Name and Account Name fields for all contacts associated with the "ABC Company" account:</p>
+        </div>
+        <div class="u-align-center u-clearfix u-custom-html u-custom-html-2">
+          <style>.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.copy-btn {
+  background-color: #1a66ff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.copy-btn:hover {
+  background-color: #3e8e41;
+} </style>
+          <div class="container">
+            <div class="text">SELECT Name, (SELECT Name, Account.Name FROM Contacts) FROM Account WHERE Name='ABC Company' </div>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <script>const copyBtn = document.querySelector('.copy-btn');
+const copyText = document.querySelector('.text');
+copyBtn.addEventListener('click', () => {
+  const tempInput = document.createElement('input');
+  tempInput.value = copyText.textContent;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand('copy');
+  document.body.removeChild(tempInput);
+  
+  copyBtn.textContent = 'Copied!';
+  setTimeout(() => {
+    copyBtn.textContent = 'Copy';
+  }, 2000);
+}); </script>
+        </div>
+        <p class="u-align-center u-custom-font u-font-montserrat u-text u-text-7"> In this query, the parent object is the Account object and the child object is the Contact object. The subquery retrieves the Contact Name and Account Name fields from the Contacts object and the Account object, respectively.The SELECT statement is a powerful tool for retrieving specific data from Salesforce objects. By using the SELECT statement in conjunction with other SOQL keywords and functions, you can retrieve, filter, and manipulate data to meet your specific business needs.<br>
+          <br>
+        </p>
+        <div class="fr-view u-align-center u-clearfix u-rich-text u-text u-text-8">
+          <h1 style="text-align: center;">
+            <span class="u-text-palette-1-base">Where Keyword in SOQL</span>
+          </h1>
+          <p id="isPasted" style="text-align: center;">SOQL (Salesforce Object Query Language) is a powerful tool that allows developers to retrieve data from Salesforce databases. One of the key features of SOQL is the ability to use the WHERE keyword to filter the data returned by a query.</p>
+          <p style="text-align: center;">The WHERE keyword in SOQL is used to specify one or more conditions that must be met in order for a record to be returned by the query. These conditions can be simple or complex and can involve multiple fields and operators.</p>
+          <p style="text-align: center;">For example, suppose you have a Salesforce database containing information about customers, including their names, addresses, and phone numbers. You could use the following SOQL query to retrieve all of the customers who live in New York:</p>
+        </div>
+        <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-3">
+          <style>.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.copy-btn {
+  background-color: #1a66ff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.copy-btn:hover {
+  background-color: #3e8e41;
+} </style>
+          <div class="container">
+            <div class="text">SELECT Name, Address, Phone FROM Customer__c WHERE State = 'New York' </div>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <script>const copyBtn = document.querySelector('.copy-btn');
+const copyText = document.querySelector('.text');
+copyBtn.addEventListener('click', () => {
+  const tempInput = document.createElement('input');
+  tempInput.value = copyText.textContent;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand('copy');
+  document.body.removeChild(tempInput);
+  
+  copyBtn.textContent = 'Copied!';
+  setTimeout(() => {
+    copyBtn.textContent = 'Copy';
+  }, 2000);
+}); </script>
+        </div>
+        <p class="u-align-center u-custom-font u-font-montserrat u-text u-text-9"> In this example, the WHERE keyword is used to specify the condition that the State field must be equal to 'New York' in order for a record to be returned. The query will only return records that meet this condition.The WHERE keyword can also be used in conjunction with other keywords, such as ORDER BY and LIMIT, to further refine the results of a query. For example, you could modify the previous query to return only the first 10 customers who live in New York and are sorted by their last name:</p>
+        <img class="u-align-center u-expanded-width u-image u-image-contain u-image-default u-image-4" src="images/94756913-01.png" alt="" data-image-width="1280" data-image-height="720">
+        <div class="u-align-center u-clearfix u-custom-html u-custom-html-4">
+          <style>.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.copy-btn {
+  background-color: #1a66ff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.copy-btn:hover {
+  background-color: #3e8e41;
+} </style>
+          <div class="container">
+            <div class="text">SELECT Name, Address, Phone FROM Customer__c WHERE State = 'New York' ORDER BY LastName LIMIT 10 </div>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <script>const copyBtn = document.querySelector('.copy-btn');
+const copyText = document.querySelector('.text');
+copyBtn.addEventListener('click', () => {
+  const tempInput = document.createElement('input');
+  tempInput.value = copyText.textContent;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand('copy');
+  document.body.removeChild(tempInput);
+  
+  copyBtn.textContent = 'Copied!';
+  setTimeout(() => {
+    copyBtn.textContent = 'Copy';
+  }, 2000);
+}); </script>
+        </div>
+        <p class="u-align-center u-custom-font u-font-montserrat u-text u-text-10"> In this modified query, the ORDER BY keyword is used to sort the results by the LastName field, and the LIMIT keyword is used to limit the number of results to 10.In conclusion, the WHERE keyword is a powerful tool in SOQL that allows developers to retrieve only the data they need from Salesforce databases. By specifying one or more conditions, developers can filter the results of a query to meet their specific needs. However, it is important to use the WHERE keyword correctly and with care to avoid unintended consequences and ensure the integrity of the data returned by the query.</p>
+        <div class="fr-view u-align-center u-clearfix u-rich-text u-text u-text-11">
+          <h1 style="text-align: center;">Logical operator in SOQL</h1>
+          <p id="isPasted">Logical operators are essential components in Salesforce Object Query Language (SOQL) that allow developers to retrieve specific data from Salesforce databases. There are three logical operators in SOQL: AND, OR, and NOT.</p>
+          <p>The AND operator in SOQL is used to retrieve records that satisfy multiple conditions. For example, if you want to retrieve all accounts that have an annual revenue of more than $1 million and are located in the United States, you can use the following SOQL query:</p>
+        </div>
+        <div class="u-align-center u-clearfix u-custom-html u-custom-html-5">
+          <style>.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.copy-btn {
+  background-color: #1a66ff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.copy-btn:hover {
+  background-color: #3e8e41;
+} </style>
+          <div class="container">
+            <div class="text">SELECT Id, Name, AnnualRevenue, BillingCountry FROM Account WHERE AnnualRevenue &gt; 1000000 AND BillingCountry = 'United States' </div>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <script>const copyBtn = document.querySelector('.copy-btn');
+const copyText = document.querySelector('.text');
+copyBtn.addEventListener('click', () => {
+  const tempInput = document.createElement('input');
+  tempInput.value = copyText.textContent;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand('copy');
+  document.body.removeChild(tempInput);
+  
+  copyBtn.textContent = 'Copied!';
+  setTimeout(() => {
+    copyBtn.textContent = 'Copy';
+  }, 2000);
+}); </script>
+        </div>
+        <img class="u-expanded-width u-image u-image-contain u-image-default u-image-5" src="images/94756913-02.png" alt="" data-image-width="1280" data-image-height="720">
+      </div>
+    </section>
+    <section class="u-align-left u-clearfix u-gradient u-section-2" id="carousel_ddc2">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="fr-view u-clearfix u-rich-text u-text u-text-1">
+          <h1 style="text-align: center;">NULL in SOQL</h1>
+          <p id="isPasted" style="text-align: center;">In SOQL, null values can be used in filters and can be checked with comparison operators such as =, !=, &lt;, &gt;, &lt;=, &gt;=. When filtering for null values, the IS NULL operator is used. For example, the following SOQL query retrieves all contacts without an email address:</p>
+        </div>
+        <div class="u-align-center u-clearfix u-custom-html u-expanded-width-xs u-custom-html-1">
+          <style>.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.copy-btn {
+  background-color: #1a66ff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.copy-btn:hover {
+  background-color: #3e8e41;
+} </style>
+          <div class="container">
+            <div class="text">SELECT Id, Name FROM Contact WHERE Email IS NULL </div>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <script>const copyBtn = document.querySelector('.copy-btn');
+const copyText = document.querySelector('.text');
+copyBtn.addEventListener('click', () => {
+  const tempInput = document.createElement('input');
+  tempInput.value = copyText.textContent;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand('copy');
+  document.body.removeChild(tempInput);
+  
+  copyBtn.textContent = 'Copied!';
+  setTimeout(() => {
+    copyBtn.textContent = 'Copy';
+  }, 2000);
+}); </script>
+        </div>
+        <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-2"></div>
+        <img class="u-expanded-width u-image u-image-contain u-image-default u-image-1" src="images/94756913-04.png" alt="" data-image-width="1280" data-image-height="720">
+        <p class="u-custom-font u-font-montserrat u-text u-text-2"> This query will return all contacts where the Email field has a null value.It is important to note that null values are not the same as empty or blank values.<br>
+          <br>&nbsp;An empty or blank value is a value that has no characters or data, whereas a null value is a value that does not exist. When querying data in SOQL, it is essential to differentiate between null values and empty or blank values, as the results returned by a query can vary significantly.In some cases, null values can cause errors in SOQL. For example, if a query attempts to access a null value in a field, an error may occur. To avoid these errors, developers can use the IFNULL() function to replace null values with a specified default value. For example, the following SOQL query retrieves all accounts and replaces null values in the Industry field with the default value "Not Specified":
+        </p>
+        <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-3">
+          <style>.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.copy-btn {
+  background-color: #1a66ff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.copy-btn:hover {
+  background-color: #3e8e41;
+} </style>
+          <div class="container">
+            <div class="text">SELECT Id, Name, IFNULL(Industry, 'Not Specified') FROM Account </div>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <script>const copyBtn = document.querySelector('.copy-btn');
+const copyText = document.querySelector('.text');
+copyBtn.addEventListener('click', () => {
+  const tempInput = document.createElement('input');
+  tempInput.value = copyText.textContent;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand('copy');
+  document.body.removeChild(tempInput);
+  
+  copyBtn.textContent = 'Copied!';
+  setTimeout(() => {
+    copyBtn.textContent = 'Copy';
+  }, 2000);
+}); </script>
+        </div>
+        <p class="u-custom-font u-font-montserrat u-text u-text-3"> In conclusion, null values in SOQL indicate the absence of a value in a field and can impact the results of a query. Developers must understand how to use null values in filters and comparison operators and differentiate between null values and empty or blank values to ensure the accuracy and integrity of their data. By using the IFNULL() function, developers can handle null values and avoid errors in their SOQL queries.</p>
+      </div>
+    </section>
+    <section class="u-align-left u-clearfix u-gradient u-section-3" id="sec-4c86">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="fr-view u-clearfix u-rich-text u-text u-text-1">
+          <h1 style="text-align: center;">LIKE in SOQL</h1>
+          <p id="isPasted" style="text-align: center;">LIKE operator is used to filter records based on a pattern that matches a specified string. The LIKE operator is similar to the SQL LIKE operator and allows developers to retrieve records that contain a specific pattern in a particular field.</p>
+          <p style="text-align: center;">The syntax for using the LIKE operator in SOQL is as follows:</p>
+        </div>
+        <div class="u-align-center u-clearfix u-custom-html u-custom-html-1">
+          <style>.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.copy-btn {
+  background-color: #1a66ff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.copy-btn:hover {
+  background-color: #3e8e41;
+} </style>
+          <div class="container">
+            <div class="text">SELECT field1, field2, ... FROM object WHERE field LIKE 'pattern' </div>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <script>const copyBtn = document.querySelector('.copy-btn');
+const copyText = document.querySelector('.text');
+copyBtn.addEventListener('click', () => {
+  const tempInput = document.createElement('input');
+  tempInput.value = copyText.textContent;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand('copy');
+  document.body.removeChild(tempInput);
+  
+  copyBtn.textContent = 'Copied!';
+  setTimeout(() => {
+    copyBtn.textContent = 'Copy';
+  }, 2000);
+}); </script>
+        </div>
+        <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-2"></div>
+        <img class="u-expanded-width u-image u-image-contain u-image-default u-image-1" src="images/94756913-05.png" alt="" data-image-width="1280" data-image-height="720">
+        <p class="u-align-center u-custom-font u-font-montserrat u-text u-text-2"> This query will retrieve all contacts whose first name starts with the letter "J", such as "John", "Jane", and "James"<br>
+          <br>.In addition to the percent sign and underscore, the LIKE operator in SOQL supports the ESCAPE keyword. The ESCAPE keyword allows developers to search for strings that contain the percent sign or underscore characters as literal characters, rather than as wildcards.For example, the following SOQL query retrieves all accounts whose name contains the string "100%":<br>
+          <br>
+          <br>
+        </p>
+        <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-3">
+          <style>.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.copy-btn {
+  background-color: #1a66ff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.copy-btn:hover {
+  background-color: #3e8e41;
+} </style>
+          <div class="container">
+            <div class="text">SELECT Id, Name FROM Account WHERE Name LIKE '%100!%%' ESCAPE '!' </div>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <script>const copyBtn = document.querySelector('.copy-btn');
+const copyText = document.querySelector('.text');
+copyBtn.addEventListener('click', () => {
+  const tempInput = document.createElement('input');
+  tempInput.value = copyText.textContent;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand('copy');
+  document.body.removeChild(tempInput);
+  
+  copyBtn.textContent = 'Copied!';
+  setTimeout(() => {
+    copyBtn.textContent = 'Copy';
+  }, 2000);
+}); </script>
+        </div>
+        <p class="u-align-center u-custom-font u-font-montserrat u-text u-text-3"> In this query, the ESCAPE keyword is used with the exclamation mark (!) character to indicate that the percent sign (%) character should be treated as a literal character, rather than as a wildcard. The query will retrieve all accounts whose name contains the string "100%", such as "Acme Corporation 100% Satisfaction Guaranteed".In conclusion, the LIKE operator in SOQL is a powerful tool for filtering records based on a pattern that matches a specified string. By using the percent sign and underscore wildcards, as well as the ESCAPE keyword, developers can create complex queries that retrieve the precise data they need from Salesforce databases.</p>
+      </div>
+    </section>
+    <section class="u-align-left u-clearfix u-gradient u-section-4" id="carousel_551a">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="fr-view u-align-center u-clearfix u-rich-text u-text u-text-1">
+          <h1 style="text-align: center;">&nbsp;LIMIT clause in SOQL</h1>
+          <p id="isPasted" style="text-align: center;">The LIMIT clause is used to limit the number of records returned by a SOQL query. Here's the syntax for using LIMIT in a SOQL query:</p>
+        </div>
+        <div class="u-align-center u-clearfix u-custom-html u-expanded-width-xs u-custom-html-1">
+          <style>.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.copy-btn {
+  background-color: #1a66ff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.copy-btn:hover {
+  background-color: #3e8e41;
+} </style>
+          <div class="container">
+            <div class="text">SELECT field1, field2, ... FROM object_name WHERE condition_expression LIMIT n </div>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <script>const copyBtn = document.querySelector('.copy-btn');
+const copyText = document.querySelector('.text');
+copyBtn.addEventListener('click', () => {
+  const tempInput = document.createElement('input');
+  tempInput.value = copyText.textContent;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand('copy');
+  document.body.removeChild(tempInput);
+  
+  copyBtn.textContent = 'Copied!';
+  setTimeout(() => {
+    copyBtn.textContent = 'Copy';
+  }, 2000);
+}); </script>
+        </div>
+        <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-2"></div>
+        <img class="u-expanded-width u-image u-image-contain u-image-default u-image-1" src="images/94756913-07.png" alt="" data-image-width="1280" data-image-height="720">
+        <p class="u-align-center u-custom-font u-font-montserrat u-text u-text-2"> In the LIMIT clause, you specify the maximum number of records to return, where n is a positive integer.<br>&nbsp;The LIMIT clause is optional, and if you don't specify a limit, Salesforce will return up to 2,000 records by default.<br>
+          <br>It's important to note that the LIMIT clause only limits the number of records returned by the query, not the number of records evaluated by the query.<br>
+          <br>&nbsp;For example, if your query includes a filter that matches a large number of records, the query may still hit Salesforce's governor limits, even if you've specified a LIMIT clause.Here's an example of a SOQL query that includes a LIMIT clause<br>
+        </p>
+        <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-3">
+          <style>.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.copy-btn {
+  background-color: #1a66ff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.copy-btn:hover {
+  background-color: #3e8e41;
+} </style>
+          <div class="container">
+            <div class="text">SELECT Id, Name, CreatedDate FROM Account WHERE CreatedDate &gt; 2022-01-01T00:00:00Z LIMIT 10 </div>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <script>const copyBtn = document.querySelector('.copy-btn');
+const copyText = document.querySelector('.text');
+copyBtn.addEventListener('click', () => {
+  const tempInput = document.createElement('input');
+  tempInput.value = copyText.textContent;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand('copy');
+  document.body.removeChild(tempInput);
+  
+  copyBtn.textContent = 'Copied!';
+  setTimeout(() => {
+    copyBtn.textContent = 'Copy';
+  }, 2000);
+}); </script>
+        </div>
+        <p class="u-align-center u-custom-font u-font-montserrat u-text u-text-3"> This query would return up to 10 accounts created after January 1, 2022, sorted by their created date.I hope this information is helpful! Let me know if you have any other questions.</p>
+      </div>
+    </section>
+    <section class="u-align-left u-clearfix u-gradient u-section-5" id="carousel_91bf">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="fr-view u-align-center u-clearfix u-rich-text u-text u-text-1">
+          <h1 style="text-align: center;">ORDER BY IN SOQL</h1>
+          <p id="isPasted" style="text-align: center;">&nbsp;ORDER BY clause is used to sort the results of a query in ascending or descending order based on one or more fields. The basic syntax for using ORDER BY in SOQL is as follows:</p>
+        </div>
+        <div class="u-align-center u-clearfix u-custom-html u-expanded-width-xs u-custom-html-1">
+          <style>.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.copy-btn {
+  background-color: #1a66ff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.copy-btn:hover {
+  background-color: #3e8e41;
+} </style>
+          <div class="container">
+            <div class="text">SELECT Name, Industry FROM Account ORDER BY Industry ASC </div>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <script>const copyBtn = document.querySelector('.copy-btn');
+const copyText = document.querySelector('.text');
+copyBtn.addEventListener('click', () => {
+  const tempInput = document.createElement('input');
+  tempInput.value = copyText.textContent;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand('copy');
+  document.body.removeChild(tempInput);
+  
+  copyBtn.textContent = 'Copied!';
+  setTimeout(() => {
+    copyBtn.textContent = 'Copy';
+  }, 2000);
+}); </script>
+        </div>
+        <img class="u-expanded-width u-image u-image-contain u-image-default u-image-1" src="images/94756913-06.png" alt="" data-image-width="1280" data-image-height="720">
+        <p class="u-align-center u-custom-font u-font-montserrat u-text u-text-2"> This query selects the Name and Industry fields from the Account object and orders the results in ascending order by the Industry field. You can replace ASC with DESC to order the results in descending order instead.<br>
+        </p>
+      </div>
+    </section>
+    <section class="u-align-left u-clearfix u-gradient u-section-6" id="carousel_fbc7">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="fr-view u-align-center u-clearfix u-rich-text u-text u-text-1">
+          <h1 style="text-align: center;">OFFSET in SOQL</h1>
+          <p id="isPasted">&nbsp;OFFSET clause to skip a specified number of records before returning the remaining records. This is useful when you want to implement pagination in your application or if you only want to retrieve a subset of the query results.</p>
+          <p>Here's the syntax for using OFFSET in a SOQL query:</p>
+        </div>
+        <div class="u-align-center u-clearfix u-custom-html u-expanded-width-xs u-custom-html-1">
+          <style>.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.copy-btn {
+  background-color: #1a66ff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.copy-btn:hover {
+  background-color: #3e8e41;
+} </style>
+          <div class="container">
+            <div class="text">SELECT field1, field2, ... FROM object_name WHERE condition_expression ORDER BY field_name [ASC|DESC], ... LIMIT row_count OFFSET offset_count </div>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <script>const copyBtn = document.querySelector('.copy-btn');
+const copyText = document.querySelector('.text');
+copyBtn.addEventListener('click', () => {
+  const tempInput = document.createElement('input');
+  tempInput.value = copyText.textContent;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand('copy');
+  document.body.removeChild(tempInput);
+  
+  copyBtn.textContent = 'Copied!';
+  setTimeout(() => {
+    copyBtn.textContent = 'Copy';
+  }, 2000);
+}); </script>
+        </div>
+        <img class="u-expanded-width u-image u-image-contain u-image-default u-image-1" src="images/94756913-08.png" alt="" data-image-width="1280" data-image-height="720">
+        <p class="u-align-center u-custom-font u-font-montserrat u-text u-text-2"> In this query, the OFFSET clause comes after the LIMIT clause. The row_count specifies the maximum number of records to return, and the offset_count specifies the number of records to skip before starting to return records.For example, if you wanted to retrieve the next 10 contacts in your Salesforce org after skipping the first 20 contacts, you could use the following SOQL query:<br>
+        </p>
+        <div class="u-align-center u-clearfix u-custom-html u-expanded-width-xs u-custom-html-2">
+          <style>.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.copy-btn {
+  background-color: #1a66ff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.copy-btn:hover {
+  background-color: #3e8e41;
+} </style>
+          <div class="container">
+            <div class="text">SELECT Id, FirstName, LastName FROM Contact ORDER BY LastName ASC LIMIT 10 OFFSET 20 </div>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <script>const copyBtn = document.querySelector('.copy-btn');
+const copyText = document.querySelector('.text');
+copyBtn.addEventListener('click', () => {
+  const tempInput = document.createElement('input');
+  tempInput.value = copyText.textContent;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand('copy');
+  document.body.removeChild(tempInput);
+  
+  copyBtn.textContent = 'Copied!';
+  setTimeout(() => {
+    copyBtn.textContent = 'Copy';
+  }, 2000);
+}); </script>
+        </div>
+        <p class="u-align-center u-custom-font u-font-montserrat u-text u-text-3"> In this query, the OFFSET clause comes after the LIMIT clause. The row_count specifies the maximum number of records to return, and the offset_count specifies the number of records to skip before starting to return records.For example, if you wanted to retrieve the next 10 contacts in your Salesforce org after skipping the first 20 contacts, you could use the following SOQL query:<br>
+        </p>
+      </div>
+    </section>
+    <section class="u-align-left u-clearfix u-gradient u-section-7" id="carousel_df69">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="fr-view u-align-center u-clearfix u-rich-text u-text u-text-1">
+          <h1 style="text-align: center;">GROUP BY clause in SOQL</h1>
+          <p id="isPasted">The GROUP BY clause is used in a SOQL query to group the query results based on one or more fields. This is useful when you want to aggregate data and perform calculations on subsets of records that share a common value in one or more fields.</p>
+          <p>Here's the syntax for using GROUP BY in a SOQL query:</p>
+        </div>
+        <div class="u-align-center u-clearfix u-custom-html u-expanded-width-xs u-custom-html-1">
+          <style>.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.copy-btn {
+  background-color: #1a66ff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.copy-btn:hover {
+  background-color: #3e8e41;
+} </style>
+          <div class="container">
+            <div class="text">SELECT field1,... FROM object_name WHERE condition_expression GROUP BY field_name, ... </div>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <script>const copyBtn = document.querySelector('.copy-btn');
+const copyText = document.querySelector('.text');
+copyBtn.addEventListener('click', () => {
+  const tempInput = document.createElement('input');
+  tempInput.value = copyText.textContent;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand('copy');
+  document.body.removeChild(tempInput);
+  
+  copyBtn.textContent = 'Copied!';
+  setTimeout(() => {
+    copyBtn.textContent = 'Copy';
+  }, 2000);
+}); </script>
+        </div>
+        <img class="u-expanded-width u-image u-image-contain u-image-default u-image-1" src="images/94756913-09.png" alt="" data-image-width="1280" data-image-height="720">
+        <p class="u-align-center u-custom-font u-font-montserrat u-text u-text-2"> In the GROUP BY clause, you specify the field(s) to use for grouping, separated by commas.&nbsp;<br>
+          <br>You can also include aggregate functions (such as COUNT(), SUM(), AVG(), MIN(), or MAX()) to perform calculations on the grouped data.For example, let's say you wanted to retrieve the total number of opportunities and the total amount for each stage in your Salesforce org. You could use the following SOQL query:<br>
+        </p>
+        <div class="u-align-center u-clearfix u-custom-html u-expanded-width-xs u-custom-html-2">
+          <style>.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.copy-btn {
+  background-color: #1a66ff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.copy-btn:hover {
+  background-color: #3e8e41;
+} </style>
+          <div class="container">
+            <div class="text">SELECT StageName, COUNT(Id), SUM(Amount) FROM Opportunity GROUP BY StageName </div>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <script>const copyBtn = document.querySelector('.copy-btn');
+const copyText = document.querySelector('.text');
+copyBtn.addEventListener('click', () => {
+  const tempInput = document.createElement('input');
+  tempInput.value = copyText.textContent;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand('copy');
+  document.body.removeChild(tempInput);
+  
+  copyBtn.textContent = 'Copied!';
+  setTimeout(() => {
+    copyBtn.textContent = 'Copy';
+  }, 2000);
+}); </script>
+        </div>
+        <p class="u-align-center u-custom-font u-font-montserrat u-text u-text-3"> This query would group the opportunities by their stage name and return the count of opportunities and the sum of their amount for each stage.Note that when using GROUP BY, you can only select fields that are specified in the GROUP BY clause or in an aggregate function. Additionally, you cannot use certain clauses (such as HAVING, LIMIT, or OFFSET) with GROUP BY.<br>
+        </p>
+      </div>
+    </section>
+    <section class="u-align-left u-clearfix u-gradient u-section-8" id="carousel_706d">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="fr-view u-align-center u-clearfix u-rich-text u-text u-text-1">
+          <h1 style="text-align: center; line-height: 1.1;">Aggregate functions in SOQL</h1>
+          <p id="isPasted">Aggregate functions in SOQL (Salesforce Object Query Language) allow you to perform calculations on your data and return summary results.&nbsp;</p>
+          <h5>The following are the available aggregate functions in SOQL:</h5>
+          <h5>
+            <span style="font-weight: 700;">🔄️COUNT():&nbsp;</span>
+            <span style="font-weight: 400;">This function returns the number of rows returned by a query.</span>
+          </h5>
+          <p>
+            <br>
+          </p>
+        </div>
+        <div class="u-align-center u-clearfix u-custom-html u-expanded-width u-custom-html-1">
+          <style>.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.copy-btn {
+  background-color: #1a66ff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.copy-btn:hover {
+  background-color: #3e8e41;
+} </style>
+          <div class="container">
+            <div class="text">SELECT COUNT() FROM Account </div>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <script>const copyBtn = document.querySelector('.copy-btn');
+const copyText = document.querySelector('.text');
+copyBtn.addEventListener('click', () => {
+  const tempInput = document.createElement('input');
+  tempInput.value = copyText.textContent;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand('copy');
+  document.body.removeChild(tempInput);
+  
+  copyBtn.textContent = 'Copied!';
+  setTimeout(() => {
+    copyBtn.textContent = 'Copy';
+  }, 2000);
+}); </script>
+        </div>
+        <img class="u-expanded-width u-image u-image-contain u-image-default u-image-1" src="images/94756913-010.png" alt="" data-image-width="1280" data-image-height="720">
+        <h5 class="u-align-center u-text u-text-2"> This query will return the total number of accounts in the Salesforce org.<br>
+          <br><span class="u-file-icon u-icon"><img src="images/4511697.png" alt=""></span>&nbsp;SUM():<span style="font-weight: 400;"> This function returns the sum of the specified field in a query.</span>
+          <br>
+        </h5>
+        <div class="u-align-center u-clearfix u-custom-html u-expanded-width u-custom-html-2">
+          <style>.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.copy-btn {
+  background-color: #1a66ff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.copy-btn:hover {
+  background-color: #3e8e41;
+} </style>
+          <div class="container">
+            <div class="text">SELECT SUM(Amount) FROM Opportunity WHERE StageName = 'Closed Won' </div>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <script>const copyBtn = document.querySelector('.copy-btn');
+const copyText = document.querySelector('.text');
+copyBtn.addEventListener('click', () => {
+  const tempInput = document.createElement('input');
+  tempInput.value = copyText.textContent;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand('copy');
+  document.body.removeChild(tempInput);
+  
+  copyBtn.textContent = 'Copied!';
+  setTimeout(() => {
+    copyBtn.textContent = 'Copy';
+  }, 2000);
+}); </script>
+        </div>
+        <h5 class="u-align-center u-text u-text-3"> This query will return the total amount of all closed won opportunities in the Salesforce org.<br>
+          <br><span class="u-file-icon u-icon"><img src="images/5405851.png" alt=""></span>&nbsp;AVG(): <span style="font-weight: 400;">This function returns the average value of the specified field in a query.</span>
+          <br>
+        </h5>
+        <div class="u-align-center u-clearfix u-custom-html u-expanded-width u-custom-html-3">
+          <style>.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.copy-btn {
+  background-color: #1a66ff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.copy-btn:hover {
+  background-color: #3e8e41;
+} </style>
+          <div class="container">
+            <div class="text">SELECT AVG(Amount) FROM Opportunity WHERE CloseDate = THIS_YEAR </div>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <script>const copyBtn = document.querySelector('.copy-btn');
+const copyText = document.querySelector('.text');
+copyBtn.addEventListener('click', () => {
+  const tempInput = document.createElement('input');
+  tempInput.value = copyText.textContent;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand('copy');
+  document.body.removeChild(tempInput);
+  
+  copyBtn.textContent = 'Copied!';
+  setTimeout(() => {
+    copyBtn.textContent = 'Copy';
+  }, 2000);
+}); </script>
+        </div>
+        <h5 class="u-align-center u-text u-text-4"> This query will return the average amount of all opportunities with a Close Date in the current year.<br>
+          <br><span class="u-file-icon u-icon"><img src="images/7387724.png" alt=""></span>&nbsp;MIN(): <span style="font-weight: 400;">This function returns the minimum value of the specified field in a query.</span>
+          <br>
+        </h5>
+        <div class="u-align-center u-clearfix u-custom-html u-expanded-width u-custom-html-4">
+          <style>.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.copy-btn {
+  background-color: #1a66ff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.copy-btn:hover {
+  background-color: #3e8e41;
+} </style>
+          <div class="container">
+            <div class="text">SELECT MIN(CloseDate) FROM Opportunity WHERE StageName = 'Closed Won' </div>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <script>const copyBtn = document.querySelector('.copy-btn');
+const copyText = document.querySelector('.text');
+copyBtn.addEventListener('click', () => {
+  const tempInput = document.createElement('input');
+  tempInput.value = copyText.textContent;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand('copy');
+  document.body.removeChild(tempInput);
+  
+  copyBtn.textContent = 'Copied!';
+  setTimeout(() => {
+    copyBtn.textContent = 'Copy';
+  }, 2000);
+}); </script>
+        </div>
+        <h5 class="u-align-center u-text u-text-5"> This query will return the earliest Close Date of all closed won opportunities in the Salesforce org.<br><span class="u-file-icon u-icon"><img src="images/10078602.png" alt=""></span>&nbsp;MAX(): <span style="font-weight: 400;">This function returns the maximum value of the specified field in a query.</span>
+          <br>
+        </h5>
+        <div class="u-align-center u-clearfix u-custom-html u-expanded-width u-custom-html-5">
+          <style>.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.copy-btn {
+  background-color: #1a66ff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.copy-btn:hover {
+  background-color: #3e8e41;
+} </style>
+          <div class="container">
+            <div class="text">SELECT MAX(Amount) FROM Opportunity WHERE CloseDate = LAST_YEAR </div>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <script>const copyBtn = document.querySelector('.copy-btn');
+const copyText = document.querySelector('.text');
+copyBtn.addEventListener('click', () => {
+  const tempInput = document.createElement('input');
+  tempInput.value = copyText.textContent;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand('copy');
+  document.body.removeChild(tempInput);
+  
+  copyBtn.textContent = 'Copied!';
+  setTimeout(() => {
+    copyBtn.textContent = 'Copy';
+  }, 2000);
+}); </script>
+        </div>
+        <h5 class="u-align-center u-text u-text-6"> This query will return the maximum amount of all opportunities with a Close Date in the previous year.<br>
+          <span style="font-weight: 400;">You can also use GROUP BY clause in combination with Aggregate functions to group the query results based on one or more fields.</span>
+          <br>
+        </h5>
+        <div class="u-align-center u-clearfix u-custom-html u-expanded-width u-custom-html-6">
+          <style>.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.copy-btn {
+  background-color: #1a66ff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.copy-btn:hover {
+  background-color: #3e8e41;
+} </style>
+          <div class="container">
+            <div class="text">SELECT StageName, COUNT(Id) FROM Opportunity GROUP BY StageName </div>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <script>const copyBtn = document.querySelector('.copy-btn');
+const copyText = document.querySelector('.text');
+copyBtn.addEventListener('click', () => {
+  const tempInput = document.createElement('input');
+  tempInput.value = copyText.textContent;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand('copy');
+  document.body.removeChild(tempInput);
+  
+  copyBtn.textContent = 'Copied!';
+  setTimeout(() => {
+    copyBtn.textContent = 'Copy';
+  }, 2000);
+}); </script>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-9" id="carousel_4252">
+      <div class="u-align-left u-expanded-width u-left-0 u-video u-video-contain u-video-1">
+        <div class="embed-responsive embed-responsive-1">
+          <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" class="embed-responsive-item" src="https://www.youtube.com/embed/2ioSL0nayqg?playlist=2ioSL0nayqg&amp;loop=1&amp;mute=1&amp;showinfo=1&amp;controls=0&amp;start=0&amp;autoplay=1" data-autoplay="1" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer class="u-clearfix u-container-align-center-xs u-footer u-grey-10" id="sec-3cbe"><div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+                <div class="u-container-layout u-container-layout-1">
+                  <div class="u-clearfix u-group-elements u-group-elements-1">
+                    <p class="u-custom-font u-font-roboto u-text u-text-1">
+                      <a href="SOQL.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-color u-btn-1"><span class="u-icon"><svg class="u-svg-content" viewBox="0 0 60 60" x="0px" y="0px" style="width: 1em; height: 1em;"><g><path d="M45.563,29.174l-22-15c-0.307-0.208-0.703-0.231-1.031-0.058C22.205,14.289,22,14.629,22,15v30
+		c0,0.371,0.205,0.711,0.533,0.884C22.679,45.962,22.84,46,23,46c0.197,0,0.394-0.059,0.563-0.174l22-15
+		C45.836,30.64,46,30.331,46,30S45.836,29.36,45.563,29.174z M24,43.107V16.893L43.225,30L24,43.107z"></path><path d="M30,0C13.458,0,0,13.458,0,30s13.458,30,30,30s30-13.458,30-30S46.542,0,30,0z M30,58C14.561,58,2,45.439,2,30
+		S14.561,2,30,2s28,12.561,28,28S45.439,58,30,58z"></path>
+</g></svg><img></span>&nbsp;SOQL
+                      </a>
+                    </p>
+                    <p class="u-custom-font u-font-roboto u-text u-text-2">
+                      <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-black u-btn-2" href="LWC.html"><span class="u-icon"><svg class="u-svg-content" viewBox="0 0 60 60" x="0px" y="0px" style="width: 1em; height: 1em;"><g><path d="M45.563,29.174l-22-15c-0.307-0.208-0.703-0.231-1.031-0.058C22.205,14.289,22,14.629,22,15v30
+		c0,0.371,0.205,0.711,0.533,0.884C22.679,45.962,22.84,46,23,46c0.197,0,0.394-0.059,0.563-0.174l22-15
+		C45.836,30.64,46,30.331,46,30S45.836,29.36,45.563,29.174z M24,43.107V16.893L43.225,30L24,43.107z"></path><path d="M30,0C13.458,0,0,13.458,0,30s13.458,30,30,30s30-13.458,30-30S46.542,0,30,0z M30,58C14.561,58,2,45.439,2,30
+		S14.561,2,30,2s28,12.561,28,28S45.439,58,30,58z"></path>
+</g></svg><img></span>&nbsp;LWC
+                      </a>
+                    </p>
+                    <p class="u-custom-font u-font-roboto u-text u-text-3">
+                      <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-black u-btn-3" href="APEX.html"><span class="u-icon"><svg class="u-svg-content" viewBox="0 0 60 60" x="0px" y="0px" style="width: 1em; height: 1em;"><g><path d="M45.563,29.174l-22-15c-0.307-0.208-0.703-0.231-1.031-0.058C22.205,14.289,22,14.629,22,15v30
+		c0,0.371,0.205,0.711,0.533,0.884C22.679,45.962,22.84,46,23,46c0.197,0,0.394-0.059,0.563-0.174l22-15
+		C45.836,30.64,46,30.331,46,30S45.836,29.36,45.563,29.174z M24,43.107V16.893L43.225,30L24,43.107z"></path><path d="M30,0C13.458,0,0,13.458,0,30s13.458,30,30,30s30-13.458,30-30S46.542,0,30,0z M30,58C14.561,58,2,45.439,2,30
+		S14.561,2,30,2s28,12.561,28,28S45.439,58,30,58z"></path>
+</g></svg><img></span>&nbsp;APEX
+                      </a>
+                    </p>
+                    <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-black u-btn-4" href="APEX.html"><span class="u-icon"><svg class="u-svg-content" viewBox="0 0 60 60" x="0px" y="0px" style="width: 1em; height: 1em;"><g><path d="M45.563,29.174l-22-15c-0.307-0.208-0.703-0.231-1.031-0.058C22.205,14.289,22,14.629,22,15v30
+		c0,0.371,0.205,0.711,0.533,0.884C22.679,45.962,22.84,46,23,46c0.197,0,0.394-0.059,0.563-0.174l22-15
+		C45.836,30.64,46,30.331,46,30S45.836,29.36,45.563,29.174z M24,43.107V16.893L43.225,30L24,43.107z"></path><path d="M30,0C13.458,0,0,13.458,0,30s13.458,30,30,30s30-13.458,30-30S46.542,0,30,0z M30,58C14.561,58,2,45.439,2,30
+		S14.561,2,30,2s28,12.561,28,28S45.439,58,30,58z"></path>
+</g></svg><img></span>&nbsp;QNA
+                    </a>
+                  </div>
+                  <div class="u-clearfix u-group-elements u-group-elements-2">
+                    <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-black u-btn-5" href="APEX.html"><span class="u-icon u-icon-5"><svg class="u-svg-content" viewBox="0 0 60 60" x="0px" y="0px" style="width: 1em; height: 1em;"><g><path d="M45.563,29.174l-22-15c-0.307-0.208-0.703-0.231-1.031-0.058C22.205,14.289,22,14.629,22,15v30
+		c0,0.371,0.205,0.711,0.533,0.884C22.679,45.962,22.84,46,23,46c0.197,0,0.394-0.059,0.563-0.174l22-15
+		C45.836,30.64,46,30.331,46,30S45.836,29.36,45.563,29.174z M24,43.107V16.893L43.225,30L24,43.107z"></path><path d="M30,0C13.458,0,0,13.458,0,30s13.458,30,30,30s30-13.458,30-30S46.542,0,30,0z M30,58C14.561,58,2,45.439,2,30
+		S14.561,2,30,2s28,12.561,28,28S45.439,58,30,58z"></path>
+</g></svg><img></span>&nbsp;​&nbsp;About
+                    </a>
+                    <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-black u-btn-6" href="APEX.html"><span class="u-icon"><svg class="u-svg-content" viewBox="0 0 60 60" x="0px" y="0px" style="width: 1em; height: 1em;"><g><path d="M45.563,29.174l-22-15c-0.307-0.208-0.703-0.231-1.031-0.058C22.205,14.289,22,14.629,22,15v30
+		c0,0.371,0.205,0.711,0.533,0.884C22.679,45.962,22.84,46,23,46c0.197,0,0.394-0.059,0.563-0.174l22-15
+		C45.836,30.64,46,30.331,46,30S45.836,29.36,45.563,29.174z M24,43.107V16.893L43.225,30L24,43.107z"></path><path d="M30,0C13.458,0,0,13.458,0,30s13.458,30,30,30s30-13.458,30-30S46.542,0,30,0z M30,58C14.561,58,2,45.439,2,30
+		S14.561,2,30,2s28,12.561,28,28S45.439,58,30,58z"></path>
+</g></svg><img></span>&nbsp;Privacy Policy
+                    </a>
+                    <a class="u-btn u-button-link u-button-style u-none u-text-black u-btn-7" href="APEX.html"><span class="u-icon"><svg class="u-svg-content" viewBox="0 0 60 60" x="0px" y="0px" style="width: 1em; height: 1em;"><g><path d="M45.563,29.174l-22-15c-0.307-0.208-0.703-0.231-1.031-0.058C22.205,14.289,22,14.629,22,15v30
+		c0,0.371,0.205,0.711,0.533,0.884C22.679,45.962,22.84,46,23,46c0.197,0,0.394-0.059,0.563-0.174l22-15
+		C45.836,30.64,46,30.331,46,30S45.836,29.36,45.563,29.174z M24,43.107V16.893L43.225,30L24,43.107z"></path><path d="M30,0C13.458,0,0,13.458,0,30s13.458,30,30,30s30-13.458,30-30S46.542,0,30,0z M30,58C14.561,58,2,45.439,2,30
+		S14.561,2,30,2s28,12.561,28,28S45.439,58,30,58z"></path>
+</g></svg><img></span>&nbsp;Disclamer
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-2">
+                  <div class="u-clearfix u-group-elements u-group-elements-3">
+                    <img class="u-image u-image-circle u-image-contain u-preserve-proportions u-image-1" src="images/d7a6016f-9b29-c05c-c7b9-5fb8c7bf8b01.gif" alt="" data-image-width="900" data-image-height="900">
+                    <h4 class="u-text u-text-4">Cloud help</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div></footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
+        <span>Website Templates</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="" target="_blank">
+        <span>Website Builder Software</span>
+      </a>. 
+    </section>
+  
+</body></html>
