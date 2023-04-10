@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html style="font-size: 14px;" lang="en-IN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Salesforce, Flow, LWC, SOQL, Salesforce Admin, Salesforce Voucher, Salesforce interview questions,Salesforce interview tips, Salesforce job interview, Salesforce interview process, How to prepare for a Salesforce interview
+Salesforce interview techniques,Salesforce interview answers, Salesforce interview guide, Common Salesforce interview questions, Salesforce interview experience">
+    <meta name="description" content="Looking for the best Salesforce Interview Question and Answers to help you land your dream job? Look no further! Our comprehensive guide features a carefully curated selection of the most frequently asked questions, along with expert answers and insider tips to help you impress even the toughest interviewer. Whether you're a seasoned pro or just starting out, our guide is the perfect resource to help you ace your Salesforce interview and take your career to the next level. So why wait? Start preparing today and get ready to land your dream job!">
+    <meta property="og:title" content="Salesforce Interview Question and Answers">
+    <meta property="og:description" content="What is Salesforce, and what are its key features?
+Answer: Salesforce is a cloud-based CRM (Customer Relationship Management) platform that allows businesses to manage their customer data, sales, and marketing activities. Its key features include contact management, lead management, opportunity management, sales forecasting, email integration, and reporting.">
+    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/myproject-c0609.appspot.com/o/soql%2F14.png?alt=media&amp;token=f17ad1fc-aced-4efd-9389-b5b0c958f1ec">
+    <title>Best Salesforce Interview Question and Answers | Admin | Flow</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Salesforce-Interview-QnA.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <link rel="canonical" href="https://thecodehelp.in/qna">
+    <link rel="icon" href="images/139265371-014.png">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
+    
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "theCloudhelp",
+		"url": "https://thecodehelp.in/qna",
+		"logo": "/images/139265371-014.png?rand=8e93",
+		"sameAs": [
+				"https://youtube.com/@sfdchelp?sub_confirmation=1",
+				"https://t.me/sfdchelps",
+				"https://www.linkedin.com/in/vishugrade",
+				"https://youtube.com/@sfdchelp?sub_confirmation=1",
+				"https://t.me/sfdchelps",
+				"https://www.linkedin.com/in/vishugrade"
+		]
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:url" content="https://thecodehelp.in/qna">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body class="u-body u-xl-mode" data-lang="en"><header class="test u-align-center-sm u-align-center-xs u-clearfix u-header u-sticky u-sticky-21ea u-white u-header" id="sec-f7d7" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-valign-middle-sm u-sheet-1">
+        <a href="thecloudhelp.in" class="u-enable-responsive u-image u-logo u-image-1" data-image-width="90" data-image-height="90" title="theCloudhelp">
+          <img src="/images/139265371-014.png?rand=8e93" class="u-logo-image u-logo-image-1">
+        </a>
+        <div class="u-enable-responsive u-social-icons u-spacing-10 u-social-icons-1">
+          <a class="u-social-url" title="Youtube" target="_blank" href="https://youtube.com/@sfdchelp?sub_confirmation=1"><span class="u-file-icon u-icon u-social-facebook u-social-icon u-icon-1"><img src="/images/160205.png" alt=""></span>
+          </a>
+          <a class="u-social-url" title="Telegram" target="_blank" href="https://t.me/sfdchelps"><span class="u-file-icon u-icon u-social-icon u-social-twitter u-icon-2"><img src="/images/253802.png" alt=""></span>
+          </a>
+          <a class="u-social-url" title="linkedin" target="_blank" href="https://www.linkedin.com/in/vishugrade"><span class="u-file-icon u-icon u-social-icon u-social-instagram u-text-black u-icon-3"><img src="/images/160168.png" alt=""></span>
+          </a>
+        </div>
+        <nav class="u-align-left u-menu u-menu-one-level u-menu-1">
+          <div class="menu-collapse u-custom-font u-font-roboto" style="font-size: 1rem; font-weight: 700;">
+            <a class="u-button-style u-custom-active-color u-custom-color u-custom-hover-color u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-file-icon u-nav-link u-file-icon-4" href="#">
+              <img src="/images/10080458.png" alt="">
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-custom-font u-font-roboto u-nav u-spacing-2 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-active-custom-color-2 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-hover-white u-nav-link u-text-active-custom-color-4 u-text-black u-text-hover-grey-75" href="/Home.html" style="padding: 10px 20px;">Home</a>
+</li><li class="u-nav-item"><a class="u-active-custom-color-2 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-hover-white u-nav-link u-text-active-custom-color-4 u-text-black u-text-hover-grey-75" href="/SOQL.html" style="padding: 10px 20px;">SOQL</a>
+</li><li class="u-nav-item"><a class="u-active-custom-color-2 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-hover-white u-nav-link u-text-active-custom-color-4 u-text-black u-text-hover-grey-75" href="/Apex-in-Salesforce-.html" style="padding: 10px 20px;">Apex</a>
+</li><li class="u-nav-item"><a class="u-active-custom-color-2 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-hover-white u-nav-link u-text-active-custom-color-4 u-text-black u-text-hover-grey-75" href="/Salesforce-Interview-QnA.html" style="padding: 10px 20px;">Interview Q&amp;A</a>
+</li><li class="u-nav-item"><a class="u-active-custom-color-2 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-hover-white u-nav-link u-text-active-custom-color-4 u-text-black u-text-hover-grey-75" href="/LWC.html" style="padding: 10px 22px 10px 20px;">LWC</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-align-center u-container-style u-custom-color-2 u-inner-container-layout u-sidenav u-sidenav-1" data-offcanvas-width="390">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close u-menu-close-1"></div>
+                <ul class="u-align-left u-custom-font u-font-lato u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Home.html">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/SOQL.html">SOQL</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Apex-in-Salesforce-.html">Apex</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Salesforce-Interview-QnA.html">Interview Q&amp;A</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/LWC.html">LWC</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+        <h5 class="u-align-left-xs u-custom-font u-enable-responsive u-font-raleway u-text u-text-1">the Cloud help</h5>
+      </div><style class="u-sticky-style" data-style-id="21ea">.u-sticky-fixed.u-sticky-21ea, .u-body.u-sticky-fixed .u-sticky-21ea {
+box-shadow: 0px 2px 8px 0px rgba(128,128,128,1) !important
+}.u-sticky-fixed.u-sticky-21ea:before, .u-body.u-sticky-fixed .u-sticky-21ea:before {
+borders: top right bottom left !important
+}</style></header>
+    <section class="u-align-center u-clearfix u-grey-5 u-section-1" id="carousel_6c50">
+      <div class="u-clearfix u-sheet u-valign-middle-xs u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-left u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+                <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-valign-top-xs u-container-layout-1">
+                  <h2 class="u-align-left u-custom-font u-font-ubuntu u-text u-text-1">Top Salesforce<br>
+                    <span class="u-text-custom-color-2" style="font-weight: 700;">Interview QnA</span>
+                  </h2>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-shape-rectangle u-size-30 u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-2">
+                  <img class="u-expanded-width-xs u-image u-image-contain u-image-default u-image-1" src="/images/89934161-01.png" alt="" data-image-width="1280" data-image-height="720">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-layout-grid u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-bottom-lg u-valign-bottom-xl u-valign-middle-xs u-container-layout-3">
+                <a href="/Salesforce-Interview-QnA.html#sec-89af" class="u-align-center-xl u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xs u-border-none u-btn u-button-style u-gradient u-hover-custom-color-2 u-none u-text-white u-btn-1">Admin&nbsp;<span class="u-file-icon u-icon u-text-white u-icon-1"><img src="/images/1769328-5862401c.png" alt=""></span>
+                </a>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-bottom-lg u-valign-bottom-xl u-valign-middle-xs u-container-layout-4">
+                <a href="/Salesforce-Interview-QnA.html#sec-9cc5" class="u-align-center-xl u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xs u-border-none u-btn u-button-style u-gradient u-hover-custom-color-2 u-none u-text-white u-btn-2">LWC&nbsp;<span class="u-file-icon u-icon u-text-white u-icon-2"><img src="/images/10218039-b7476788.png" alt=""></span>
+                </a>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-bottom-lg u-valign-bottom-xl u-valign-middle-xs u-container-layout-5">
+                <a href="/Salesforce-Interview-QnA.html#sec-86a8" class="u-align-center-xl u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xs u-border-none u-btn u-button-style u-gradient u-hover-custom-color-2 u-none u-text-white u-btn-3">Flows&nbsp;<span class="u-file-icon u-icon u-text-white u-icon-3"><img src="/images/3731370-da471ad9.png" alt=""></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-grey-10 u-section-2" id="sec-89af">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h2 class="u-align-center-xs u-text u-text-default-xs u-text-1">ADMIN</h2>
+        <div class="u-accordion u-expanded-width u-faq u-spacing-13 u-accordion-1">
+          <div class="u-accordion-item">
+            <a class="active u-accordion-link u-active-white u-border-2 u-border-active-black u-border-custom-color-2 u-button-style u-hover-custom-color-2 u-radius-34 u-text-active-custom-color-2 u-text-black u-accordion-link-1" id="link-b5e0" aria-controls="b5e0" aria-selected="true">
+              <span class="u-accordion-link-text"> What is Salesforce and how do you define it?</span><span class="u-accordion-link-icon u-icon u-icon-rounded u-radius-50 u-white u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-4878"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-4878"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-active u-accordion-pane u-container-style u-accordion-pane-1" id="b5e0" aria-labelledby="link-b5e0">
+              <div class="u-container-layout u-container-layout-1">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <ul>
+                    <li id="isPasted">Salesforce is a<span style="font-weight: 700;"> cloud-based Customer Relationship Management (CRM) platform that allows businesses to manage their customer interactions, sales, marketing, and customer service all in one place.</span> It provides a suite of tools and services that help organizations manage and analyze customer interactions and data, automate processes, and collaborate across departments.
+                    </li>
+                    <li>In simpler terms,<span style="font-weight: 700;"> Salesforce is a software solution that helps businesses better understand and manage their customers, which ultimately leads to more effective sales and marketing strategies, improved customer service, and increased customer satisfaction.</span>
+                    </li>
+                    <li>Salesforce also offers a variety of cloud-based applications and services,<span style="font-weight: 700;"> including Sales Cloud for managing sales processes, Service Cloud for managing customer service interactions, Marketing Cloud for managing marketing campaigns, and Commerce Cloud for managing online sales.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-white u-border-2 u-border-active-black u-border-custom-color-2 u-button-style u-hover-custom-color-2 u-radius-34 u-text-active-custom-color-2 u-text-black u-accordion-link-2" id="link-0d04" aria-controls="0d04" aria-selected="false">
+              <span class="u-accordion-link-text"> What is CRM?</span><span class="u-accordion-link-icon u-icon u-icon-rounded u-radius-50 u-white u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-f10f"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-f10f"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-accordion-pane-2" id="0d04" aria-labelledby="link-0d04">
+              <div class="u-container-layout u-container-layout-2">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <ul>
+                    <li id="isPasted">CRM stands for <span style="font-weight: 700;">Customer Relationship Management</span>. It refers to the strategies, technologies, and practices that organizations use to manage and analyze customer interactions and data throughout the customer lifecycle, with the goal of improving customer relationships, increasing customer retention and loyalty, and ultimately driving sales growth.
+                    </li>
+                    <li>A<span style="font-weight: 700;"> CRM system typically includes a database of customer information, as well as tools for managing and tracking customer interactions across various channels such as phone, email, social media, and in-person meetings.</span> CRM systems can also include automation tools for tasks such as lead management, sales forecasting, and marketing campaign management.
+                    </li>
+                    <li>By implementing a CRM system, organizations can gain valuable insights into customer behavior and preferences, identify opportunities for cross-selling and upselling, and better tailor their products and services to meet the needs of their customers.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-white u-border-2 u-border-active-black u-border-custom-color-2 u-button-style u-hover-custom-color-2 u-radius-34 u-text-active-custom-color-2 u-text-black u-accordion-link-3" id="link-3113" aria-controls="3113" aria-selected="false">
+              <span class="u-accordion-link-text"> What is a profile in Salesforce?</span><span class="u-accordion-link-icon u-icon u-icon-rounded u-radius-50 u-white u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-08df"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-08df"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-accordion-pane-3" id="3113" aria-labelledby="link-3113">
+              <div class="u-container-layout u-container-layout-3">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <ul>
+                    <li id="isPasted">In Salesforce, a<span style="font-weight: 700;">&nbsp;profile is a collection of settings and permissions that define what a user can see and do within the organization</span>.
+                    </li>
+                    <li>Profiles are used to determine which records and fields users can access, which tasks they can perform, and which features they can use. They also control the level of data access that users have, which includes defining which records users can view, edit, delete, or share.</li>
+                    <li>
+                      <span style="font-weight: 700;">Profiles can be customized to meet the specific needs of different users or groups of users within an organization.</span> For example,<span style="font-weight: 700;"> a sales representative might have a profile that allows them to access and edit opportunities, </span>while a customer service representative might have a profile that allows them to view and update customer cases.
+                    </li>
+                    <li>In addition to profiles, Salesforce also uses permission sets to provide additional levels of access and permissions to users. Permission sets are similar to profiles, but they can be added on top of a user's existing profile to provide additional access to certain features or data.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-white u-border-2 u-border-active-black u-border-custom-color-2 u-button-style u-hover-custom-color-2 u-radius-34 u-text-active-custom-color-2 u-text-black u-accordion-link-4" id="link-5243" aria-controls="5243" aria-selected="false">
+              <span class="u-accordion-link-text"> What is an object in Salesforce?</span><span class="u-accordion-link-icon u-icon u-icon-rounded u-radius-50 u-white u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1aea"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-1aea"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-accordion-pane-4" id="5243" aria-labelledby="link-5243">
+              <div class="u-container-layout u-container-layout-4">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <ul>
+                    <li id="isPasted" style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;data:image/svg+xml;base64,DQoNCjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjhweCIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyMCAyOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjAgMjgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZD0iTTEyLDRoLTJ2M0g5VjRIN1YzaDFWMmgxVjFoMXYxaDF2MWgxVjR6IE03LDlINFY3SDN2MUgydjFIMXYxaDF2MWgxdjFoMXYtMmgzVjl6IE0xOCw5aC0xVjhoLTFWN2gtMXYyaC0zdjFoM3YyaDF2LTFoMXYtMQ0KCWgxVjl6IE03LDE1djFoMXYxaDF2LTF2LTFIN3oiLz4NCgk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTAsMlYxaDF2MUgxMHogTTEyLDNWMmgtMXYxSDEyeiBNMTIsM3YxaC0ydjNIOVY0SDdWM0g2djF2MWgydjNoM1Y1aDJWM0gxMnogTTEwLDBIOXYxaDFWMHogTTksMUg4djFoMVYxeg0KCSBNOCwySDd2MWgxVjJ6IE04LDE3djFoMXYtMUg4eiBNNywxNnYxaDF2LTFIN3ogTTYsMTR2Mmgxdi0xaDJ2LTFINnogTTEwLDE3djEgTTE3LDExaDF2LTFoLTFWMTF6IE0xNiwxMmgxdi0xaC0xVjEyeiBNMTYsMTJoLTF2LTINCgloLTFoLTJWOWgyaDFWN2gxVjZoLTFoLTF2MmgtM3YxdjF2MWgzdjJoMWgxVjEyeiBNMTksMTBWOWgtMXYxSDE5eiBNMTgsOVY4aC0xdjFIMTh6IE0xNyw4VjdoLTF2MUgxN3ogTTIsOEgxdjFoMVY4eiBNMyw3SDJ2MWgxVjd6DQoJIE0zLDdoMXYyaDN2MUg0djJIM3YxaDJ2LTJoM1Y4SDVWNkgzVjd6IE0wLDl2MWgxVjlIMHogTTEsMTB2MWgxdi0xSDF6IE0yLDExdjFoMXYtMUgyeiIvPg0KCTxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTYsMTkgMTcsMTkgMTgsMTkgMTgsMTggMTcsMTggMTcsMTcgMTYsMTcgMTYsMTYgMTUsMTYgMTUsMTUgMTQsMTUgMTQsMTQgMTMsMTQgMTMsMTMgMTIsMTMgMTIsMTINCgkxMSwxMiAxMSwxMSAxMCwxMSAxMCwyMiAxMSwyMiAxMSwyMSAxMiwyMSAxMiwyMCAxMywyMCAxMywyMSAxNCwyMSAxNCwyMyAxNSwyMyAxNSwyNSAxNiwyNSAxNiwyNyAxNywyNyAxOCwyNyAxOCwyNSAxNywyNSAxNywyMw0KCTE2LDIzIDE2LDIxIDE1LDIxIDE1LDE5ICIvPg0KCTxwYXRoIGQ9Ik0xMiwxM3YtMWgxdjFIMTJ6IE0xNCwxNHYtMWgtMXYxSDE0eiBNMTAsMTFoMXYtMWgtMVY5SDl2MTVoMXYtMWgxdi0xaC0xVjExeiBNMTIsMTJ2LTFoLTF2MUgxMnogTTE3LDE3di0xaC0xdjFIMTd6DQoJIE0xOCwxOHYtMWgtMXYxSDE4eiBNMTUsMTV2LTFoLTF2MUgxNXogTTE2LDE2di0xaC0xdjFIMTZ6IE0xNCwyM3YyaDF2LTJIMTR6IE0xNiwyN3YxaDN2LTF2LTJoLTF2MkgxNnogTTE4LDI1di0yaC0xdjJIMTh6IE0xNywyMw0KCXYtMmgtMXYySDE3eiBNMjAsMjB2LTFoLTF2LTFoLTF2MWgtM3YxdjFoMXYtMUgyMHogTTEzLDIxdjJoMXYtMkgxM3ogTTEyLDIwdjFoMXYtMUgxMnogTTE1LDI1djJoMXYtMkgxNXogTTExLDIyaDF2LTFoLTFWMjJ6Ii8+DQo8L3N2Zz4NCg==&quot;) 10 10, auto; pointer-events: auto !important;">In Salesforce,<span style="font-weight: 700;"> an object is a table or a database of related fields that store data specific to an organization.</span> Objects represent different types of data, such as Accounts, Contacts, Opportunities, Cases, and custom objects, and are used to organize and manage data in a logical way.
+                    </li>
+                    <li style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;data:image/svg+xml;base64,DQoNCjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjhweCIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyMCAyOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjAgMjgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZD0iTTEyLDRoLTJ2M0g5VjRIN1YzaDFWMmgxVjFoMXYxaDF2MWgxVjR6IE03LDlINFY3SDN2MUgydjFIMXYxaDF2MWgxdjFoMXYtMmgzVjl6IE0xOCw5aC0xVjhoLTFWN2gtMXYyaC0zdjFoM3YyaDF2LTFoMXYtMQ0KCWgxVjl6IE03LDE1djFoMXYxaDF2LTF2LTFIN3oiLz4NCgk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTAsMlYxaDF2MUgxMHogTTEyLDNWMmgtMXYxSDEyeiBNMTIsM3YxaC0ydjNIOVY0SDdWM0g2djF2MWgydjNoM1Y1aDJWM0gxMnogTTEwLDBIOXYxaDFWMHogTTksMUg4djFoMVYxeg0KCSBNOCwySDd2MWgxVjJ6IE04LDE3djFoMXYtMUg4eiBNNywxNnYxaDF2LTFIN3ogTTYsMTR2Mmgxdi0xaDJ2LTFINnogTTEwLDE3djEgTTE3LDExaDF2LTFoLTFWMTF6IE0xNiwxMmgxdi0xaC0xVjEyeiBNMTYsMTJoLTF2LTINCgloLTFoLTJWOWgyaDFWN2gxVjZoLTFoLTF2MmgtM3YxdjF2MWgzdjJoMWgxVjEyeiBNMTksMTBWOWgtMXYxSDE5eiBNMTgsOVY4aC0xdjFIMTh6IE0xNyw4VjdoLTF2MUgxN3ogTTIsOEgxdjFoMVY4eiBNMyw3SDJ2MWgxVjd6DQoJIE0zLDdoMXYyaDN2MUg0djJIM3YxaDJ2LTJoM1Y4SDVWNkgzVjd6IE0wLDl2MWgxVjlIMHogTTEsMTB2MWgxdi0xSDF6IE0yLDExdjFoMXYtMUgyeiIvPg0KCTxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTYsMTkgMTcsMTkgMTgsMTkgMTgsMTggMTcsMTggMTcsMTcgMTYsMTcgMTYsMTYgMTUsMTYgMTUsMTUgMTQsMTUgMTQsMTQgMTMsMTQgMTMsMTMgMTIsMTMgMTIsMTINCgkxMSwxMiAxMSwxMSAxMCwxMSAxMCwyMiAxMSwyMiAxMSwyMSAxMiwyMSAxMiwyMCAxMywyMCAxMywyMSAxNCwyMSAxNCwyMyAxNSwyMyAxNSwyNSAxNiwyNSAxNiwyNyAxNywyNyAxOCwyNyAxOCwyNSAxNywyNSAxNywyMw0KCTE2LDIzIDE2LDIxIDE1LDIxIDE1LDE5ICIvPg0KCTxwYXRoIGQ9Ik0xMiwxM3YtMWgxdjFIMTJ6IE0xNCwxNHYtMWgtMXYxSDE0eiBNMTAsMTFoMXYtMWgtMVY5SDl2MTVoMXYtMWgxdi0xaC0xVjExeiBNMTIsMTJ2LTFoLTF2MUgxMnogTTE3LDE3di0xaC0xdjFIMTd6DQoJIE0xOCwxOHYtMWgtMXYxSDE4eiBNMTUsMTV2LTFoLTF2MUgxNXogTTE2LDE2di0xaC0xdjFIMTZ6IE0xNCwyM3YyaDF2LTJIMTR6IE0xNiwyN3YxaDN2LTF2LTJoLTF2MkgxNnogTTE4LDI1di0yaC0xdjJIMTh6IE0xNywyMw0KCXYtMmgtMXYySDE3eiBNMjAsMjB2LTFoLTF2LTFoLTF2MWgtM3YxdjFoMXYtMUgyMHogTTEzLDIxdjJoMXYtMkgxM3ogTTEyLDIwdjFoMXYtMUgxMnogTTE1LDI1djJoMXYtMkgxNXogTTExLDIyaDF2LTFoLTFWMjJ6Ii8+DQo8L3N2Zz4NCg==&quot;) 10 10, auto; pointer-events: auto !important;">
+                      <span style="font-weight: 700;">Each object contains a set of fields that define the data that can be stored in the object. </span>Fields can be of different types, such as text, number, date, picklist, or lookup fields, and can have specific properties and behaviors that define how data is entered, stored, and used.
+                    </li>
+                    <li style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;data:image/svg+xml;base64,DQoNCjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjhweCIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyMCAyOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjAgMjgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZD0iTTEyLDRoLTJ2M0g5VjRIN1YzaDFWMmgxVjFoMXYxaDF2MWgxVjR6IE03LDlINFY3SDN2MUgydjFIMXYxaDF2MWgxdjFoMXYtMmgzVjl6IE0xOCw5aC0xVjhoLTFWN2gtMXYyaC0zdjFoM3YyaDF2LTFoMXYtMQ0KCWgxVjl6IE03LDE1djFoMXYxaDF2LTF2LTFIN3oiLz4NCgk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTAsMlYxaDF2MUgxMHogTTEyLDNWMmgtMXYxSDEyeiBNMTIsM3YxaC0ydjNIOVY0SDdWM0g2djF2MWgydjNoM1Y1aDJWM0gxMnogTTEwLDBIOXYxaDFWMHogTTksMUg4djFoMVYxeg0KCSBNOCwySDd2MWgxVjJ6IE04LDE3djFoMXYtMUg4eiBNNywxNnYxaDF2LTFIN3ogTTYsMTR2Mmgxdi0xaDJ2LTFINnogTTEwLDE3djEgTTE3LDExaDF2LTFoLTFWMTF6IE0xNiwxMmgxdi0xaC0xVjEyeiBNMTYsMTJoLTF2LTINCgloLTFoLTJWOWgyaDFWN2gxVjZoLTFoLTF2MmgtM3YxdjF2MWgzdjJoMWgxVjEyeiBNMTksMTBWOWgtMXYxSDE5eiBNMTgsOVY4aC0xdjFIMTh6IE0xNyw4VjdoLTF2MUgxN3ogTTIsOEgxdjFoMVY4eiBNMyw3SDJ2MWgxVjd6DQoJIE0zLDdoMXYyaDN2MUg0djJIM3YxaDJ2LTJoM1Y4SDVWNkgzVjd6IE0wLDl2MWgxVjlIMHogTTEsMTB2MWgxdi0xSDF6IE0yLDExdjFoMXYtMUgyeiIvPg0KCTxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTYsMTkgMTcsMTkgMTgsMTkgMTgsMTggMTcsMTggMTcsMTcgMTYsMTcgMTYsMTYgMTUsMTYgMTUsMTUgMTQsMTUgMTQsMTQgMTMsMTQgMTMsMTMgMTIsMTMgMTIsMTINCgkxMSwxMiAxMSwxMSAxMCwxMSAxMCwyMiAxMSwyMiAxMSwyMSAxMiwyMSAxMiwyMCAxMywyMCAxMywyMSAxNCwyMSAxNCwyMyAxNSwyMyAxNSwyNSAxNiwyNSAxNiwyNyAxNywyNyAxOCwyNyAxOCwyNSAxNywyNSAxNywyMw0KCTE2LDIzIDE2LDIxIDE1LDIxIDE1LDE5ICIvPg0KCTxwYXRoIGQ9Ik0xMiwxM3YtMWgxdjFIMTJ6IE0xNCwxNHYtMWgtMXYxSDE0eiBNMTAsMTFoMXYtMWgtMVY5SDl2MTVoMXYtMWgxdi0xaC0xVjExeiBNMTIsMTJ2LTFoLTF2MUgxMnogTTE3LDE3di0xaC0xdjFIMTd6DQoJIE0xOCwxOHYtMWgtMXYxSDE4eiBNMTUsMTV2LTFoLTF2MUgxNXogTTE2LDE2di0xaC0xdjFIMTZ6IE0xNCwyM3YyaDF2LTJIMTR6IE0xNiwyN3YxaDN2LTF2LTJoLTF2MkgxNnogTTE4LDI1di0yaC0xdjJIMTh6IE0xNywyMw0KCXYtMmgtMXYySDE3eiBNMjAsMjB2LTFoLTF2LTFoLTF2MWgtM3YxdjFoMXYtMUgyMHogTTEzLDIxdjJoMXYtMkgxM3ogTTEyLDIwdjFoMXYtMUgxMnogTTE1LDI1djJoMXYtMkgxNXogTTExLDIyaDF2LTFoLTFWMjJ6Ii8+DQo8L3N2Zz4NCg==&quot;) 10 10, auto; pointer-events: auto !important;">Objects can be related to other objects through relationships such as lookup or master-detail relationships, which allow data to be shared and linked between objects.<span style="font-weight: 700;"> Custom objects can also be created to meet specific business needs and can have their own fields, relationships, and behaviors.</span>
+                    </li>
+                    <li style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;data:image/svg+xml;base64,DQoNCjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjhweCIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyMCAyOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjAgMjgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZD0iTTEyLDRoLTJ2M0g5VjRIN1YzaDFWMmgxVjFoMXYxaDF2MWgxVjR6IE03LDlINFY3SDN2MUgydjFIMXYxaDF2MWgxdjFoMXYtMmgzVjl6IE0xOCw5aC0xVjhoLTFWN2gtMXYyaC0zdjFoM3YyaDF2LTFoMXYtMQ0KCWgxVjl6IE03LDE1djFoMXYxaDF2LTF2LTFIN3oiLz4NCgk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTAsMlYxaDF2MUgxMHogTTEyLDNWMmgtMXYxSDEyeiBNMTIsM3YxaC0ydjNIOVY0SDdWM0g2djF2MWgydjNoM1Y1aDJWM0gxMnogTTEwLDBIOXYxaDFWMHogTTksMUg4djFoMVYxeg0KCSBNOCwySDd2MWgxVjJ6IE04LDE3djFoMXYtMUg4eiBNNywxNnYxaDF2LTFIN3ogTTYsMTR2Mmgxdi0xaDJ2LTFINnogTTEwLDE3djEgTTE3LDExaDF2LTFoLTFWMTF6IE0xNiwxMmgxdi0xaC0xVjEyeiBNMTYsMTJoLTF2LTINCgloLTFoLTJWOWgyaDFWN2gxVjZoLTFoLTF2MmgtM3YxdjF2MWgzdjJoMWgxVjEyeiBNMTksMTBWOWgtMXYxSDE5eiBNMTgsOVY4aC0xdjFIMTh6IE0xNyw4VjdoLTF2MUgxN3ogTTIsOEgxdjFoMVY4eiBNMyw3SDJ2MWgxVjd6DQoJIE0zLDdoMXYyaDN2MUg0djJIM3YxaDJ2LTJoM1Y4SDVWNkgzVjd6IE0wLDl2MWgxVjlIMHogTTEsMTB2MWgxdi0xSDF6IE0yLDExdjFoMXYtMUgyeiIvPg0KCTxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTYsMTkgMTcsMTkgMTgsMTkgMTgsMTggMTcsMTggMTcsMTcgMTYsMTcgMTYsMTYgMTUsMTYgMTUsMTUgMTQsMTUgMTQsMTQgMTMsMTQgMTMsMTMgMTIsMTMgMTIsMTINCgkxMSwxMiAxMSwxMSAxMCwxMSAxMCwyMiAxMSwyMiAxMSwyMSAxMiwyMSAxMiwyMCAxMywyMCAxMywyMSAxNCwyMSAxNCwyMyAxNSwyMyAxNSwyNSAxNiwyNSAxNiwyNyAxNywyNyAxOCwyNyAxOCwyNSAxNywyNSAxNywyMw0KCTE2LDIzIDE2LDIxIDE1LDIxIDE1LDE5ICIvPg0KCTxwYXRoIGQ9Ik0xMiwxM3YtMWgxdjFIMTJ6IE0xNCwxNHYtMWgtMXYxSDE0eiBNMTAsMTFoMXYtMWgtMVY5SDl2MTVoMXYtMWgxdi0xaC0xVjExeiBNMTIsMTJ2LTFoLTF2MUgxMnogTTE3LDE3di0xaC0xdjFIMTd6DQoJIE0xOCwxOHYtMWgtMXYxSDE4eiBNMTUsMTV2LTFoLTF2MUgxNXogTTE2LDE2di0xaC0xdjFIMTZ6IE0xNCwyM3YyaDF2LTJIMTR6IE0xNiwyN3YxaDN2LTF2LTJoLTF2MkgxNnogTTE4LDI1di0yaC0xdjJIMTh6IE0xNywyMw0KCXYtMmgtMXYySDE3eiBNMjAsMjB2LTFoLTF2LTFoLTF2MWgtM3YxdjFoMXYtMUgyMHogTTEzLDIxdjJoMXYtMkgxM3ogTTEyLDIwdjFoMXYtMUgxMnogTTE1LDI1djJoMXYtMkgxNXogTTExLDIyaDF2LTFoLTFWMjJ6Ii8+DQo8L3N2Zz4NCg==&quot;) 10 10, auto; pointer-events: auto !important;">Overall, objects are a fundamental building block in Salesforce, and they form the foundation of many key features such as reporting, automation, and security. Understanding objects and their relationships is essential to designing effective data models in Salesforce.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-white u-border-2 u-border-active-black u-border-custom-color-2 u-button-style u-hover-custom-color-2 u-radius-34 u-text-active-custom-color-2 u-text-black u-accordion-link-5" id="link-4c75" aria-controls="4c75" aria-selected="false">
+              <span class="u-accordion-link-text"> What is a record in Salesforce?</span><span class="u-accordion-link-icon u-icon u-icon-rounded u-radius-50 u-white u-icon-5"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-4283"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-4283"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-accordion-pane-5" id="4c75" aria-labelledby="link-4c75">
+              <div class="u-container-layout u-container-layout-5">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <ul>
+                    <li id="isPasted" style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;data:image/svg+xml;base64,DQoNCjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjhweCIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyMCAyOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjAgMjgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZD0iTTEyLDRoLTJ2M0g5VjRIN1YzaDFWMmgxVjFoMXYxaDF2MWgxVjR6IE03LDlINFY3SDN2MUgydjFIMXYxaDF2MWgxdjFoMXYtMmgzVjl6IE0xOCw5aC0xVjhoLTFWN2gtMXYyaC0zdjFoM3YyaDF2LTFoMXYtMQ0KCWgxVjl6IE03LDE1djFoMXYxaDF2LTF2LTFIN3oiLz4NCgk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTAsMlYxaDF2MUgxMHogTTEyLDNWMmgtMXYxSDEyeiBNMTIsM3YxaC0ydjNIOVY0SDdWM0g2djF2MWgydjNoM1Y1aDJWM0gxMnogTTEwLDBIOXYxaDFWMHogTTksMUg4djFoMVYxeg0KCSBNOCwySDd2MWgxVjJ6IE04LDE3djFoMXYtMUg4eiBNNywxNnYxaDF2LTFIN3ogTTYsMTR2Mmgxdi0xaDJ2LTFINnogTTEwLDE3djEgTTE3LDExaDF2LTFoLTFWMTF6IE0xNiwxMmgxdi0xaC0xVjEyeiBNMTYsMTJoLTF2LTINCgloLTFoLTJWOWgyaDFWN2gxVjZoLTFoLTF2MmgtM3YxdjF2MWgzdjJoMWgxVjEyeiBNMTksMTBWOWgtMXYxSDE5eiBNMTgsOVY4aC0xdjFIMTh6IE0xNyw4VjdoLTF2MUgxN3ogTTIsOEgxdjFoMVY4eiBNMyw3SDJ2MWgxVjd6DQoJIE0zLDdoMXYyaDN2MUg0djJIM3YxaDJ2LTJoM1Y4SDVWNkgzVjd6IE0wLDl2MWgxVjlIMHogTTEsMTB2MWgxdi0xSDF6IE0yLDExdjFoMXYtMUgyeiIvPg0KCTxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTYsMTkgMTcsMTkgMTgsMTkgMTgsMTggMTcsMTggMTcsMTcgMTYsMTcgMTYsMTYgMTUsMTYgMTUsMTUgMTQsMTUgMTQsMTQgMTMsMTQgMTMsMTMgMTIsMTMgMTIsMTINCgkxMSwxMiAxMSwxMSAxMCwxMSAxMCwyMiAxMSwyMiAxMSwyMSAxMiwyMSAxMiwyMCAxMywyMCAxMywyMSAxNCwyMSAxNCwyMyAxNSwyMyAxNSwyNSAxNiwyNSAxNiwyNyAxNywyNyAxOCwyNyAxOCwyNSAxNywyNSAxNywyMw0KCTE2LDIzIDE2LDIxIDE1LDIxIDE1LDE5ICIvPg0KCTxwYXRoIGQ9Ik0xMiwxM3YtMWgxdjFIMTJ6IE0xNCwxNHYtMWgtMXYxSDE0eiBNMTAsMTFoMXYtMWgtMVY5SDl2MTVoMXYtMWgxdi0xaC0xVjExeiBNMTIsMTJ2LTFoLTF2MUgxMnogTTE3LDE3di0xaC0xdjFIMTd6DQoJIE0xOCwxOHYtMWgtMXYxSDE4eiBNMTUsMTV2LTFoLTF2MUgxNXogTTE2LDE2di0xaC0xdjFIMTZ6IE0xNCwyM3YyaDF2LTJIMTR6IE0xNiwyN3YxaDN2LTF2LTJoLTF2MkgxNnogTTE4LDI1di0yaC0xdjJIMTh6IE0xNywyMw0KCXYtMmgtMXYySDE3eiBNMjAsMjB2LTFoLTF2LTFoLTF2MWgtM3YxdjFoMXYtMUgyMHogTTEzLDIxdjJoMXYtMkgxM3ogTTEyLDIwdjFoMXYtMUgxMnogTTE1LDI1djJoMXYtMkgxNXogTTExLDIyaDF2LTFoLTFWMjJ6Ii8+DQo8L3N2Zz4NCg==&quot;) 10 10, auto; pointer-events: auto !important;">A<span style="font-weight: 700;"> record in Salesforce refers to a single instance of an object in the database.</span> An object is a table-like structure that stores specific types of data within the Salesforce system. Examples of objects in Salesforce include accounts, contacts, opportunities, cases, and custom objects.
+                    </li>
+                    <li style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;data:image/svg+xml;base64,DQoNCjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjhweCIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyMCAyOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjAgMjgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZD0iTTEyLDRoLTJ2M0g5VjRIN1YzaDFWMmgxVjFoMXYxaDF2MWgxVjR6IE03LDlINFY3SDN2MUgydjFIMXYxaDF2MWgxdjFoMXYtMmgzVjl6IE0xOCw5aC0xVjhoLTFWN2gtMXYyaC0zdjFoM3YyaDF2LTFoMXYtMQ0KCWgxVjl6IE03LDE1djFoMXYxaDF2LTF2LTFIN3oiLz4NCgk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTAsMlYxaDF2MUgxMHogTTEyLDNWMmgtMXYxSDEyeiBNMTIsM3YxaC0ydjNIOVY0SDdWM0g2djF2MWgydjNoM1Y1aDJWM0gxMnogTTEwLDBIOXYxaDFWMHogTTksMUg4djFoMVYxeg0KCSBNOCwySDd2MWgxVjJ6IE04LDE3djFoMXYtMUg4eiBNNywxNnYxaDF2LTFIN3ogTTYsMTR2Mmgxdi0xaDJ2LTFINnogTTEwLDE3djEgTTE3LDExaDF2LTFoLTFWMTF6IE0xNiwxMmgxdi0xaC0xVjEyeiBNMTYsMTJoLTF2LTINCgloLTFoLTJWOWgyaDFWN2gxVjZoLTFoLTF2MmgtM3YxdjF2MWgzdjJoMWgxVjEyeiBNMTksMTBWOWgtMXYxSDE5eiBNMTgsOVY4aC0xdjFIMTh6IE0xNyw4VjdoLTF2MUgxN3ogTTIsOEgxdjFoMVY4eiBNMyw3SDJ2MWgxVjd6DQoJIE0zLDdoMXYyaDN2MUg0djJIM3YxaDJ2LTJoM1Y4SDVWNkgzVjd6IE0wLDl2MWgxVjlIMHogTTEsMTB2MWgxdi0xSDF6IE0yLDExdjFoMXYtMUgyeiIvPg0KCTxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTYsMTkgMTcsMTkgMTgsMTkgMTgsMTggMTcsMTggMTcsMTcgMTYsMTcgMTYsMTYgMTUsMTYgMTUsMTUgMTQsMTUgMTQsMTQgMTMsMTQgMTMsMTMgMTIsMTMgMTIsMTINCgkxMSwxMiAxMSwxMSAxMCwxMSAxMCwyMiAxMSwyMiAxMSwyMSAxMiwyMSAxMiwyMCAxMywyMCAxMywyMSAxNCwyMSAxNCwyMyAxNSwyMyAxNSwyNSAxNiwyNSAxNiwyNyAxNywyNyAxOCwyNyAxOCwyNSAxNywyNSAxNywyMw0KCTE2LDIzIDE2LDIxIDE1LDIxIDE1LDE5ICIvPg0KCTxwYXRoIGQ9Ik0xMiwxM3YtMWgxdjFIMTJ6IE0xNCwxNHYtMWgtMXYxSDE0eiBNMTAsMTFoMXYtMWgtMVY5SDl2MTVoMXYtMWgxdi0xaC0xVjExeiBNMTIsMTJ2LTFoLTF2MUgxMnogTTE3LDE3di0xaC0xdjFIMTd6DQoJIE0xOCwxOHYtMWgtMXYxSDE4eiBNMTUsMTV2LTFoLTF2MUgxNXogTTE2LDE2di0xaC0xdjFIMTZ6IE0xNCwyM3YyaDF2LTJIMTR6IE0xNiwyN3YxaDN2LTF2LTJoLTF2MkgxNnogTTE4LDI1di0yaC0xdjJIMTh6IE0xNywyMw0KCXYtMmgtMXYySDE3eiBNMjAsMjB2LTFoLTF2LTFoLTF2MWgtM3YxdjFoMXYtMUgyMHogTTEzLDIxdjJoMXYtMkgxM3ogTTEyLDIwdjFoMXYtMUgxMnogTTE1LDI1djJoMXYtMkgxNXogTTExLDIyaDF2LTFoLTFWMjJ6Ii8+DQo8L3N2Zz4NCg==&quot;) 10 10, auto; pointer-events: auto !important;">
+                      <span style="font-weight: 700;">Each record within an object represents a specific instance of that object, with its own set of fields and related data.</span> For example, a record in the accounts object might represent a single customer account, with fields such as the account name, address, phone number, and industry type.
+                    </li>
+                    <li style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;data:image/svg+xml;base64,DQoNCjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjhweCIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyMCAyOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjAgMjgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZD0iTTEyLDRoLTJ2M0g5VjRIN1YzaDFWMmgxVjFoMXYxaDF2MWgxVjR6IE03LDlINFY3SDN2MUgydjFIMXYxaDF2MWgxdjFoMXYtMmgzVjl6IE0xOCw5aC0xVjhoLTFWN2gtMXYyaC0zdjFoM3YyaDF2LTFoMXYtMQ0KCWgxVjl6IE03LDE1djFoMXYxaDF2LTF2LTFIN3oiLz4NCgk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTAsMlYxaDF2MUgxMHogTTEyLDNWMmgtMXYxSDEyeiBNMTIsM3YxaC0ydjNIOVY0SDdWM0g2djF2MWgydjNoM1Y1aDJWM0gxMnogTTEwLDBIOXYxaDFWMHogTTksMUg4djFoMVYxeg0KCSBNOCwySDd2MWgxVjJ6IE04LDE3djFoMXYtMUg4eiBNNywxNnYxaDF2LTFIN3ogTTYsMTR2Mmgxdi0xaDJ2LTFINnogTTEwLDE3djEgTTE3LDExaDF2LTFoLTFWMTF6IE0xNiwxMmgxdi0xaC0xVjEyeiBNMTYsMTJoLTF2LTINCgloLTFoLTJWOWgyaDFWN2gxVjZoLTFoLTF2MmgtM3YxdjF2MWgzdjJoMWgxVjEyeiBNMTksMTBWOWgtMXYxSDE5eiBNMTgsOVY4aC0xdjFIMTh6IE0xNyw4VjdoLTF2MUgxN3ogTTIsOEgxdjFoMVY4eiBNMyw3SDJ2MWgxVjd6DQoJIE0zLDdoMXYyaDN2MUg0djJIM3YxaDJ2LTJoM1Y4SDVWNkgzVjd6IE0wLDl2MWgxVjlIMHogTTEsMTB2MWgxdi0xSDF6IE0yLDExdjFoMXYtMUgyeiIvPg0KCTxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTYsMTkgMTcsMTkgMTgsMTkgMTgsMTggMTcsMTggMTcsMTcgMTYsMTcgMTYsMTYgMTUsMTYgMTUsMTUgMTQsMTUgMTQsMTQgMTMsMTQgMTMsMTMgMTIsMTMgMTIsMTINCgkxMSwxMiAxMSwxMSAxMCwxMSAxMCwyMiAxMSwyMiAxMSwyMSAxMiwyMSAxMiwyMCAxMywyMCAxMywyMSAxNCwyMSAxNCwyMyAxNSwyMyAxNSwyNSAxNiwyNSAxNiwyNyAxNywyNyAxOCwyNyAxOCwyNSAxNywyNSAxNywyMw0KCTE2LDIzIDE2LDIxIDE1LDIxIDE1LDE5ICIvPg0KCTxwYXRoIGQ9Ik0xMiwxM3YtMWgxdjFIMTJ6IE0xNCwxNHYtMWgtMXYxSDE0eiBNMTAsMTFoMXYtMWgtMVY5SDl2MTVoMXYtMWgxdi0xaC0xVjExeiBNMTIsMTJ2LTFoLTF2MUgxMnogTTE3LDE3di0xaC0xdjFIMTd6DQoJIE0xOCwxOHYtMWgtMXYxSDE4eiBNMTUsMTV2LTFoLTF2MUgxNXogTTE2LDE2di0xaC0xdjFIMTZ6IE0xNCwyM3YyaDF2LTJIMTR6IE0xNiwyN3YxaDN2LTF2LTJoLTF2MkgxNnogTTE4LDI1di0yaC0xdjJIMTh6IE0xNywyMw0KCXYtMmgtMXYySDE3eiBNMjAsMjB2LTFoLTF2LTFoLTF2MWgtM3YxdjFoMXYtMUgyMHogTTEzLDIxdjJoMXYtMkgxM3ogTTEyLDIwdjFoMXYtMUgxMnogTTE1LDI1djJoMXYtMkgxNXogTTExLDIyaDF2LTFoLTFWMjJ6Ii8+DQo8L3N2Zz4NCg==&quot;) 10 10, auto; pointer-events: auto !important;">
+                      <span style="font-weight: 700;">Records in Salesforce can be created, viewed, edited, and deleted by users with the appropriate permissions. </span>They can also be searched, filtered, and sorted using various tools within the Salesforce interface.
+                    </li>
+                    <li style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;data:image/svg+xml;base64,DQoNCjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjhweCIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyMCAyOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjAgMjgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZD0iTTEyLDRoLTJ2M0g5VjRIN1YzaDFWMmgxVjFoMXYxaDF2MWgxVjR6IE03LDlINFY3SDN2MUgydjFIMXYxaDF2MWgxdjFoMXYtMmgzVjl6IE0xOCw5aC0xVjhoLTFWN2gtMXYyaC0zdjFoM3YyaDF2LTFoMXYtMQ0KCWgxVjl6IE03LDE1djFoMXYxaDF2LTF2LTFIN3oiLz4NCgk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTAsMlYxaDF2MUgxMHogTTEyLDNWMmgtMXYxSDEyeiBNMTIsM3YxaC0ydjNIOVY0SDdWM0g2djF2MWgydjNoM1Y1aDJWM0gxMnogTTEwLDBIOXYxaDFWMHogTTksMUg4djFoMVYxeg0KCSBNOCwySDd2MWgxVjJ6IE04LDE3djFoMXYtMUg4eiBNNywxNnYxaDF2LTFIN3ogTTYsMTR2Mmgxdi0xaDJ2LTFINnogTTEwLDE3djEgTTE3LDExaDF2LTFoLTFWMTF6IE0xNiwxMmgxdi0xaC0xVjEyeiBNMTYsMTJoLTF2LTINCgloLTFoLTJWOWgyaDFWN2gxVjZoLTFoLTF2MmgtM3YxdjF2MWgzdjJoMWgxVjEyeiBNMTksMTBWOWgtMXYxSDE5eiBNMTgsOVY4aC0xdjFIMTh6IE0xNyw4VjdoLTF2MUgxN3ogTTIsOEgxdjFoMVY4eiBNMyw3SDJ2MWgxVjd6DQoJIE0zLDdoMXYyaDN2MUg0djJIM3YxaDJ2LTJoM1Y4SDVWNkgzVjd6IE0wLDl2MWgxVjlIMHogTTEsMTB2MWgxdi0xSDF6IE0yLDExdjFoMXYtMUgyeiIvPg0KCTxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTYsMTkgMTcsMTkgMTgsMTkgMTgsMTggMTcsMTggMTcsMTcgMTYsMTcgMTYsMTYgMTUsMTYgMTUsMTUgMTQsMTUgMTQsMTQgMTMsMTQgMTMsMTMgMTIsMTMgMTIsMTINCgkxMSwxMiAxMSwxMSAxMCwxMSAxMCwyMiAxMSwyMiAxMSwyMSAxMiwyMSAxMiwyMCAxMywyMCAxMywyMSAxNCwyMSAxNCwyMyAxNSwyMyAxNSwyNSAxNiwyNSAxNiwyNyAxNywyNyAxOCwyNyAxOCwyNSAxNywyNSAxNywyMw0KCTE2LDIzIDE2LDIxIDE1LDIxIDE1LDE5ICIvPg0KCTxwYXRoIGQ9Ik0xMiwxM3YtMWgxdjFIMTJ6IE0xNCwxNHYtMWgtMXYxSDE0eiBNMTAsMTFoMXYtMWgtMVY5SDl2MTVoMXYtMWgxdi0xaC0xVjExeiBNMTIsMTJ2LTFoLTF2MUgxMnogTTE3LDE3di0xaC0xdjFIMTd6DQoJIE0xOCwxOHYtMWgtMXYxSDE4eiBNMTUsMTV2LTFoLTF2MUgxNXogTTE2LDE2di0xaC0xdjFIMTZ6IE0xNCwyM3YyaDF2LTJIMTR6IE0xNiwyN3YxaDN2LTF2LTJoLTF2MkgxNnogTTE4LDI1di0yaC0xdjJIMTh6IE0xNywyMw0KCXYtMmgtMXYySDE3eiBNMjAsMjB2LTFoLTF2LTFoLTF2MWgtM3YxdjFoMXYtMUgyMHogTTEzLDIxdjJoMXYtMkgxM3ogTTEyLDIwdjFoMXYtMUgxMnogTTE1LDI1djJoMXYtMkgxNXogTTExLDIyaDF2LTFoLTFWMjJ6Ii8+DQo8L3N2Zz4NCg==&quot;) 10 10, auto; pointer-events: auto !important;">Additionally,<span style="font-weight: 700;"> records in Salesforce can be related to one another, forming a hierarchy or network of interconnected data. </span>For example, an opportunity record might be related to a specific account record and a specific contact record, allowing users to easily view and manage all related data within the Salesforce system.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-white u-border-2 u-border-active-black u-border-custom-color-2 u-button-style u-hover-custom-color-2 u-radius-34 u-text-active-custom-color-2 u-text-black u-accordion-link-6" id="link-42da" aria-controls="42da" aria-selected="false">
+              <span class="u-accordion-link-text"> What is a workflow in Salesforce?</span><span class="u-accordion-link-icon u-icon u-icon-rounded u-radius-50 u-white u-icon-6"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8cea"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-8cea"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-accordion-pane-6" id="42da" aria-labelledby="link-42da">
+              <div class="u-container-layout u-container-layout-6">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <ul>
+                    <li id="isPasted" style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;data:image/svg+xml;base64,DQoNCjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjhweCIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyMCAyOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjAgMjgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZD0iTTEyLDRoLTJ2M0g5VjRIN1YzaDFWMmgxVjFoMXYxaDF2MWgxVjR6IE03LDlINFY3SDN2MUgydjFIMXYxaDF2MWgxdjFoMXYtMmgzVjl6IE0xOCw5aC0xVjhoLTFWN2gtMXYyaC0zdjFoM3YyaDF2LTFoMXYtMQ0KCWgxVjl6IE03LDE1djFoMXYxaDF2LTF2LTFIN3oiLz4NCgk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTAsMlYxaDF2MUgxMHogTTEyLDNWMmgtMXYxSDEyeiBNMTIsM3YxaC0ydjNIOVY0SDdWM0g2djF2MWgydjNoM1Y1aDJWM0gxMnogTTEwLDBIOXYxaDFWMHogTTksMUg4djFoMVYxeg0KCSBNOCwySDd2MWgxVjJ6IE04LDE3djFoMXYtMUg4eiBNNywxNnYxaDF2LTFIN3ogTTYsMTR2Mmgxdi0xaDJ2LTFINnogTTEwLDE3djEgTTE3LDExaDF2LTFoLTFWMTF6IE0xNiwxMmgxdi0xaC0xVjEyeiBNMTYsMTJoLTF2LTINCgloLTFoLTJWOWgyaDFWN2gxVjZoLTFoLTF2MmgtM3YxdjF2MWgzdjJoMWgxVjEyeiBNMTksMTBWOWgtMXYxSDE5eiBNMTgsOVY4aC0xdjFIMTh6IE0xNyw4VjdoLTF2MUgxN3ogTTIsOEgxdjFoMVY4eiBNMyw3SDJ2MWgxVjd6DQoJIE0zLDdoMXYyaDN2MUg0djJIM3YxaDJ2LTJoM1Y4SDVWNkgzVjd6IE0wLDl2MWgxVjlIMHogTTEsMTB2MWgxdi0xSDF6IE0yLDExdjFoMXYtMUgyeiIvPg0KCTxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTYsMTkgMTcsMTkgMTgsMTkgMTgsMTggMTcsMTggMTcsMTcgMTYsMTcgMTYsMTYgMTUsMTYgMTUsMTUgMTQsMTUgMTQsMTQgMTMsMTQgMTMsMTMgMTIsMTMgMTIsMTINCgkxMSwxMiAxMSwxMSAxMCwxMSAxMCwyMiAxMSwyMiAxMSwyMSAxMiwyMSAxMiwyMCAxMywyMCAxMywyMSAxNCwyMSAxNCwyMyAxNSwyMyAxNSwyNSAxNiwyNSAxNiwyNyAxNywyNyAxOCwyNyAxOCwyNSAxNywyNSAxNywyMw0KCTE2LDIzIDE2LDIxIDE1LDIxIDE1LDE5ICIvPg0KCTxwYXRoIGQ9Ik0xMiwxM3YtMWgxdjFIMTJ6IE0xNCwxNHYtMWgtMXYxSDE0eiBNMTAsMTFoMXYtMWgtMVY5SDl2MTVoMXYtMWgxdi0xaC0xVjExeiBNMTIsMTJ2LTFoLTF2MUgxMnogTTE3LDE3di0xaC0xdjFIMTd6DQoJIE0xOCwxOHYtMWgtMXYxSDE4eiBNMTUsMTV2LTFoLTF2MUgxNXogTTE2LDE2di0xaC0xdjFIMTZ6IE0xNCwyM3YyaDF2LTJIMTR6IE0xNiwyN3YxaDN2LTF2LTJoLTF2MkgxNnogTTE4LDI1di0yaC0xdjJIMTh6IE0xNywyMw0KCXYtMmgtMXYySDE3eiBNMjAsMjB2LTFoLTF2LTFoLTF2MWgtM3YxdjFoMXYtMUgyMHogTTEzLDIxdjJoMXYtMkgxM3ogTTEyLDIwdjFoMXYtMUgxMnogTTE1LDI1djJoMXYtMkgxNXogTTExLDIyaDF2LTFoLTFWMjJ6Ii8+DQo8L3N2Zz4NCg==&quot;) 10 10, auto; pointer-events: auto !important;">
+                      <span style="font-weight: 700;">A workflow in Salesforce is a set of rules that automates standard internal procedures and processes to save time and streamline workflows</span>. It enables the automation of repetitive manual tasks and reduces the workload of users, allowing them to focus on more important tasks.
+                    </li>
+                    <li style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;data:image/svg+xml;base64,DQoNCjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjhweCIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyMCAyOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjAgMjgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZD0iTTEyLDRoLTJ2M0g5VjRIN1YzaDFWMmgxVjFoMXYxaDF2MWgxVjR6IE03LDlINFY3SDN2MUgydjFIMXYxaDF2MWgxdjFoMXYtMmgzVjl6IE0xOCw5aC0xVjhoLTFWN2gtMXYyaC0zdjFoM3YyaDF2LTFoMXYtMQ0KCWgxVjl6IE03LDE1djFoMXYxaDF2LTF2LTFIN3oiLz4NCgk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTAsMlYxaDF2MUgxMHogTTEyLDNWMmgtMXYxSDEyeiBNMTIsM3YxaC0ydjNIOVY0SDdWM0g2djF2MWgydjNoM1Y1aDJWM0gxMnogTTEwLDBIOXYxaDFWMHogTTksMUg4djFoMVYxeg0KCSBNOCwySDd2MWgxVjJ6IE04LDE3djFoMXYtMUg4eiBNNywxNnYxaDF2LTFIN3ogTTYsMTR2Mmgxdi0xaDJ2LTFINnogTTEwLDE3djEgTTE3LDExaDF2LTFoLTFWMTF6IE0xNiwxMmgxdi0xaC0xVjEyeiBNMTYsMTJoLTF2LTINCgloLTFoLTJWOWgyaDFWN2gxVjZoLTFoLTF2MmgtM3YxdjF2MWgzdjJoMWgxVjEyeiBNMTksMTBWOWgtMXYxSDE5eiBNMTgsOVY4aC0xdjFIMTh6IE0xNyw4VjdoLTF2MUgxN3ogTTIsOEgxdjFoMVY4eiBNMyw3SDJ2MWgxVjd6DQoJIE0zLDdoMXYyaDN2MUg0djJIM3YxaDJ2LTJoM1Y4SDVWNkgzVjd6IE0wLDl2MWgxVjlIMHogTTEsMTB2MWgxdi0xSDF6IE0yLDExdjFoMXYtMUgyeiIvPg0KCTxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTYsMTkgMTcsMTkgMTgsMTkgMTgsMTggMTcsMTggMTcsMTcgMTYsMTcgMTYsMTYgMTUsMTYgMTUsMTUgMTQsMTUgMTQsMTQgMTMsMTQgMTMsMTMgMTIsMTMgMTIsMTINCgkxMSwxMiAxMSwxMSAxMCwxMSAxMCwyMiAxMSwyMiAxMSwyMSAxMiwyMSAxMiwyMCAxMywyMCAxMywyMSAxNCwyMSAxNCwyMyAxNSwyMyAxNSwyNSAxNiwyNSAxNiwyNyAxNywyNyAxOCwyNyAxOCwyNSAxNywyNSAxNywyMw0KCTE2LDIzIDE2LDIxIDE1LDIxIDE1LDE5ICIvPg0KCTxwYXRoIGQ9Ik0xMiwxM3YtMWgxdjFIMTJ6IE0xNCwxNHYtMWgtMXYxSDE0eiBNMTAsMTFoMXYtMWgtMVY5SDl2MTVoMXYtMWgxdi0xaC0xVjExeiBNMTIsMTJ2LTFoLTF2MUgxMnogTTE3LDE3di0xaC0xdjFIMTd6DQoJIE0xOCwxOHYtMWgtMXYxSDE4eiBNMTUsMTV2LTFoLTF2MUgxNXogTTE2LDE2di0xaC0xdjFIMTZ6IE0xNCwyM3YyaDF2LTJIMTR6IE0xNiwyN3YxaDN2LTF2LTJoLTF2MkgxNnogTTE4LDI1di0yaC0xdjJIMTh6IE0xNywyMw0KCXYtMmgtMXYySDE3eiBNMjAsMjB2LTFoLTF2LTFoLTF2MWgtM3YxdjFoMXYtMUgyMHogTTEzLDIxdjJoMXYtMkgxM3ogTTEyLDIwdjFoMXYtMUgxMnogTTE1LDI1djJoMXYtMkgxNXogTTExLDIyaDF2LTFoLTFWMjJ6Ii8+DQo8L3N2Zz4NCg==&quot;) 10 10, auto; pointer-events: auto !important;">
+                      <span style="font-weight: 700;">Workflows in Salesforce are typically used to automate business processes, such as sending email notifications, creating tasks, updating fields, or assigning new records to specific users.</span> They can be triggered by specific events, such as when a record is created or updated, or based on a set schedule.
+                    </li>
+                    <li style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;data:image/svg+xml;base64,DQoNCjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjhweCIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyMCAyOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjAgMjgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZD0iTTEyLDRoLTJ2M0g5VjRIN1YzaDFWMmgxVjFoMXYxaDF2MWgxVjR6IE03LDlINFY3SDN2MUgydjFIMXYxaDF2MWgxdjFoMXYtMmgzVjl6IE0xOCw5aC0xVjhoLTFWN2gtMXYyaC0zdjFoM3YyaDF2LTFoMXYtMQ0KCWgxVjl6IE03LDE1djFoMXYxaDF2LTF2LTFIN3oiLz4NCgk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTAsMlYxaDF2MUgxMHogTTEyLDNWMmgtMXYxSDEyeiBNMTIsM3YxaC0ydjNIOVY0SDdWM0g2djF2MWgydjNoM1Y1aDJWM0gxMnogTTEwLDBIOXYxaDFWMHogTTksMUg4djFoMVYxeg0KCSBNOCwySDd2MWgxVjJ6IE04LDE3djFoMXYtMUg4eiBNNywxNnYxaDF2LTFIN3ogTTYsMTR2Mmgxdi0xaDJ2LTFINnogTTEwLDE3djEgTTE3LDExaDF2LTFoLTFWMTF6IE0xNiwxMmgxdi0xaC0xVjEyeiBNMTYsMTJoLTF2LTINCgloLTFoLTJWOWgyaDFWN2gxVjZoLTFoLTF2MmgtM3YxdjF2MWgzdjJoMWgxVjEyeiBNMTksMTBWOWgtMXYxSDE5eiBNMTgsOVY4aC0xdjFIMTh6IE0xNyw4VjdoLTF2MUgxN3ogTTIsOEgxdjFoMVY4eiBNMyw3SDJ2MWgxVjd6DQoJIE0zLDdoMXYyaDN2MUg0djJIM3YxaDJ2LTJoM1Y4SDVWNkgzVjd6IE0wLDl2MWgxVjlIMHogTTEsMTB2MWgxdi0xSDF6IE0yLDExdjFoMXYtMUgyeiIvPg0KCTxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTYsMTkgMTcsMTkgMTgsMTkgMTgsMTggMTcsMTggMTcsMTcgMTYsMTcgMTYsMTYgMTUsMTYgMTUsMTUgMTQsMTUgMTQsMTQgMTMsMTQgMTMsMTMgMTIsMTMgMTIsMTINCgkxMSwxMiAxMSwxMSAxMCwxMSAxMCwyMiAxMSwyMiAxMSwyMSAxMiwyMSAxMiwyMCAxMywyMCAxMywyMSAxNCwyMSAxNCwyMyAxNSwyMyAxNSwyNSAxNiwyNSAxNiwyNyAxNywyNyAxOCwyNyAxOCwyNSAxNywyNSAxNywyMw0KCTE2LDIzIDE2LDIxIDE1LDIxIDE1LDE5ICIvPg0KCTxwYXRoIGQ9Ik0xMiwxM3YtMWgxdjFIMTJ6IE0xNCwxNHYtMWgtMXYxSDE0eiBNMTAsMTFoMXYtMWgtMVY5SDl2MTVoMXYtMWgxdi0xaC0xVjExeiBNMTIsMTJ2LTFoLTF2MUgxMnogTTE3LDE3di0xaC0xdjFIMTd6DQoJIE0xOCwxOHYtMWgtMXYxSDE4eiBNMTUsMTV2LTFoLTF2MUgxNXogTTE2LDE2di0xaC0xdjFIMTZ6IE0xNCwyM3YyaDF2LTJIMTR6IE0xNiwyN3YxaDN2LTF2LTJoLTF2MkgxNnogTTE4LDI1di0yaC0xdjJIMTh6IE0xNywyMw0KCXYtMmgtMXYySDE3eiBNMjAsMjB2LTFoLTF2LTFoLTF2MWgtM3YxdjFoMXYtMUgyMHogTTEzLDIxdjJoMXYtMkgxM3ogTTEyLDIwdjFoMXYtMUgxMnogTTE1LDI1djJoMXYtMkgxNXogTTExLDIyaDF2LTFoLTFWMjJ6Ii8+DQo8L3N2Zz4NCg==&quot;) 10 10, auto; pointer-events: auto !important;">Workflows are created using a simple drag-and-drop interface in Salesforce, making it easy for users to define the criteria and actions for each step in the workflow. For example,<span style="font-weight: 700;"> a workflow can be created to automatically send an email notification to a sales manager when a new opportunity is created, or to update the status of a case when it is assigned to a support representative.</span>
+                    </li>
+                    <li style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;data:image/svg+xml;base64,DQoNCjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjhweCIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyMCAyOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjAgMjgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZD0iTTEyLDRoLTJ2M0g5VjRIN1YzaDFWMmgxVjFoMXYxaDF2MWgxVjR6IE03LDlINFY3SDN2MUgydjFIMXYxaDF2MWgxdjFoMXYtMmgzVjl6IE0xOCw5aC0xVjhoLTFWN2gtMXYyaC0zdjFoM3YyaDF2LTFoMXYtMQ0KCWgxVjl6IE03LDE1djFoMXYxaDF2LTF2LTFIN3oiLz4NCgk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTAsMlYxaDF2MUgxMHogTTEyLDNWMmgtMXYxSDEyeiBNMTIsM3YxaC0ydjNIOVY0SDdWM0g2djF2MWgydjNoM1Y1aDJWM0gxMnogTTEwLDBIOXYxaDFWMHogTTksMUg4djFoMVYxeg0KCSBNOCwySDd2MWgxVjJ6IE04LDE3djFoMXYtMUg4eiBNNywxNnYxaDF2LTFIN3ogTTYsMTR2Mmgxdi0xaDJ2LTFINnogTTEwLDE3djEgTTE3LDExaDF2LTFoLTFWMTF6IE0xNiwxMmgxdi0xaC0xVjEyeiBNMTYsMTJoLTF2LTINCgloLTFoLTJWOWgyaDFWN2gxVjZoLTFoLTF2MmgtM3YxdjF2MWgzdjJoMWgxVjEyeiBNMTksMTBWOWgtMXYxSDE5eiBNMTgsOVY4aC0xdjFIMTh6IE0xNyw4VjdoLTF2MUgxN3ogTTIsOEgxdjFoMVY4eiBNMyw3SDJ2MWgxVjd6DQoJIE0zLDdoMXYyaDN2MUg0djJIM3YxaDJ2LTJoM1Y4SDVWNkgzVjd6IE0wLDl2MWgxVjlIMHogTTEsMTB2MWgxdi0xSDF6IE0yLDExdjFoMXYtMUgyeiIvPg0KCTxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTYsMTkgMTcsMTkgMTgsMTkgMTgsMTggMTcsMTggMTcsMTcgMTYsMTcgMTYsMTYgMTUsMTYgMTUsMTUgMTQsMTUgMTQsMTQgMTMsMTQgMTMsMTMgMTIsMTMgMTIsMTINCgkxMSwxMiAxMSwxMSAxMCwxMSAxMCwyMiAxMSwyMiAxMSwyMSAxMiwyMSAxMiwyMCAxMywyMCAxMywyMSAxNCwyMSAxNCwyMyAxNSwyMyAxNSwyNSAxNiwyNSAxNiwyNyAxNywyNyAxOCwyNyAxOCwyNSAxNywyNSAxNywyMw0KCTE2LDIzIDE2LDIxIDE1LDIxIDE1LDE5ICIvPg0KCTxwYXRoIGQ9Ik0xMiwxM3YtMWgxdjFIMTJ6IE0xNCwxNHYtMWgtMXYxSDE0eiBNMTAsMTFoMXYtMWgtMVY5SDl2MTVoMXYtMWgxdi0xaC0xVjExeiBNMTIsMTJ2LTFoLTF2MUgxMnogTTE3LDE3di0xaC0xdjFIMTd6DQoJIE0xOCwxOHYtMWgtMXYxSDE4eiBNMTUsMTV2LTFoLTF2MUgxNXogTTE2LDE2di0xaC0xdjFIMTZ6IE0xNCwyM3YyaDF2LTJIMTR6IE0xNiwyN3YxaDN2LTF2LTJoLTF2MkgxNnogTTE4LDI1di0yaC0xdjJIMTh6IE0xNywyMw0KCXYtMmgtMXYySDE3eiBNMjAsMjB2LTFoLTF2LTFoLTF2MWgtM3YxdjFoMXYtMUgyMHogTTEzLDIxdjJoMXYtMkgxM3ogTTEyLDIwdjFoMXYtMUgxMnogTTE1LDI1djJoMXYtMkgxNXogTTExLDIyaDF2LTFoLTFWMjJ6Ii8+DQo8L3N2Zz4NCg==&quot;) 10 10, auto; pointer-events: auto !important;">Overall, workflows in Salesforce can help organizations automate their internal processes, reduce manual errors, and improve overall efficiency.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-white u-border-2 u-border-active-black u-border-custom-color-2 u-button-style u-hover-custom-color-2 u-radius-34 u-text-active-custom-color-2 u-text-black u-accordion-link-7" id="link-b7c8" aria-controls="b7c8" aria-selected="false">
+              <span class="u-accordion-link-text" style=""> What is a trigger in Salesforce?</span><span class="u-accordion-link-icon u-icon u-icon-rounded u-radius-50 u-white u-icon-7"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-4adb"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-4adb"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-accordion-pane-7" id="b7c8" aria-labelledby="link-b7c8">
+              <div class="u-container-layout u-container-layout-7">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <ul>
+                    <li id="isPasted">
+                      <span style="font-weight: 700;">A trigger in Salesforce is a piece of Apex code that is executed before or after certain events occur in the Salesforce platform, such as the insertion, update, or deletion of records</span>.Triggers are used to automate business processes and perform custom operations on data within Salesforce.
+                    </li>
+                    <li>&nbsp;They can be used to perform complex data validations, update related records, and enforce complex business rules<span style="font-weight: 700;">.Triggers are associated with a specific object in Salesforce, and can be set to execute before or after specific events occur, such as before an object is inserted or updated, or after it has been deleted.</span>
+                    </li>
+                    <li>
+                      <span style="font-weight: 700;">&nbsp;Triggers can be written using Apex code and are stored in Salesforce as metadata</span>.Triggers are an important feature in Salesforce as they allow developers and administrators to customize and extend the platform's functionality to meet the specific needs of their organization.&nbsp;
+                    </li>
+                    <li>However, it is important to <span style="font-weight: 700;">use triggers with caution and follow best practices to avoid performance issues and data integrity problems.</span>
+                    </li>
+                  </ul>
+                  <p>
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-white u-border-2 u-border-active-black u-border-custom-color-2 u-button-style u-hover-custom-color-2 u-radius-34 u-text-active-custom-color-2 u-text-black u-accordion-link-8" id="link-77a4" aria-controls="77a4" aria-selected="false">
+              <span class="u-accordion-link-text"> What is a sandbox in Salesforce?</span><span class="u-accordion-link-icon u-icon u-icon-rounded u-radius-50 u-white u-icon-8"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-7ecc"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-7ecc"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-accordion-pane-8" id="77a4" aria-labelledby="link-77a4">
+              <div class="u-container-layout u-container-layout-8">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <ul id="isPasted">
+                    <li>In Salesforce<span style="font-weight: 700;">, a sandbox is a copy of an organization's data and metadata that is used for testing and development purposes.</span> Sandboxes are isolated from the production environment and are used to test changes to the Salesforce configuration, custom code, or integrations before they are deployed to the live environment.
+                    </li>
+                    <li>
+                      <span style="font-weight: 700;">Sandboxes are useful for testing changes without affecting live data or disrupting business operations. They can also be used to train users or to create new applications or customizations without the risk of impacting production data</span>.
+                    </li>
+                    <li>Salesforce provides several types of sandboxes, each with different levels of access and functionality. These include:</li>
+                  </ul>
+                  <ul>
+                    <li style="font-weight: 700;">
+                      <p>
+                        <span style="text-decoration: underline;">Developer Sandbox:</span> A free sandbox designed for individual developers or small teams to build and test customizations or integrations.
+                      </p>
+                    </li>
+                    <li style="font-weight: 700;">
+                      <p>
+                        <span style="text-decoration: underline;">Developer Pro Sandbox:</span> A paid sandbox that provides more storage and functionality than the Developer Sandbox, making it suitable for larger teams or more complex projects.
+                      </p>
+                    </li>
+                    <li style="font-weight: 700;">
+                      <p>
+                        <span style="text-decoration: underline;">Full Sandbox:</span> A complete copy of the production environment, including all data and metadata. This is useful for testing complex changes or integrations.
+                      </p>
+                    </li>
+                    <li style="font-weight: 700;">
+                      <p>
+                        <span style="text-decoration: underline;">Partial Copy Sandbox:</span> A partial copy of the production environment that includes a subset of data, as specified by the administrator. This is useful for testing changes with realistic data.
+                      </p>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>In summary, a Salesforce sandbox is a copy of an organization's data and metadata used for testing and development purposes, and there are different types of sandboxes available depending on the specific needs of the organization</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-white u-border-2 u-border-active-black u-border-custom-color-2 u-button-style u-hover-custom-color-2 u-radius-34 u-text-active-custom-color-2 u-text-black u-accordion-link-9" id="link-e8e4" aria-controls="e8e4" aria-selected="false">
+              <span class="u-accordion-link-text" style=""> What is a Visualforce page in Salesforce?</span><span class="u-accordion-link-icon u-icon u-icon-rounded u-radius-50 u-white u-icon-9"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-c9e4"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-c9e4"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-accordion-pane-9" id="e8e4" aria-labelledby="link-e8e4">
+              <div class="u-container-layout u-container-layout-9">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <ul>
+                    <li id="isPasted" style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;data:image/svg+xml;base64,DQoNCjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjhweCIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyMCAyOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjAgMjgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZD0iTTEyLDRoLTJ2M0g5VjRIN1YzaDFWMmgxVjFoMXYxaDF2MWgxVjR6IE03LDlINFY3SDN2MUgydjFIMXYxaDF2MWgxdjFoMXYtMmgzVjl6IE0xOCw5aC0xVjhoLTFWN2gtMXYyaC0zdjFoM3YyaDF2LTFoMXYtMQ0KCWgxVjl6IE03LDE1djFoMXYxaDF2LTF2LTFIN3oiLz4NCgk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTAsMlYxaDF2MUgxMHogTTEyLDNWMmgtMXYxSDEyeiBNMTIsM3YxaC0ydjNIOVY0SDdWM0g2djF2MWgydjNoM1Y1aDJWM0gxMnogTTEwLDBIOXYxaDFWMHogTTksMUg4djFoMVYxeg0KCSBNOCwySDd2MWgxVjJ6IE04LDE3djFoMXYtMUg4eiBNNywxNnYxaDF2LTFIN3ogTTYsMTR2Mmgxdi0xaDJ2LTFINnogTTEwLDE3djEgTTE3LDExaDF2LTFoLTFWMTF6IE0xNiwxMmgxdi0xaC0xVjEyeiBNMTYsMTJoLTF2LTINCgloLTFoLTJWOWgyaDFWN2gxVjZoLTFoLTF2MmgtM3YxdjF2MWgzdjJoMWgxVjEyeiBNMTksMTBWOWgtMXYxSDE5eiBNMTgsOVY4aC0xdjFIMTh6IE0xNyw4VjdoLTF2MUgxN3ogTTIsOEgxdjFoMVY4eiBNMyw3SDJ2MWgxVjd6DQoJIE0zLDdoMXYyaDN2MUg0djJIM3YxaDJ2LTJoM1Y4SDVWNkgzVjd6IE0wLDl2MWgxVjlIMHogTTEsMTB2MWgxdi0xSDF6IE0yLDExdjFoMXYtMUgyeiIvPg0KCTxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTYsMTkgMTcsMTkgMTgsMTkgMTgsMTggMTcsMTggMTcsMTcgMTYsMTcgMTYsMTYgMTUsMTYgMTUsMTUgMTQsMTUgMTQsMTQgMTMsMTQgMTMsMTMgMTIsMTMgMTIsMTINCgkxMSwxMiAxMSwxMSAxMCwxMSAxMCwyMiAxMSwyMiAxMSwyMSAxMiwyMSAxMiwyMCAxMywyMCAxMywyMSAxNCwyMSAxNCwyMyAxNSwyMyAxNSwyNSAxNiwyNSAxNiwyNyAxNywyNyAxOCwyNyAxOCwyNSAxNywyNSAxNywyMw0KCTE2LDIzIDE2LDIxIDE1LDIxIDE1LDE5ICIvPg0KCTxwYXRoIGQ9Ik0xMiwxM3YtMWgxdjFIMTJ6IE0xNCwxNHYtMWgtMXYxSDE0eiBNMTAsMTFoMXYtMWgtMVY5SDl2MTVoMXYtMWgxdi0xaC0xVjExeiBNMTIsMTJ2LTFoLTF2MUgxMnogTTE3LDE3di0xaC0xdjFIMTd6DQoJIE0xOCwxOHYtMWgtMXYxSDE4eiBNMTUsMTV2LTFoLTF2MUgxNXogTTE2LDE2di0xaC0xdjFIMTZ6IE0xNCwyM3YyaDF2LTJIMTR6IE0xNiwyN3YxaDN2LTF2LTJoLTF2MkgxNnogTTE4LDI1di0yaC0xdjJIMTh6IE0xNywyMw0KCXYtMmgtMXYySDE3eiBNMjAsMjB2LTFoLTF2LTFoLTF2MWgtM3YxdjFoMXYtMUgyMHogTTEzLDIxdjJoMXYtMkgxM3ogTTEyLDIwdjFoMXYtMUgxMnogTTE1LDI1djJoMXYtMkgxNXogTTExLDIyaDF2LTFoLTFWMjJ6Ii8+DQo8L3N2Zz4NCg==&quot;) 10 10, auto; pointer-events: auto !important;">
+                      <span style="font-weight: 700;">A Visualforce page in Salesforce is a custom user interface component that can be used to display and interact with data from the Salesforce database. </span>Visualforce pages are designed using a markup language that is similar to HTML, which allows developers to create customized interfaces that can be tailored to meet the specific needs of their organization.
+                    </li>
+                    <li style="box-sizing: border-box; cursor: url(&quot;data:image/svg+xml;base64,DQoNCjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjhweCIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyMCAyOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjAgMjgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZD0iTTEyLDRoLTJ2M0g5VjRIN1YzaDFWMmgxVjFoMXYxaDF2MWgxVjR6IE03LDlINFY3SDN2MUgydjFIMXYxaDF2MWgxdjFoMXYtMmgzVjl6IE0xOCw5aC0xVjhoLTFWN2gtMXYyaC0zdjFoM3YyaDF2LTFoMXYtMQ0KCWgxVjl6IE03LDE1djFoMXYxaDF2LTF2LTFIN3oiLz4NCgk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTAsMlYxaDF2MUgxMHogTTEyLDNWMmgtMXYxSDEyeiBNMTIsM3YxaC0ydjNIOVY0SDdWM0g2djF2MWgydjNoM1Y1aDJWM0gxMnogTTEwLDBIOXYxaDFWMHogTTksMUg4djFoMVYxeg0KCSBNOCwySDd2MWgxVjJ6IE04LDE3djFoMXYtMUg4eiBNNywxNnYxaDF2LTFIN3ogTTYsMTR2Mmgxdi0xaDJ2LTFINnogTTEwLDE3djEgTTE3LDExaDF2LTFoLTFWMTF6IE0xNiwxMmgxdi0xaC0xVjEyeiBNMTYsMTJoLTF2LTINCgloLTFoLTJWOWgyaDFWN2gxVjZoLTFoLTF2MmgtM3YxdjF2MWgzdjJoMWgxVjEyeiBNMTksMTBWOWgtMXYxSDE5eiBNMTgsOVY4aC0xdjFIMTh6IE0xNyw4VjdoLTF2MUgxN3ogTTIsOEgxdjFoMVY4eiBNMyw3SDJ2MWgxVjd6DQoJIE0zLDdoMXYyaDN2MUg0djJIM3YxaDJ2LTJoM1Y4SDVWNkgzVjd6IE0wLDl2MWgxVjlIMHogTTEsMTB2MWgxdi0xSDF6IE0yLDExdjFoMXYtMUgyeiIvPg0KCTxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTYsMTkgMTcsMTkgMTgsMTkgMTgsMTggMTcsMTggMTcsMTcgMTYsMTcgMTYsMTYgMTUsMTYgMTUsMTUgMTQsMTUgMTQsMTQgMTMsMTQgMTMsMTMgMTIsMTMgMTIsMTINCgkxMSwxMiAxMSwxMSAxMCwxMSAxMCwyMiAxMSwyMiAxMSwyMSAxMiwyMSAxMiwyMCAxMywyMCAxMywyMSAxNCwyMSAxNCwyMyAxNSwyMyAxNSwyNSAxNiwyNSAxNiwyNyAxNywyNyAxOCwyNyAxOCwyNSAxNywyNSAxNywyMw0KCTE2LDIzIDE2LDIxIDE1LDIxIDE1LDE5ICIvPg0KCTxwYXRoIGQ9Ik0xMiwxM3YtMWgxdjFIMTJ6IE0xNCwxNHYtMWgtMXYxSDE0eiBNMTAsMTFoMXYtMWgtMVY5SDl2MTVoMXYtMWgxdi0xaC0xVjExeiBNMTIsMTJ2LTFoLTF2MUgxMnogTTE3LDE3di0xaC0xdjFIMTd6DQoJIE0xOCwxOHYtMWgtMXYxSDE4eiBNMTUsMTV2LTFoLTF2MUgxNXogTTE2LDE2di0xaC0xdjFIMTZ6IE0xNCwyM3YyaDF2LTJIMTR6IE0xNiwyN3YxaDN2LTF2LTJoLTF2MkgxNnogTTE4LDI1di0yaC0xdjJIMTh6IE0xNywyMw0KCXYtMmgtMXYySDE3eiBNMjAsMjB2LTFoLTF2LTFoLTF2MWgtM3YxdjFoMXYtMUgyMHogTTEzLDIxdjJoMXYtMkgxM3ogTTEyLDIwdjFoMXYtMUgxMnogTTE1LDI1djJoMXYtMkgxNXogTTExLDIyaDF2LTFoLTFWMjJ6Ii8+DQo8L3N2Zz4NCg==&quot;) 10 10, auto; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; pointer-events: auto !important; font-weight: 700;">Visualforce pages can be used to display a wide range of data, including records, lists, reports, and dashboards. They can also be used to collect data from users through forms and other input elements.</li>
+                    <li style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;data:image/svg+xml;base64,DQoNCjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjhweCIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyMCAyOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjAgMjgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZD0iTTEyLDRoLTJ2M0g5VjRIN1YzaDFWMmgxVjFoMXYxaDF2MWgxVjR6IE03LDlINFY3SDN2MUgydjFIMXYxaDF2MWgxdjFoMXYtMmgzVjl6IE0xOCw5aC0xVjhoLTFWN2gtMXYyaC0zdjFoM3YyaDF2LTFoMXYtMQ0KCWgxVjl6IE03LDE1djFoMXYxaDF2LTF2LTFIN3oiLz4NCgk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTAsMlYxaDF2MUgxMHogTTEyLDNWMmgtMXYxSDEyeiBNMTIsM3YxaC0ydjNIOVY0SDdWM0g2djF2MWgydjNoM1Y1aDJWM0gxMnogTTEwLDBIOXYxaDFWMHogTTksMUg4djFoMVYxeg0KCSBNOCwySDd2MWgxVjJ6IE04LDE3djFoMXYtMUg4eiBNNywxNnYxaDF2LTFIN3ogTTYsMTR2Mmgxdi0xaDJ2LTFINnogTTEwLDE3djEgTTE3LDExaDF2LTFoLTFWMTF6IE0xNiwxMmgxdi0xaC0xVjEyeiBNMTYsMTJoLTF2LTINCgloLTFoLTJWOWgyaDFWN2gxVjZoLTFoLTF2MmgtM3YxdjF2MWgzdjJoMWgxVjEyeiBNMTksMTBWOWgtMXYxSDE5eiBNMTgsOVY4aC0xdjFIMTh6IE0xNyw4VjdoLTF2MUgxN3ogTTIsOEgxdjFoMVY4eiBNMyw3SDJ2MWgxVjd6DQoJIE0zLDdoMXYyaDN2MUg0djJIM3YxaDJ2LTJoM1Y4SDVWNkgzVjd6IE0wLDl2MWgxVjlIMHogTTEsMTB2MWgxdi0xSDF6IE0yLDExdjFoMXYtMUgyeiIvPg0KCTxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTYsMTkgMTcsMTkgMTgsMTkgMTgsMTggMTcsMTggMTcsMTcgMTYsMTcgMTYsMTYgMTUsMTYgMTUsMTUgMTQsMTUgMTQsMTQgMTMsMTQgMTMsMTMgMTIsMTMgMTIsMTINCgkxMSwxMiAxMSwxMSAxMCwxMSAxMCwyMiAxMSwyMiAxMSwyMSAxMiwyMSAxMiwyMCAxMywyMCAxMywyMSAxNCwyMSAxNCwyMyAxNSwyMyAxNSwyNSAxNiwyNSAxNiwyNyAxNywyNyAxOCwyNyAxOCwyNSAxNywyNSAxNywyMw0KCTE2LDIzIDE2LDIxIDE1LDIxIDE1LDE5ICIvPg0KCTxwYXRoIGQ9Ik0xMiwxM3YtMWgxdjFIMTJ6IE0xNCwxNHYtMWgtMXYxSDE0eiBNMTAsMTFoMXYtMWgtMVY5SDl2MTVoMXYtMWgxdi0xaC0xVjExeiBNMTIsMTJ2LTFoLTF2MUgxMnogTTE3LDE3di0xaC0xdjFIMTd6DQoJIE0xOCwxOHYtMWgtMXYxSDE4eiBNMTUsMTV2LTFoLTF2MUgxNXogTTE2LDE2di0xaC0xdjFIMTZ6IE0xNCwyM3YyaDF2LTJIMTR6IE0xNiwyN3YxaDN2LTF2LTJoLTF2MkgxNnogTTE4LDI1di0yaC0xdjJIMTh6IE0xNywyMw0KCXYtMmgtMXYySDE3eiBNMjAsMjB2LTFoLTF2LTFoLTF2MWgtM3YxdjFoMXYtMUgyMHogTTEzLDIxdjJoMXYtMkgxM3ogTTEyLDIwdjFoMXYtMUgxMnogTTE1LDI1djJoMXYtMkgxNXogTTExLDIyaDF2LTFoLTFWMjJ6Ii8+DQo8L3N2Zz4NCg==&quot;) 10 10, auto; pointer-events: auto !important;">Visualforce pages are typically created using the Salesforce Developer Console, which provides a user-friendly interface for designing and editing pages. Once a Visualforce page has been created,<span style="font-weight: 700;"> it can be added to a Salesforce application or embedded within other pages using the Visualforce component.</span>
+                    </li>
+                    <li style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;data:image/svg+xml;base64,DQoNCjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjhweCIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyMCAyOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjAgMjgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZD0iTTEyLDRoLTJ2M0g5VjRIN1YzaDFWMmgxVjFoMXYxaDF2MWgxVjR6IE03LDlINFY3SDN2MUgydjFIMXYxaDF2MWgxdjFoMXYtMmgzVjl6IE0xOCw5aC0xVjhoLTFWN2gtMXYyaC0zdjFoM3YyaDF2LTFoMXYtMQ0KCWgxVjl6IE03LDE1djFoMXYxaDF2LTF2LTFIN3oiLz4NCgk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTAsMlYxaDF2MUgxMHogTTEyLDNWMmgtMXYxSDEyeiBNMTIsM3YxaC0ydjNIOVY0SDdWM0g2djF2MWgydjNoM1Y1aDJWM0gxMnogTTEwLDBIOXYxaDFWMHogTTksMUg4djFoMVYxeg0KCSBNOCwySDd2MWgxVjJ6IE04LDE3djFoMXYtMUg4eiBNNywxNnYxaDF2LTFIN3ogTTYsMTR2Mmgxdi0xaDJ2LTFINnogTTEwLDE3djEgTTE3LDExaDF2LTFoLTFWMTF6IE0xNiwxMmgxdi0xaC0xVjEyeiBNMTYsMTJoLTF2LTINCgloLTFoLTJWOWgyaDFWN2gxVjZoLTFoLTF2MmgtM3YxdjF2MWgzdjJoMWgxVjEyeiBNMTksMTBWOWgtMXYxSDE5eiBNMTgsOVY4aC0xdjFIMTh6IE0xNyw4VjdoLTF2MUgxN3ogTTIsOEgxdjFoMVY4eiBNMyw3SDJ2MWgxVjd6DQoJIE0zLDdoMXYyaDN2MUg0djJIM3YxaDJ2LTJoM1Y4SDVWNkgzVjd6IE0wLDl2MWgxVjlIMHogTTEsMTB2MWgxdi0xSDF6IE0yLDExdjFoMXYtMUgyeiIvPg0KCTxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTYsMTkgMTcsMTkgMTgsMTkgMTgsMTggMTcsMTggMTcsMTcgMTYsMTcgMTYsMTYgMTUsMTYgMTUsMTUgMTQsMTUgMTQsMTQgMTMsMTQgMTMsMTMgMTIsMTMgMTIsMTINCgkxMSwxMiAxMSwxMSAxMCwxMSAxMCwyMiAxMSwyMiAxMSwyMSAxMiwyMSAxMiwyMCAxMywyMCAxMywyMSAxNCwyMSAxNCwyMyAxNSwyMyAxNSwyNSAxNiwyNSAxNiwyNyAxNywyNyAxOCwyNyAxOCwyNSAxNywyNSAxNywyMw0KCTE2LDIzIDE2LDIxIDE1LDIxIDE1LDE5ICIvPg0KCTxwYXRoIGQ9Ik0xMiwxM3YtMWgxdjFIMTJ6IE0xNCwxNHYtMWgtMXYxSDE0eiBNMTAsMTFoMXYtMWgtMVY5SDl2MTVoMXYtMWgxdi0xaC0xVjExeiBNMTIsMTJ2LTFoLTF2MUgxMnogTTE3LDE3di0xaC0xdjFIMTd6DQoJIE0xOCwxOHYtMWgtMXYxSDE4eiBNMTUsMTV2LTFoLTF2MUgxNXogTTE2LDE2di0xaC0xdjFIMTZ6IE0xNCwyM3YyaDF2LTJIMTR6IE0xNiwyN3YxaDN2LTF2LTJoLTF2MkgxNnogTTE4LDI1di0yaC0xdjJIMTh6IE0xNywyMw0KCXYtMmgtMXYySDE3eiBNMjAsMjB2LTFoLTF2LTFoLTF2MWgtM3YxdjFoMXYtMUgyMHogTTEzLDIxdjJoMXYtMkgxM3ogTTEyLDIwdjFoMXYtMUgxMnogTTE1LDI1djJoMXYtMkgxNXogTTExLDIyaDF2LTFoLTFWMjJ6Ii8+DQo8L3N2Zz4NCg==&quot;) 10 10, auto; pointer-events: auto !important;">Visualforce pages can be accessed by users with the appropriate permissions, and can be customized to display different data or functionality based on the user's role or profile. They are an important tool for developers and administrators who want to create customized user interfaces within the Salesforce platform.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-white u-border-2 u-border-active-black u-border-custom-color-2 u-button-style u-hover-custom-color-2 u-radius-34 u-text-active-custom-color-2 u-text-black u-accordion-link-10" id="link-dcdb" aria-controls="dcdb" aria-selected="false">
+              <span class="u-accordion-link-text"> What is a governor limit in Salesforce?</span><span class="u-accordion-link-icon u-icon u-icon-rounded u-radius-50 u-white u-icon-10"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-7b05"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-7b05"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-accordion-pane-10" id="dcdb" aria-labelledby="link-dcdb">
+              <div class="u-container-layout u-container-layout-10">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <p>Answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor, et ultricies sapien. Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-white u-border-2 u-border-active-black u-border-custom-color-2 u-button-style u-hover-custom-color-2 u-radius-34 u-text-active-custom-color-2 u-text-black u-accordion-link-11" id="link-6cf7" aria-controls="6cf7" aria-selected="false">
+              <span class="u-accordion-link-text"> What is a sharing rule in Salesforce?</span><span class="u-accordion-link-icon u-icon u-icon-rounded u-radius-50 u-white u-icon-11"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bed8"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-bed8"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-accordion-pane-11" id="6cf7" aria-labelledby="link-6cf7">
+              <div class="u-container-layout u-container-layout-11">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <ul>
+                    <li id="isPasted" style="font-weight: 700;">A sharing rule in Salesforce is a tool that allows administrators to extend access to records beyond the organization-wide defaults set by the organization.</li>
+                    <li>&nbsp;Sharing rules can be used to selectively share records with groups of users or public groups based on specific criteria, such as record ownership, location, or other field values.<span style="font-weight: 700;">Sharing rules can be created for standard and custom objects in Salesforce, and they can be used to grant read-only or read/write access to records.</span>
+                    </li>
+                    <li style="font-weight: 700;">&nbsp;Sharing rules can also be used to grant access to users or groups outside of the organization, such as partners or customers.</li>
+                    <li style="font-weight: 700;">There are two types of sharing rules in Salesforce: </li>
+                    <li>
+                      <span style="text-decoration: underline; font-weight: 700;">criteria-based sharing rules</span>
+                      <span style="font-weight: 700;">&nbsp;</span>and ownership-based sharing rules. Criteria-based sharing rules allow records to be shared based on certain criteria, such as field values or record ownership.&nbsp;
+                    </li>
+                    <li>
+                      <span style="font-weight: 700; text-decoration: underline;">Ownership-based sharing rule</span>
+                      <span style="text-decoration: underline;">s</span> allow records to be shared with users based on the record owner or the owner's role in the organization.
+                    </li>
+                    <li>Sharing rules can be a powerful tool for ensuring that users have the right level of access to records, regardless of their role in the organization or their location. However, it's important to use sharing rules carefully and thoughtfully, as they can also increase the complexity of the security model and make it more difficult to manage permissions over time.</li>
+                  </ul>
+                  <p>
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-white u-border-2 u-border-active-black u-border-custom-color-2 u-button-style u-hover-custom-color-2 u-radius-34 u-text-active-custom-color-2 u-text-black u-accordion-link-12" id="link-2477" aria-controls="2477" aria-selected="false">
+              <span class="u-accordion-link-text"> What is a role hierarchy in Salesforce?</span><span class="u-accordion-link-icon u-icon u-icon-rounded u-radius-50 u-white u-icon-12"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-ba2a"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-ba2a"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-accordion-pane-12" id="2477" aria-labelledby="link-2477">
+              <div class="u-container-layout u-container-layout-12">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <ul>
+                    <li style="font-weight: 700;">A role hierarchy in Salesforce is a way of defining a hierarchical relationship between different roles in an organization. This hierarchy is used to control access to data and records, as well as to determine how certain actions can be performed.</li>
+                    <li>The role hierarchy is based on a pyramid structure, with the most senior roles at the top and the least senior roles at the bottom.<span style="font-weight: 700;"> Users with higher roles in the hierarchy have access to all the records that are owned by users below them in the hierarchy. They can also perform certain actions on those records, such as editing or deleting them.</span>
+                    </li>
+                    <li>Role hierarchies are typically used in organizations where there is a need to restrict access to certain records or data based on the user's position in the organization. For example, a sales manager might have access to all the sales data for their team, while a sales representative might only have access to their own sales data.</li>
+                    <li style="font-weight: 700;">Role hierarchies can be customized to meet the specific needs of an organization. This includes defining the roles, creating rules for how data and records can be accessed, and setting up sharing rules to allow users to share data outside of their role hierarchy.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-white u-border-2 u-border-active-black u-border-custom-color-2 u-button-style u-hover-custom-color-2 u-radius-34 u-text-active-custom-color-2 u-text-black u-accordion-link-13" id="link-0189" aria-controls="0189" aria-selected="false">
+              <span class="u-accordion-link-text"> What is the difference between a lead and an opportunity in Salesforce?</span><span class="u-accordion-link-icon u-icon u-icon-rounded u-radius-50 u-white u-icon-13"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-a53f"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-a53f"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-accordion-pane-13" id="0189" aria-labelledby="link-0189">
+              <div class="u-container-layout u-container-layout-13">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <p id="isPasted">A lead in Salesforce is a person or company who has expressed some level of interest in your product or service, but has not yet been qualified as a sales opportunity. A lead can be generated through a variety of channels, including marketing campaigns, trade shows, or referrals. In Salesforce, you can track a lead's activity, such as website visits or email opens, and use this information to determine their level of interest and potential fit for your product or service.</p>
+                  <p>Once a lead has been deemed qualified, it can be converted into an opportunity. An opportunity in Salesforce is a potential sales deal that has progressed beyond the initial stage of simply expressing interest. When a lead is converted into an opportunity, it is assigned a sales representative who will work to close the deal. Opportunities have various stages, such as "prospecting," "qualification," and "closed-won," which reflect how far along the sales process is.</p>
+                  <p>It is important to understand the difference between a lead and an opportunity in Salesforce in order to effectively manage your sales pipeline. By keeping track of your leads and their level of interest, you can focus your sales efforts on the most promising prospects. Once a lead has been converted into an opportunity, you can use Salesforce's sales tools to manage the sales process and increase your chances of closing the deal.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-white u-border-2 u-border-active-black u-border-custom-color-2 u-button-style u-hover-custom-color-2 u-radius-34 u-text-active-custom-color-2 u-text-black u-accordion-link-14" id="link-748f" aria-controls="748f" aria-selected="false">
+              <span class="u-accordion-link-text"> What is the difference between a contact and an account in Salesforce?</span><span class="u-accordion-link-icon u-icon u-icon-rounded u-radius-50 u-white u-icon-14"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-b303"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-b303"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-accordion-pane-14" id="748f" aria-labelledby="link-748f">
+              <div class="u-container-layout u-container-layout-14">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <p>In Salesforce<span style="font-weight: 700;">, a contact and an account are two separate objects that are related to each other. An account represents a company or organization, while a contact represents an individual who is associated with that account.</span>
+                  </p>
+                  <ul>
+                    <li>Here are some key differences between the two:</li>
+                    <li>
+                      <p>
+                        <span style="font-weight: 700;">Ownership</span>: An account is typically owned by a sales representative or account manager, while a contact is typically owned by the individual who created it or the person assigned to manage that contact.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <span style="font-weight: 700;">Relationship</span>: Accounts and contacts have a parent-child relationship in Salesforce. An account can have many related contacts, but a contact can only be associated with one account.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <span style="font-weight: 700;">Information</span>: An account contains information about the company or organization, such as the company name, address, and phone number. A contact contains information about the individual associated with the account, such as their name, email address, and job title.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <span style="font-weight: 700;">Access</span>: Accounts and contacts have different levels of access within Salesforce. A sales representative may have access to all the accounts in their territory, but may only have access to certain contacts within those accounts.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <span style="font-weight: 700;">Marketing</span>: Accounts are typically used for marketing purposes, such as targeting a specific company or industry. Contacts are used for more personalized communication, such as sending an email or making a phone call to an individual contact.
+                      </p>
+                    </li>
+                  </ul>
+                  <p>In summary, while accounts and contacts are related, they serve different purposes within Salesforce. Accounts represent companies or organizations, while contacts represent individuals associated with those accounts.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-white u-border-2 u-border-active-black u-border-custom-color-2 u-button-style u-hover-custom-color-2 u-radius-34 u-text-active-custom-color-2 u-text-black u-accordion-link-15" id="link-92c4" aria-controls="92c4" aria-selected="false">
+              <span class="u-accordion-link-text"> What is the difference between a standard object and a custom object in Salesforce?</span><span class="u-accordion-link-icon u-icon u-icon-rounded u-radius-50 u-white u-icon-15"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-640a"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-640a"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-accordion-pane-15" id="92c4" aria-labelledby="link-92c4">
+              <div class="u-container-layout u-container-layout-15">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <ul>
+                    <li id="isPasted" style="font-weight: 700;">A standard object in Salesforce is a pre-built object that is included in the Salesforce platform and comes with predefined fields, relationships, and functionality. Examples of standard objects include Accounts, Contacts, Opportunities, Cases, and Leads.</li>
+                    <li>On the other hand, <span style="font-weight: 700;">a custom object in Salesforce is an object that is created by a user to store data that is specific to their business needs. Custom objects can be created by adding fields, relationships, and custom functionality to the object.</span>
+                    </li>
+                  </ul>
+                  <p>The key differences between standard and custom objects in Salesforce are:</p>
+                  <ul>
+                    <li>
+                      <p>
+                        <span style="font-weight: 700;">Pre-built vs. User-defined: </span>Standard objects are pre-built by Salesforce and come with predefined fields and functionality, while custom objects are created by users and can be customized to fit their specific business requirements.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <span style="font-weight: 700;">Common vs. Unique:</span> Standard objects are common to all Salesforce organizations and are used for standard business processes, while custom objects are unique to each organization and are tailored to specific business needs.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <span style="font-weight: 700;">Access and Permissions: </span>Standard objects have default access and permissions settings that are determined by Salesforce, while custom objects can be customized to provide specific levels of access and permissions to users.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <span style="font-weight: 700;">Integration:</span> Standard objects can be easily integrated with other Salesforce features and applications, while custom objects require additional customization to integrate with other Salesforce features and applications.
+                      </p>
+                    </li>
+                  </ul>
+                  <p>In summary,<span style="font-weight: 700;"> standard objects are pre-built objects provided by Salesforce that support common business processes, while custom objects are user-defined objects that can be customized to fit specific business needs.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-white u-border-2 u-border-active-black u-border-custom-color-2 u-button-style u-hover-custom-color-2 u-radius-34 u-text-active-custom-color-2 u-text-black u-accordion-link-16" id="link-a312" aria-controls="a312" aria-selected="false">
+              <span class="u-accordion-link-text"> What is a custom label in Salesforce?</span><span class="u-accordion-link-icon u-icon u-icon-rounded u-radius-50 u-white u-icon-16"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-5190"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-5190"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-accordion-pane-16" id="a312" aria-labelledby="link-a312">
+              <div class="u-container-layout u-container-layout-16">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <ul>
+                    <li id="isPasted" style="font-weight: 700;">A custom label in Salesforce is a way to create a reusable text value that can be used in various parts of an organization's Salesforce instance. Custom labels can be used to replace hard-coded text values, such as field labels, validation rule error messages, or email templates, making it easier to manage and update the text values in one place.</li>
+                    <li>Custom labels are particularly useful in multi-language organizations, as<span style="font-weight: 700;"> they allow administrators to create translations of the same text value for different languages. This helps ensure that users see the correct text values in their preferred language, based on their user settings</span>.
+                    </li>
+                    <li>
+                      <span style="font-weight: 700;">Custom labels can be created by navigating to the Setup menu in Salesforce and selecting the Custom Labels option</span>. From there, administrators can create a new custom label, define its text value, and assign translations for different languages.
+                    </li>
+                    <li>Once a custom label is created, it can be used in various parts of Salesforce by referencing its unique name, which is automatically generated by Salesforce when the label is created. Custom labels can also be referenced in Apex code or Visualforce pages, making it easier to maintain consistent messaging and branding across an organization's Salesforce instance.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-white u-border-2 u-border-active-black u-border-custom-color-2 u-button-style u-hover-custom-color-2 u-radius-34 u-text-active-custom-color-2 u-text-black u-accordion-link-17" id="link-375b" aria-controls="375b" aria-selected="false">
+              <span class="u-accordion-link-text"> What is a picklist in Salesforce?</span><span class="u-accordion-link-icon u-icon u-icon-rounded u-radius-50 u-white u-icon-17"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-b2c9"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-b2c9"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-accordion-pane-17" id="375b" aria-labelledby="link-375b">
+              <div class="u-container-layout u-container-layout-17">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <ul>
+                    <li id="isPasted">In Salesforce,<span style="font-weight: 700;"> a picklist is a type of field that allows users to select a value from a pre-defined list of options. Picklists are commonly used to capture data such as product categories, lead sources, or contact types, and can be used to ensure data consistency and accuracy.</span>
+                    </li>
+                    <li>When creating a picklist field, administrators define a list of values that users can choose from.<span style="font-weight: 700;"> These values can be arranged in a specific order, and can also be marked as "active" or "inactive" to control whether they appear in the picklist or not. Picklists can also be set to allow users to select multiple values, or to restrict them to choosing only one value.</span>
+                    </li>
+                    <li>In addition to standard picklists, Salesforce also offers dependent picklists, which allow the available options in one picklist to change based on the value selected in another picklist. This can be useful for capturing related data, such as product models and colors, or lead sources and campaigns.</li>
+                    <li>Overall<span style="font-weight: 700;">, picklists are a powerful tool for managing data in Salesforce, and can help to ensure consistency and accuracy in data entry, while also making it easier for users to find and select the appropriate values.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-white u-border-2 u-border-active-black u-border-custom-color-2 u-button-style u-hover-custom-color-2 u-radius-34 u-text-active-custom-color-2 u-text-black u-accordion-link-18" id="link-e060" aria-controls="e060" aria-selected="false">
+              <span class="u-accordion-link-text"> What is a formula field in Salesforce?</span><span class="u-accordion-link-icon u-icon u-icon-rounded u-radius-50 u-white u-icon-18"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-72b1"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-72b1"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-accordion-pane-18" id="e060" aria-labelledby="link-e060">
+              <div class="u-container-layout u-container-layout-18">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <p id="isPasted">Formula fields can be used to calculate values that are not directly stored in a record, or to combine multiple fields into a single value. For example, you can use a formula field to calculate the total amount of an opportunity by multiplying the quantity by the unit price. Another example is using a formula field to combine the first name and last name fields into a full name field.</p>
+                  <p>Formula fields can also be used to perform simple or complex mathematical calculations, conditional statements, or string manipulations. You can use functions such as IF, AND, OR, DATE, TEXT, and others to create complex formulas.</p>
+                  <p>Formula fields can be created on standard or custom objects, and they are evaluated in real-time, meaning that their value is calculated whenever a user or system accesses the record.</p>
+                  <p>When creating a formula field, it is important to ensure that the formula is accurate and does not violate any copyright or intellectual property laws. Plagiarism of formula expressions from external sources is not acceptable and can result in consequences for both the user and the organization. Therefore, it is recommended to use only original and verified formula expressions in Salesforce</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-white u-border-2 u-border-active-black u-border-custom-color-2 u-button-style u-hover-custom-color-2 u-radius-34 u-text-active-custom-color-2 u-text-black u-accordion-link-19" id="link-855e" aria-controls="855e" aria-selected="false">
+              <span class="u-accordion-link-text"> What is a validation rule in Salesforce?</span><span class="u-accordion-link-icon u-icon u-icon-rounded u-radius-50 u-white u-icon-19"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-d5bf"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-d5bf"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-accordion-pane-19" id="855e" aria-labelledby="link-855e">
+              <div class="u-container-layout u-container-layout-19">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <p id="isPasted">A validation rule is a set of criteria or conditions that are defined by an organization to ensure that the data entered into Salesforce meets certain standards or requirements. Validation rules are used to help maintain data integrity and consistency, and to prevent data entry errors or incorrect information from being stored in Salesforce.When a user enters data into a Salesforce record, the system checks to see if the data meets the validation criteria defined in the validation rule. If the data does not meet the criteria, the user is presented with an error message and asked to correct the data before the record can be saved.Validation rules can be defined for any standard or custom Salesforce object, including accounts, contacts, leads, opportunities, and custom objects. They can also be defined to check for a wide variety of data conditions, such as required fields, data formats, data ranges, unique values, and more.In addition to helping ensure data quality, validation rules can also be used to enforce business rules or policies, such as minimum order amounts, maximum discount percentages, or required product configurations.Overall, validation rules are an important tool for any organization that wants to maintain accurate and reliable data in Salesforce, and ensure that their business processes are running smoothly and efficiently.</p>
+                  <p>
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-white u-border-2 u-border-active-black u-border-custom-color-2 u-button-style u-hover-custom-color-2 u-radius-34 u-text-active-custom-color-2 u-text-black u-accordion-link-20" id="link-2f29" aria-controls="2f29" aria-selected="false">
+              <span class="u-accordion-link-text"> What is a process builder in Salesforce?</span><span class="u-accordion-link-icon u-icon u-icon-rounded u-radius-50 u-white u-icon-20"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-ddcf"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-ddcf"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-accordion-pane-20" id="2f29" aria-labelledby="link-2f29">
+              <div class="u-container-layout u-container-layout-20">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <p id="isPasted">Process Builder is a visual tool in Salesforce that allows users to automate complex business processes by defining a set of criteria and actions. With Process Builder, users can create automated processes that trigger actions, such as updating a record, creating a task, sending an email, or posting to Chatter.Process Builder is designed to be easy to use, even for non-technical users. It uses a simple point-and-click interface to define process criteria and actions, which means that users don't need to know how to write code to automate business processes.To create a process in Process Builder, users first define the criteria for when the process should run. This can be based on the record's field values, related records, or time-based triggers. Once the criteria have been defined, users can then specify the actions that should be taken when the criteria are met. For example, if the criteria are met, Process Builder could update a related record, create a task for a user, and send an email notification to a group of users.Process Builder can be used for a wide range of business processes, from simple to complex. It can help businesses streamline their operations and improve efficiency by automating manual tasks and reducing the risk of errors.In conclusion, Process Builder is a powerful tool in Salesforce that allows users to automate complex business processes without needing to write code. With its simple point-and-click interface, Process Builder is easy to use and can help businesses streamline their operations and improve efficiency.</p>
+                  <p>
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-white u-border-2 u-border-active-black u-border-custom-color-2 u-button-style u-hover-custom-color-2 u-radius-34 u-text-active-custom-color-2 u-text-black u-accordion-link-21" id="link-c952" aria-controls="c952" aria-selected="false">
+              <span class="u-accordion-link-text"> What is the difference between a master-detail relationship and a lookup relationship in Salesforce?</span><span class="u-accordion-link-icon u-icon u-icon-rounded u-radius-50 u-white u-icon-21"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-c099"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-c099"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-accordion-pane-21" id="c952" aria-labelledby="link-c952">
+              <div class="u-container-layout u-container-layout-21">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <p id="isPasted">A master-detail relationship is a type of relationship where the child object depends on the master object for its existence. The master object owns the detail object, and the detail object cannot exist without the master object. In other words, the detail object is a subordinate to the master object, and any changes made to the master object will automatically affect the detail object. A master-detail relationship is used when you want to ensure that the child object is always associated with a parent object.</p>
+                  <p>On the other hand, a lookup relationship is a type of relationship where the child object does not depend on the master object for its existence. The child object can exist without the parent object, and changes made to the parent object do not automatically affect the child object. In a lookup relationship, the child object has a field that references the parent object. This field is known as the lookup field, and it allows you to establish a relationship between two objects.</p>
+                  <p>Some of the differences between a master-detail relationship and a lookup relationship are as follows:</p>
+                  <p>Ownership: In a master-detail relationship, the master object owns the detail object, while in a lookup relationship, there is no ownership.</p>
+                  <p>Cascade Delete: In a master-detail relationship, if the master object is deleted, all the detail objects are deleted as well. In a lookup relationship, the child object is not deleted if the parent object is deleted.</p>
+                  <p>Roll-Up Summary Fields: In a master-detail relationship, you can create roll-up summary fields on the master object to summarize the data on the detail object. In a lookup relationship, you cannot create roll-up summary fields.</p>
+                  <p>Security: In a master-detail relationship, the security on the detail object is inherited from the master object. In a lookup relationship, the security is independent.</p>
+                  <p>In summary, a master-detail relationship is used when you want to ensure that the child object is always associated with a parent object, and changes made to the parent object affect the child object. A lookup relationship is used when you want to establish a relationship between two objects, but the child object does not depend on the parent object for its existence.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-white u-border-2 u-border-active-black u-border-custom-color-2 u-button-style u-hover-custom-color-2 u-radius-34 u-text-active-custom-color-2 u-text-black u-accordion-link-22" id="link-0367" aria-controls="0367" aria-selected="false">
+              <span class="u-accordion-link-text"> What is a chatter in Salesforce?</span><span class="u-accordion-link-icon u-icon u-icon-rounded u-radius-50 u-white u-icon-22"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-6c96"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-6c96"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-accordion-pane-22" id="0367" aria-labelledby="link-0367">
+              <div class="u-container-layout u-container-layout-22">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <p id="isPasted">A "chatter" in Salesforce refers to the collaboration platform that enables employees, customers, and partners to connect with each other and share information within the Salesforce ecosystem. Chatter offers a social media-like experience where users can post updates, follow other users, comment on posts, and share files.</p>
+                  <p>Chatter can be used to share information and knowledge within an organization, collaborate on projects, provide feedback, and stay updated on company news. It can also be used for customer engagement, where businesses can connect with their customers and address their queries or concerns.</p>
+                  <p>One of the key features of Chatter is its integration with other Salesforce tools, such as Salesforce CRM and Salesforce Communities. This integration allows users to access relevant information and collaborate with team members and customers from a single platform.</p>
+                  <p>In addition, Chatter also offers security and compliance features, such as data encryption, audit trails, and access controls, to ensure that sensitive information is protected.</p>
+                  <p>Overall, Chatter is a powerful tool for collaboration and communication within the Salesforce ecosystem, providing a centralized platform for users to connect, share information, and work together.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-white u-border-2 u-border-active-black u-border-custom-color-2 u-button-style u-hover-custom-color-2 u-radius-34 u-text-active-custom-color-2 u-text-black u-accordion-link-23" id="link-0da5" aria-controls="0da5" aria-selected="false">
+              <span class="u-accordion-link-text"> What is a dashboard in Salesforce?</span><span class="u-accordion-link-icon u-icon u-icon-rounded u-radius-50 u-white u-icon-23"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-b4f5"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-b4f5"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-accordion-pane-23" id="0da5" aria-labelledby="link-0da5">
+              <div class="u-container-layout u-container-layout-23">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <p id="isPasted">A Salesforce dashboard is made up of various components, including charts, tables, and gauges, that display data in real-time. Users can customize their dashboards to display the information they need, in the format they prefer. Dashboards can be created for specific users, teams, or the entire organization, and can be shared with others as needed.</p>
+                  <p>One of the benefits of using a dashboard in Salesforce is that it allows users to identify trends and patterns in their data quickly. They can then use this information to make informed decisions about their business strategy and operations. For example, a sales team might use a dashboard to track their progress towards their quarterly goals, while a customer service team might use a dashboard to monitor their response times and customer satisfaction ratings.</p>
+                  <p>In conclusion, a dashboard in Salesforce is a powerful tool for analyzing and interpreting data. It provides users with an easy-to-use, customizable interface that allows them to quickly gain insights into key metrics and trends. By using a dashboard, users can make data-driven decisions that can help them improve their business performance and achieve their goals.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-white u-border-2 u-border-active-black u-border-custom-color-2 u-button-style u-hover-custom-color-2 u-radius-34 u-text-active-custom-color-2 u-text-black u-accordion-link-24" id="link-655a" aria-controls="655a" aria-selected="false">
+              <span class="u-accordion-link-text"> What is a report in Salesforce?</span><span class="u-accordion-link-icon u-icon u-icon-rounded u-radius-50 u-white u-icon-24"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-3b20"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-3b20"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-accordion-pane-24" id="655a" aria-labelledby="link-655a">
+              <div class="u-container-layout u-container-layout-24">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <p id="isPasted">There are several types of reports available in Salesforce, including tabular reports, summary reports, matrix reports, and joined reports. Tabular reports display data in a simple table format, while summary reports group data based on a chosen criteria and display summary data such as totals and averages. Matrix reports organize data into a grid-like format with both horizontal and vertical grouping options, while joined reports combine data from two or more reports into a single view.</p>
+                  <p>To create a report in Salesforce, users must first select the report type and choose the fields they wish to include. They can then customize the report by adding filters, grouping data, and including charts or graphs to visualize the data. Once the report is created, users can save it for future reference, schedule it to run automatically, or share it with other users in the organization.</p>
+                  <p>It is important to note that while reports are a valuable tool for analyzing data in Salesforce, they are only as accurate as the data entered into the platform. It is therefore essential to maintain clean and up-to-date data to ensure the accuracy of reports and insights derived from them.</p>
+                  <p>In summary, a report in Salesforce is a powerful tool that allows users to analyze and visualize data stored in the platform, and can be customized to answer specific business questions or gain insights into data.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-1">
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Best Salesforce Interview Question and Answers | Admin | Flow</title>
+          <script type="text/javascript" language="javascript"> var aax_size='300x600';
+    var aax_pubname = 'thecloudhelp-21';
+    var aax_src='302'; </script>
+          <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+          <script type="text/javascript" language="javascript"> var aax_size='160x600';
+    var aax_pubname = 'thecloudhelp-21';
+    var aax_src='302'; </script>
+          <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-left u-clearfix u-grey-10 u-section-3" id="sec-9cc5">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h3 class="u-align-center u-text u-text-black u-text-1">LWC interview Question Answers&nbsp;</h3>
+        <div class="fr-view u-align-center u-clearfix u-rich-text u-text u-text-2">
+          <h6 style="text-align: left;">
+            <span style="font-weight: 700;">1. What are Lightning Web Components (LWC), and what's their significance?</span>
+          </h6>
+          <p style="text-align: left;">LWC is a programming model for building Lightning components on Salesforce that uses modern web standards such as Web Components, JavaScript, and HTML. The importance of LWCs is that they offer superior performance, are easier to build, and are simpler to maintain than Aura Components.</p>
+          <h6 style="text-align: left;">2. What distinguishes LWCs from Aura Components?</h6>
+          <p style="text-align: left;">LWCs are built on modern web standards, whereas Aura Components are built on a proprietary framework. LWCs are also faster and more straightforward to create and maintain.</p>
+          <h6 style="text-align: left;">3. How does an LWC differ from an Aura Component?</h6>
+          <p style="text-align: left;">LWCs utilize modern web standards such as Web Components, JavaScript, and HTML, whereas Aura Components are built on a proprietary framework. Additionally, LWCs provide better performance and are simpler to create and maintain.</p>
+          <h6 style="text-align: left;">4. What are the different phases in the lifecycle of an LWC?</h6>
+          <p style="text-align: left;">The lifecycle of an LWC consists of several stages, including creation, rendering, updating, and destruction. Each phase has its set of methods that you can use to alter the component and its data.</p>
+          <h6 style="text-align: left;">5. What's the difference between the @api and @track decorators?</h6>
+          <p style="text-align: left;">The @api decorator is utilized to expose a public property or method from the component, while the @track decorator is used to track changes to a property and update the component accordingly.</p>
+          <h6 style="text-align: left;">6. How does Lightning Data Service compare to Apex?</h6>
+          <p style="text-align: left;">Lightning Data Service allows you to access and manipulate Salesforce data in a declarative manner, while Apex is a server-side programming language used to create custom business logic.</p>
+          <h6 style="text-align: left;">7. What is a wire adapter in LWC, and what role does it play?</h6>
+          <p style="text-align: left;">A wire adapter is a JavaScript class that retrieves data from Salesforce or other sources and returns it to the component.</p>
+          <h6 style="text-align: left;">8. What is an LWC slot?</h6>
+          <p style="text-align: left;">An LWC slot is a placeholder in a component's HTML template that can be filled with content from another component.</p>
+          <h6 style="text-align: left;">9.How does a component differ from a module in LWC?</h6>
+          <p style="text-align: left;">A component is a UI element that encapsulates a particular functionality or behavior, while a module is a self-contained code unit that can be reused in several components.</p>
+          <h6 style="text-align: left;">10. What is the distinction between a directive and a component in LWC?</h6>
+          <p style="text-align: left;">A directive is a type of component that modifies the behavior or appearance of an element in the component's template, whereas a component is a stand-alone UI element with its template, JavaScript, and CSS.</p>
+          <h6 style="text-align: left;">11. How do getters and setters differ in LWC?</h6>
+          <p style="text-align: left;">A getter is a method that retrieves the value of a property, while a setter is a method that sets the value of a property.</p>
+          <h6 style="text-align: left;">12. How do Lightning web components compare to Aura Components?</h6>
+          <p style="text-align: left;">LWCs use modern web standards like Web Components, JavaScript, and HTML, while Aura Components are built on a proprietary framework. LWCs offer better performance and are easier to develop and maintain.</p>
+          <h6 style="text-align: left;">13. How does imperative data fetching differ from reactive data fetching in LWC?</h6>
+          <p style="text-align: left;">Imperative data fetching occurs when the component explicitly requests data from a data source, whereas reactive data fetching occurs when the component subscribes to a data source and updates automatically when changes occur.</p>
+          <h6 style="text-align: left;">14. How do @wire and @api differ in LWC?</h6>
+          <p style="text-align: left;">@api is used to expose a public property or method from the component, while @wire is used to retrieve data from a data source.</p>
+          <h6 style="text-align: left;">15. What is the role of the Lightning App Builder in LWC?</h6>
+          <p style="text-align: left;">The Lightning App Builder is a visual editor that allows users to create custom pages and apps using LWCs and other Lightning components.</p>
+          <h6 style="text-align: left;">16. How does LWC differ from Visualforce?</h6>
+          <p style="text-align: left;">Visualforce is a component-based framework that uses server-side rendering to generate HTML, while LWC is a client-side rendering framework that uses modern web standards such as Web Components, JavaScript, and HTML. LWC is also faster and more flexible than Visualforce.</p>
+          <h6 style="text-align: left;">17. What is the role of the Lightning Design System in LWC?</h6>
+          <p style="text-align: left;">The Lightning Design System is a set of CSS styles and guidelines that ensure consistency in the appearance and behavior of Lightning components. It's crucial to use the Lightning Design System in LWCs to maintain a cohesive user interface and provide a seamless experience for the end-users.</p>
+          <h6 style="text-align: left;">18 How does LWC support reusability?</h6>
+          <p style="text-align: left;">LWC supports reusability through the use of modules, which are self-contained units of code that can be reused in several components. Modules can include CSS, HTML, and JavaScript files, making it easier to create complex components with reusable functionality.</p>
+          <h6 style="text-align: left;">19. What is the difference between a component and a service in LWC?</h6>
+          <p style="text-align: left;">A component is a UI element that encapsulates a specific functionality or behavior, while a service is a standalone class that provides functionality that can be shared across multiple components. Services are used to implement complex logic, such as data retrieval and manipulation, that can be reused across components.</p>
+          <h6 style="text-align: left;">20. What is the significance of the @wire decorator in LWC?</h6>
+          <p style="text-align: left;">The @wire decorator is used to fetch data from an external data source and make it available in the component. It provides a declarative way of accessing data and handles the details of data retrieval and caching, making it easier to build scalable and performant applications.</p>
+          <h6 style="text-align: left;">21. What is the difference between a synchronous and asynchronous wire adapter?</h6>
+          <p style="text-align: left;">A synchronous wire adapter retrieves data immediately and blocks the UI until the data is available, while an asynchronous wire adapter retrieves data in the background and updates the UI when the data is ready. Asynchronous wire adapters are preferred because they provide a better user experience by not blocking the UI.</p>
+          <h6 style="text-align: left;">22. How does the LWC component hierarchy work?</h6>
+          <p style="text-align: left;">In LWC, components can be nested within other components to form a hierarchy. Each component has a parent-child relationship with other components, and data can be passed between components using component events and property binding.</p>
+          <h6 style="text-align: left;">23. What is the role of the Shadow DOM in LWC?</h6>
+          <p style="text-align: left;">The Shadow DOM is a feature of Web Components that enables encapsulation of a component's HTML, CSS, and JavaScript, preventing it from interfering with other components on the page. LWC uses the Shadow DOM to isolate components and ensure that they don't interfere with other elements on the page.</p>
+          <h6 style="text-align: left;">24. How does LWC support internationalization?</h6>
+          <p style="text-align: left;">LWC supports internationalization through the use of the Salesforce Translation Workbench, which provides a way to translate text labels and messages into multiple languages. LWC also supports the use of JavaScript's built-in internationalization features to format dates, times, and numbers based on the user's locale.</p>
+          <h6 style="text-align: left;">25. What are the best practices for developing LWCs?</h6>
+          <p style="text-align: left;">Some best practices for developing LWCs include using the Lightning Design System, following the principles of separation of concerns and reusability, minimizing the use of imperative code, and using @wire for data fetching. It's also essential to write clear and concise code, use meaningful names for components and variables, and test thoroughly to ensure that the component works as intended</p>
+          <h6 style="text-align: left;">26. What is the difference between a Lightning Web Component and a Visualforce page?</h6>
+          <p style="text-align: left;">A Lightning Web Component is built on modern web standards and can be used in Lightning Experience, Communities, and the Salesforce mobile app. In contrast, a Visualforce page is built on an older technology stack and is used primarily in Salesforce Classic.</p>
+          <h6 style="text-align: left;">27. What is the role of a JavaScript controller in a Lightning Web Component?</h6>
+          <p style="text-align: left;">A JavaScript controller in a Lightning Web Component is used to handle user interactions and modify the component's data and behavior based on those interactions.</p>
+          <h6 style="text-align: left;">28.What is a Lightning Message Channel, and how is it used in LWC?</h6>
+          <p style="text-align: left;">A Lightning Message Channel is a publish-subscribe messaging channel that allows LWCs and other Lightning components to communicate with each other. LWCs can use message channels to send and receive data and events with other components.</p>
+          <h6 style="text-align: left;">29. What is the difference between a property and an attribute in a Lightning Web Component?</h6>
+          <p style="text-align: left;">A property is a value that is stored in the component's JavaScript code and can be manipulated programmatically. An attribute, on the other hand, is a value that is defined in the component's HTML markup and is used to pass data from the parent component to the child component.</p>
+          <h6 style="text-align: left;">30. How can you add a third-party JavaScript library to a Lightning Web Component?</h6>
+          <p style="text-align: left;">To add a third-party JavaScript library to a Lightning Web Component, you can either import the library directly into the component's JavaScript file or include it as a static resource and reference it in the component's XML file.</p>
+          <h6 style="text-align: left;">32. What is the role of the wire service in LWC?</h6>
+          <p style="text-align: left;">The wire service in LWC is used to retrieve data from Salesforce or other external sources and pass it to the component. The wire service handles data caching and error handling, making it easier to work with data in LWCs.</p>
+          <h6 style="text-align: left;">33. What is the difference between a public property and a private property in a Lightning Web Component?</h6>
+          <p style="text-align: left;">A public property is a property that can be accessed and manipulated by other components or the component's parent component. In contrast, a private property is only accessible and modifiable within the component's JavaScript code.</p>
+          <h6 style="text-align: left;">34. How can you handle errors in a Lightning Web Component?</h6>
+          <p style="text-align: left;">You can handle errors in a Lightning Web Component by using the try-catch block in the component's JavaScript code. Additionally, you can use the @wire decorator to handle errors automatically and display error messages to the user.</p>
+          <h6 style="text-align: left;">35. What is the difference between a Lightning Web Component bundle and a module in JavaScript?</h6>
+          <p style="text-align: left;">A Lightning Web Component bundle is a collection of files that make up a single component, including its HTML, JavaScript, and CSS files. In contrast, a module in JavaScript is a self-contained block of code that can be imported and used in other code files.</p>
+          <h6 style="text-align: left;">36. How can you use Lightning Web Components in Visualforce pages?</h6>
+          <p style="text-align: left;">You can use Lightning Web Components in Visualforce pages by embedding them in a Lightning Out container. This allows you to use LWCs in Visualforce pages and other non-Lightning contexts.</p>
+          <h6 style="text-align: left;">37. What is the @api decorator in LWC, and how is it used?</h6>
+          <p style="text-align: left;">The @api decorator in LWC is used to define a public property that can be accessed and manipulated by other components or the component's parent component. This allows for greater flexibility and reusability of components.</p>
+          <h6 style="text-align: left;">38. What is the @wire decorator in LWC, and how is it used?</h6>
+          <p style="text-align: left;">The @wire decorator in LWC is used to fetch data from Salesforce or other external sources and pass it to the component. The wire service handles data caching and error handling, making it easier to work with data in LWCs.</p>
+          <h6 style="text-align: left;">39. What is the role of the HTML template in a Lightning Web Component?</h6>
+          <p style="text-align: left;">The HTML template in a Lightning Web Component defines the structure and layout of the component, including any child components and data bindings.</p>
+          <h6 style="text-align: left;">40. What is the role of the JavaScript class in a Lightning Web Component?</h6>
+          <p style="text-align: left;">The JavaScript class in a Lightning Web Component defines the component's behavior and functionality, including event handling, data manipulation, and communication with other components.</p>
+          <h6 style="text-align: left;">41. How can you use CSS styles in a Lightning Web Component?</h6>
+          <p style="text-align: left;">You can use CSS styles in a Lightning Web Component by including them in the component's CSS file or by using inline styles in the component's HTML template.</p>
+          <h6 style="text-align: left;">42. What is the role of the Shadow DOM in LWC?</h6>
+          <p style="text-align: left;">The Shadow DOM in LWC provides encapsulation for the component's HTML and CSS, preventing style clashes and allowing for more modular and reusable components.</p>
+          <h6 style="text-align: left;">43. What is a Lightning App Builder, and how is it used with LWCs?</h6>
+          <p style="text-align: left;">A Lightning App Builder is a drag-and-drop tool that allows you to build custom pages and apps in Salesforce. You can use LWCs in App Builder to create custom components and add them to your pages and apps.</p>
+          <h6 style="text-align: left;">44. What is a Lightning Web Component bundle, and what files does it contain?</h6>
+          <p style="text-align: left;">A Lightning Web Component bundle is a collection of files that make up a single component. The bundle typically contains an HTML template file, a JavaScript class file, a CSS file, and a metadata file.</p>
+          <h6 style="text-align: left;">45. What is the role of the @track decorator in LWC, and when should you use it?</h6>
+          <p style="text-align: left;">The @track decorator in LWC is used to mark a property as reactive, meaning that changes to the property will automatically trigger updates to the component's UI. You should use @track for any properties that may be modified during the component's lifecycle.</p>
+          <h6 style="text-align: left;">46. How can you use Lightning Web Components in Lightning Flow?</h6>
+          <p style="text-align: left;">You can use Lightning Web Components in Lightning Flow by adding the LWC as a screen component and passing data to and from the component using flow variables. This allows you to create more interactive and customized flows in Salesforce.</p>
+          <h6 style="text-align: left;">47. What is the difference between @wire and imperative Apex calls in LWC?</h6>
+          <p style="text-align: left;">@wire is a declarative way to fetch data from Salesforce or other external sources, while imperative Apex calls are executed directly from the component's JavaScript code. @wire is typically used for simple data fetching scenarios, while imperative Apex calls are used for more complex operations or when you need more control over the data flow.</p>
+          <h6 style="text-align: left;">48. What is the role of the connectedCallback() lifecycle hook in LWC?</h6>
+          <p style="text-align: left;">The connectedCallback() lifecycle hook in LWC is called when the component is inserted into the DOM. This is a good place to perform any initialization logic, such as fetching data or setting up event listeners.</p>
+          <h6 style="text-align: left;">49. What is the role of the disconnectedCallback() lifecycle hook in LWC?</h6>
+          <p style="text-align: left;">The disconnectedCallback() lifecycle hook in LWC is called when the component is removed from the DOM. This is a good place to perform any cleanup logic, such as removing event listeners or canceling data subscriptions.</p>
+          <h6 style="text-align: left;">50. How can you pass data from a child component to a parent component in LWC?</h6>
+          <p style="text-align: left;">You can pass data from a child component to a parent component in LWC by dispatching a custom event from the child component and handling it in the parent component. The event can contain any data that needs to be passed.</p>
+          <h6 style="text-align: left;">51. How can you communicate between sibling components in LWC?</h6>
+          <p style="text-align: left;">You can communicate between sibling components in LWC by using a shared parent component as a mediator. The parent component can pass data between the siblings using custom events or by passing data through the parent's public properties.</p>
+          <h6 style="text-align: left;">52. What is the role of the Lightning Data Service in LWC?</h6>
+          <p style="text-align: left;">The Lightning Data Service in LWC is a declarative way to fetch and manipulate data in Salesforce without writing Apex code. It provides a standardized way to interact with Salesforce data and automatically handles data caching and error handling.</p>
+          <h6 style="text-align: left;">53. What is the role of the @api get method in LWC, and how is it used?</h6>
+          <p style="text-align: left;">The @api get method in LWC is used to define a public property that can be accessed and read by other components or the component's parent component. This allows for greater flexibility and reusability of components.</p>
+          <h6 style="text-align: left;">54. What is the role of the @api set method in LWC, and how is it used?</h6>
+          <p style="text-align: left;">The @api set method in LWC is used to define a public property that can be accessed and modified by other components or the component's parent component. This allows for greater flexibility and reusability of components.</p>
+          <h6 style="text-align: left;">55. What is the role of the render() method in LWC, and when should you use it?</h6>
+          <p style="text-align: left;">The render() method in LWC is used to customize the component's rendering behavior, such as modifying the HTML or CSS output. You should use the render() method when you need to customize the component's rendering behavior beyond what is possible with the template or CSS.</p>
+          <h6 style="text-align: left;">57. What is the role of the Lightning Message Service in LWC, and how is it used?</h6>
+          <p style="text-align: left;">The Lightning Message Service in LWC is used to communicate between components that may not have a direct parent-child relationship. It allows components to subscribe to and publish messages, which can be used to share data or trigger actions between components.</p>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-left u-clearfix u-grey-10 u-section-4" id="sec-86a8">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="fr-view u-clearfix u-rich-text u-text u-text-1">
+          <h1 style="text-align: center;">Flow Interview QnA</h1>
+          <h6 id="isPasted">1. What is Salesforce Flow?</h6>
+          <p>Salesforce Flow is a tool that allows users to automate processes and streamline business operations by visually designing and executing a sequence of screens, forms, and rules without the need for code.</p>
+          <h6>2. How do you create a flow in Salesforce?</h6>
+          <p>To create a flow in Salesforce, navigate to the Flow Builder tool and use the drag-and-drop interface to build a sequence of screens, forms, and rules.</p>
+          <h6>3. What is a flow interview in Salesforce?</h6>
+          <p>A flow interview is a process in which a user interacts with a flow in Salesforce, providing input and following the sequence of screens, forms, and rules defined in the flow.</p>
+          <h6>4. How do you start a flow interview in Salesforce?</h6>
+          <p>To start a flow interview in Salesforce, you can create a button or link on a record page or custom page, embed the flow in a Lightning component or Visualforce page, or use the URL for the flow.</p>
+          <h6>5. What are the different types of elements in Salesforce Flow?</h6>
+          <p>The different types of elements in Salesforce Flow include screens, forms, fields, variables, decisions, loops, and assignments.</p>
+          <h6>6. What is a screen element in Salesforce Flow?</h6>
+          <p>A screen element in Salesforce Flow is a visual interface that allows users to input data and interact with the flow.</p>
+          <h6>7. What is a form element in Salesforce Flow?</h6>
+          <p>A form element in Salesforce Flow is a collection of fields that allows users to input data and interact with the flow.</p>
+          <h6>8. What is a decision element in Salesforce Flow?</h6>
+          <p>A decision element in Salesforce Flow is a rule that evaluates a condition and determines which path the flow should take based on the result.</p>
+          <h6>9. What is a loop element in Salesforce Flow?</h6>
+          <p>A loop element in Salesforce Flow is a sequence of actions that repeats a specified number of times or until a condition is met.</p>
+          <h6>10. What is an assignment element in Salesforce Flow?</h6>
+          <p>An assignment element in Salesforce Flow is a process that assigns a value to a variable or a field.</p>
+          <h6>11. What is a subflow in Salesforce Flow?</h6>
+          <p>A subflow in Salesforce Flow is a sequence of actions that can be reused within a flow or across different flows.</p>
+          <h6>12. How do you debug a flow in Salesforce?</h6>
+          <p>To debug a flow in Salesforce, you can use the flow debug log to view the sequence of actions and identify any errors or issues.</p>
+          <h6>13. What is a record-triggered flow in Salesforce?</h6>
+          <p>A record-triggered flow in Salesforce is a type of flow that is automatically triggered when a record is created, updated, or deleted.</p>
+          <h6>14. What is a scheduled flow in Salesforce?</h6>
+          <p>A scheduled flow in Salesforce is a type of flow that is automatically triggered at a specified time or interval.</p>
+          <h6>15. What is a flow template in Salesforce?</h6>
+          <p>A flow template in Salesforce is a pre-built flow that can be customized and reused by users.</p>
+          <h6>16. What is a dynamic record choice element in Salesforce Flow?</h6>
+          <p>A dynamic record choice element in Salesforce Flow is an interface that allows users to select a record from a list based on a specified criteria.</p>
+          <h6>17. What is a collection variable in Salesforce Flow?</h6>
+          <p>A collection variable in Salesforce Flow is a variable that stores a collection of data, such as a list of records.</p>
+          <h6>18. What is a formula element in Salesforce Flow?</h6>
+          <p>A formula element in Salesforce Flow is a process that performs a calculation or manipulation of data based on a specified formula.</p>
+          <h6>19. What is a fast lookup element in Salesforce Flow?</h6>
+          <p>A fast lookup element in Salesforce Flow is a process that searches for a record based on a specified criteria and retrieves its data.</p>
+          <h6>20. What is a loop and iterate element in Salesforce Flow?</h6>
+          <p>A loop and iterate element in Salesforce Flow is a process that iterates over a collection of data, such as a list of records, and performs a specified action for each item.</p>
+          <h6>21. What is a connector in Salesforce Flow?</h6>
+          <p>A connector in Salesforce Flow is an integration tool that allows users to connect to external systems and services.</p>
+          <h6>22. How do you use a connector in Salesforce Flow?</h6>
+          <p>To use a connector in Salesforce Flow, you can add a connector element to the flow and configure it with the necessary authentication and parameters.</p>
+          <h6>23. What is a screen flow in Salesforce?</h6>
+          <p>A screen flow in Salesforce is a type of flow that guides users through a series of screens and forms to collect and process data.</p>
+          <h6>24. What is an autolaunched flow in Salesforce?</h6>
+          <p>An autolaunched flow in Salesforce is a type of flow that can be triggered by an external system or API.</p>
+          <h6>25. What is a flow interview finish element in Salesforce?</h6>
+          <p>A flow interview finish element in Salesforce is a process that concludes the flow interview and returns the user to the previous screen or page.</p>
+          <h6>26. What is a fault element in Salesforce Flow?</h6>
+          <p>A fault element in Salesforce Flow is a process that handles errors and exceptions that may occur during the execution of the flow.</p>
+          <h6>27. What is a screen flow component in Salesforce?</h6>
+          <p>A screen flow component in Salesforce is a reusable component that can be added to a screen flow to provide additional functionality and customization.</p>
+          <h6>28. What is a lookup element in Salesforce Flow?</h6>
+          <p>A lookup element in Salesforce Flow is a process that searches for a record based on a specified criteria and returns its ID or data.</p>
+          <h6>29. What is a decision table in Salesforce Flow?</h6>
+          <p>A decision table in Salesforce Flow is a table that defines a set of rules and conditions and determines the outcome based on the input.</p>
+          <h6>30. What is a formula resource in Salesforce Flow?</h6>
+          <p>A formula resource in Salesforce Flow is a reusable formula that can be used in multiple elements and flows.</p>
+          <h6>31. What is a flow resource in Salesforce?</h6>
+          <p>A flow resource in Salesforce is a reusable element or subflow that can be shared across multiple flows.</p>
+          <h6>32. What is a flow record update in Salesforce?</h6>
+          <p>A flow record update in Salesforce is a process that updates a record in a specified object based on the input data and criteria.</p>
+          <h6>33. What is a flow record create in Salesforce?</h6>
+          <p>A flow record create in Salesforce is a process that creates a new record in a specified object based on the input data and criteria.</p>
+          <h6>34. What is a flow record delete in Salesforce?</h6>
+          <p>A flow record delete in Salesforce is a process that deletes a record in a specified object based on the input data and criteria.</p>
+          <h6>35. What is a flow input variable in Salesforce?</h6>
+          <p>A flow input variable in Salesforce is a variable that receives input data from an external system or user and can be used in the flow.</p>
+          <h6>36. What is a flow output variable in Salesforce?</h6>
+          <p>A flow output variable in Salesforce is a variable that stores output data from the flow and can be used by an external system or user.</p>
+          <h6>37. What is a formula resource in Salesforce Flow?</h6>
+          <p>A formula resource in Salesforce Flow is a reusable formula that can be used in multiple elements and flows.</p>
+          <h6>38. What is a flow resource in Salesforce?</h6>
+          <p>A flow resource in Salesforce is a reusable element or subflow that can be shared across multiple flows.</p>
+          <h6>39. What is a flow record update in Salesforce?</h6>
+          <p>A flow record update in Salesforce is a process that updates a record in a specified object based on the input data and criteria.</p>
+          <h6>40. What is a flow record create in Salesforce?</h6>
+          <p>A flow record create in Salesforce is a process that creates a new record in a specified object based on the input data and criteria.</p>
+          <h6>41. What is a flow record delete in Salesforce?</h6>
+          <p>A flow record delete in Salesforce is a process that deletes a record in a specified object based on the input data and criteria.</p>
+          <h6>42. What is a flow input variable in Salesforce?</h6>
+          <p>A flow input variable in Salesforce is a variable that receives input data from an external system</p>
+          <h6>43. How can you debug a Salesforce Flow?</h6>
+          <p>To debug a Salesforce Flow, you can use the Debug mode, which allows you to step through the flow and view the values of variables and elements.</p>
+          <h6>44. What is a loop in Salesforce Flow?</h6>
+          <p>A loop in Salesforce Flow is a process that repeats a set of actions for each record in a collection or a set number of times.</p>
+          <h6>45. How do you use a loop in Salesforce Flow?</h6>
+          <p>To use a loop in Salesforce Flow, you can add a loop element to the flow and configure it with the necessary parameters and actions.</p>
+          <h6>46. What is a subflow in Salesforce Flow?</h6>
+          <p>A subflow in Salesforce Flow is a reusable flow that can be called from another flow to perform a specific task.</p>
+          <h6>47. How do you create a subflow in Salesforce Flow?</h6>
+          <p>To create a subflow in Salesforce Flow, you can create a new flow and set its type to "Subflow," then add the necessary elements and actions.</p>
+          <h6>48. What is a wait element in Salesforce Flow?</h6>
+          <p>A wait element in Salesforce Flow is a process that pauses the flow for a specified period of time before continuing to the next action.</p>
+          <h6>49. What is a dynamic choice in Salesforce Flow?</h6>
+          <p>A dynamic choice in Salesforce Flow is a list of values that are retrieved from an external system or object and can be used as input for a user or automated decision.</p>
+          <p>
+            <br>
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer class="u-clearfix u-custom-color-2 u-footer" id="sec-3cbe"><div class="u-clearfix u-sheet u-valign-middle-md u-valign-top-sm u-sheet-1">
+        <div class="u-clearfix u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xl u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xs u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+                <div class="u-container-layout u-container-layout-1">
+                  <div class="u-clearfix u-group-elements u-group-elements-1">
+                    <img class="u-image u-image-circle u-image-contain u-opacity u-opacity-90 u-preserve-proportions u-image-1" src="https://firebasestorage.googleapis.com/v0/b/myproject-c0609.appspot.com/o/soql%2FUntitled%20design%20(1).gif?alt=media&amp;token=a60fed89-8702-4b68-8c11-7bebc71811bc" alt="" data-image-width="90" data-image-height="90">
+                    <h4 class="u-custom-font u-font-raleway u-text u-text-1">the Cloud help</h4>
+                    <p class="u-text u-text-2">Get notes, Blogs and Learn with Ease.</p>
+                  </div>
+                  <div class="u-social-icons u-spacing-10 u-social-icons-1">
+                    <a class="u-social-url" title="YouTube" target="_blank" href="https://youtube.com/@sfdchelp?sub_confirmation=1"><span class="u-file-icon u-icon u-social-facebook u-social-icon u-text-white u-icon-1"><img src="/images/717426-11575112.png" alt=""></span>
+                    </a>
+                    <a class="u-social-url" title="Telegram" target="_blank" href="https://t.me/sfdchelps"><span class="u-file-icon u-icon u-social-icon u-social-twitter u-text-white u-icon-2"><img src="/images/1946523-46930ff6.png" alt=""></span>
+                    </a>
+                    <a class="u-social-url" title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/vishugrade"><span class="u-file-icon u-icon u-social-icon u-social-instagram u-text-white u-icon-3"><img src="/images/2111532-9345b781.png" alt=""></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-2">
+                  <div class="u-border-2 u-border-custom-color-4 u-hidden-lg u-hidden-md u-hidden-xl u-line u-line-horizontal u-opacity u-opacity-90 u-line-1"></div>
+                  <div class="u-container-style u-group u-shape-rectangle u-group-1">
+                    <div class="u-container-layout">
+                      <a href="/SOQL.html" class="u-btn u-button-link u-button-style u-none u-text-white u-btn-1">MENU</a>
+                      <p class="u-custom-font u-font-roboto u-text u-text-white u-text-3">
+                        <a href="/SOQL.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-grey-10 u-btn-2"> &nbsp;SOQL</a>
+                      </p>
+                      <p class="u-custom-font u-font-roboto u-text u-text-4">
+                        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-grey-10 u-btn-3" href="/LWC.html"> &nbsp;LWC</a>
+                      </p>
+                      <p class="u-custom-font u-font-roboto u-text u-text-5">
+                        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-grey-15 u-btn-4" href="/Apex-in-Salesforce-.html"> &nbsp;APEX</a>
+                      </p>
+                      <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-grey-15 u-btn-5" href="/Salesforce-Interview-QnA.html"> &nbsp;QNA</a>
+                    </div>
+                  </div>
+                  <div class="u-container-style u-group u-shape-rectangle u-group-2">
+                    <div class="u-container-layout">
+                      <a href="/SOQL.html" class="u-btn u-button-link u-button-style u-none u-text-white u-btn-6">Services</a>
+                      <p class="u-custom-font u-font-roboto u-text u-text-white u-text-6">
+                        <a href="/blog/about.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-grey-10 u-btn-7"> &nbsp;About</a>
+                      </p>
+                      <p class="u-custom-font u-font-roboto u-text u-text-7">
+                        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-grey-10 u-btn-8" href="/blog/privacy-policy.html"> &nbsp;Privacy Policy</a>
+                      </p>
+                      <p class="u-custom-font u-font-roboto u-text u-text-8">
+                        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-grey-10 u-btn-9" href="/blog/disclaimer.html">Disclaimer</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="u-border-3 u-border-custom-color-4 u-hidden-sm u-hidden-xs u-line u-line-vertical u-line-2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div></footer>
+   <span style="height: 64px; width: 64px; margin-left: 0px; margin-right: auto; margin-top: 0px; right: 20px; bottom: 20px; padding: 3px;" class="u-back-to-top u-border-2 u-border-custom-color-4 u-file-icon u-icon u-icon-circle u-opacity u-opacity-85" data-href="#"><img src="/images/9995237.png" alt=""></span>
+  
+</body></html>
