@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html style="font-size: 14px;" lang="en-IN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Salesforce, Flow, LWC, SOQL, Salesforce Admin, Salesforce Voucher,Salesforce interview questions,Salesforce interview tips, Salesforce job interview, Salesforce interview process, How to prepare for a Salesforce interview
+Salesforce interview techniques,Salesforce interview answers, Salesforce interview guide, Common Salesforce interview questions, Salesforce interview experience">
+    <meta name="description" content="Looking to learn Apex in Salesforce? Look no further! Our comprehensive guide to mastering Apex will take you from beginner to expert in no time. Whether you're a seasoned developer or just getting started, our step-by-step tutorials and hands-on exercises will help you become proficient in one of the most powerful programming languages for building custom applications on the Salesforce platform. Start your journey to becoming an Apex pro today!">
+    <title>Learn Apex in Salesforce</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Apex-in-Salesforce-.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    
+    <link rel="canonical" href="https://thecloudhelp.in/apex">
+    <link rel="icon" href="images/139265371-014.png">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "theCloudhelp",
+		"url": "https://thecloudhelp.in/apex",
+		"logo": "/images/139265371-014.png?rand=8e93",
+		"sameAs": [
+				"https://youtube.com/@sfdchelp?sub_confirmation=1",
+				"https://t.me/sfdchelps",
+				"https://www.linkedin.com/in/vishugrade",
+				"https://youtube.com/@sfdchelp?sub_confirmation=1",
+				"https://t.me/sfdchelps",
+				"https://www.linkedin.com/in/vishugrade"
+		]
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Learn Apex in Salesforce">
+    <meta property="og:description" content="Looking to learn Apex in Salesforce? Look no further! Our comprehensive guide to mastering Apex will take you from beginner to expert in no time. Whether you're a seasoned developer or just getting started, our step-by-step tutorials and hands-on exercises will help you become proficient in one of the most powerful programming languages for building custom applications on the Salesforce platform. Start your journey to becoming an Apex pro today!">
+    <meta property="og:url" content="https://thecloudhelp.in/apex">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body class="u-body u-xl-mode" data-lang="en"><header class="test u-align-center-sm u-align-center-xs u-clearfix u-header u-sticky u-sticky-21ea u-white u-header" id="sec-f7d7" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-valign-middle-sm u-sheet-1">
+        <a href="thecloudhelp.in" class="u-enable-responsive u-image u-logo u-image-1" data-image-width="90" data-image-height="90" title="theCloudhelp">
+          <img src="/images/139265371-014.png?rand=8e93" class="u-logo-image u-logo-image-1">
+        </a>
+        <div class="u-enable-responsive u-social-icons u-spacing-10 u-social-icons-1">
+          <a class="u-social-url" title="Youtube" target="_blank" href="https://youtube.com/@sfdchelp?sub_confirmation=1"><span class="u-file-icon u-icon u-social-facebook u-social-icon u-icon-1"><img src="/images/160205.png" alt=""></span>
+          </a>
+          <a class="u-social-url" title="Telegram" target="_blank" href="https://t.me/sfdchelps"><span class="u-file-icon u-icon u-social-icon u-social-twitter u-icon-2"><img src="/images/253802.png" alt=""></span>
+          </a>
+          <a class="u-social-url" title="linkedin" target="_blank" href="https://www.linkedin.com/in/vishugrade"><span class="u-file-icon u-icon u-social-icon u-social-instagram u-text-black u-icon-3"><img src="/images/160168.png" alt=""></span>
+          </a>
+        </div>
+        <nav class="u-align-left u-menu u-menu-one-level u-menu-1">
+          <div class="menu-collapse u-custom-font u-font-roboto" style="font-size: 1rem; font-weight: 700;">
+            <a class="u-button-style u-custom-active-color u-custom-color u-custom-hover-color u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-file-icon u-nav-link u-file-icon-4" href="#">
+              <img src="/images/10080458.png" alt="">
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-custom-font u-font-roboto u-nav u-spacing-2 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-active-custom-color-2 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-hover-white u-nav-link u-text-active-custom-color-4 u-text-black u-text-hover-grey-75" href="/Home.html" style="padding: 10px 20px;">Home</a>
+</li><li class="u-nav-item"><a class="u-active-custom-color-2 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-hover-white u-nav-link u-text-active-custom-color-4 u-text-black u-text-hover-grey-75" href="/SOQL.html" style="padding: 10px 20px;">SOQL</a>
+</li><li class="u-nav-item"><a class="u-active-custom-color-2 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-hover-white u-nav-link u-text-active-custom-color-4 u-text-black u-text-hover-grey-75" href="/Apex-in-Salesforce-.html" style="padding: 10px 20px;">Apex</a>
+</li><li class="u-nav-item"><a class="u-active-custom-color-2 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-hover-white u-nav-link u-text-active-custom-color-4 u-text-black u-text-hover-grey-75" href="/Salesforce-Interview-QnA.html" style="padding: 10px 20px;">Interview Q&amp;A</a>
+</li><li class="u-nav-item"><a class="u-active-custom-color-2 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-hover-white u-nav-link u-text-active-custom-color-4 u-text-black u-text-hover-grey-75" href="/LWC.html" style="padding: 10px 22px 10px 20px;">LWC</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-align-center u-container-style u-custom-color-2 u-inner-container-layout u-sidenav u-sidenav-1" data-offcanvas-width="390">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close u-menu-close-1"></div>
+                <ul class="u-align-left u-custom-font u-font-lato u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Home.html">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/SOQL.html">SOQL</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Apex-in-Salesforce-.html">Apex</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Salesforce-Interview-QnA.html">Interview Q&amp;A</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/LWC.html">LWC</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+        <h5 class="u-align-left-xs u-custom-font u-enable-responsive u-font-raleway u-text u-text-1">the Cloud help</h5>
+      </div><style class="u-sticky-style" data-style-id="21ea">.u-sticky-fixed.u-sticky-21ea, .u-body.u-sticky-fixed .u-sticky-21ea {
+box-shadow: 0px 2px 8px 0px rgba(128,128,128,1) !important
+}.u-sticky-fixed.u-sticky-21ea:before, .u-body.u-sticky-fixed .u-sticky-21ea:before {
+borders: top right bottom left !important
+}</style></header>
+    <section class="blurnow u-clearfix u-section-1" id="sec-52ab">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1"><!--blog--><!--blog_options_json--><!--{"type":"Custom","source":"APEX","tags":"","count":""}--><!--/blog_options_json-->
+        <div class="u-blog u-expanded-width u-blog-1">
+          <div class="u-repeater u-repeater-1"><!--blog_post-->
+            <div class="u-align-center u-blog-post u-container-style u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
+                <a class="u-post-header-link" href="/blog/10-tips-for-successful-apex-development-in-salesforce-1.html"><!--blog_post_image-->
+                  <img class="u-blog-control u-expanded-width u-image u-image-1" src="/images/k.png" data-image-width="1280" data-image-height="720" data-animation-name="customAnimationIn" data-animation-duration="1500"><!--/blog_post_image-->
+                </a><!--blog_post_header-->
+                <h1 class="u-blog-control u-text u-text-custom-color-2 u-title u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500">
+                  <a class="u-post-header-link" href="/blog/10-tips-for-successful-apex-development-in-salesforce-1.html"><!--blog_post_header_content-->10 Tips for Successful Apex Development in Salesforce<!--/blog_post_header_content--></a>
+                </h1><!--/blog_post_header--><!--blog_post_content-->
+                <div class="u-blog-control u-post-content u-text u-text-black u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1500"><!--blog_post_content_content-->IntroductionApex is a unique programming language used to customize Salesforce applications and automate business processes. Apex code is executed on the Salesforce platform and has specific rules and limits. To develop efficient and effective Apex code, ...<!--/blog_post_content_content--></div><!--/blog_post_content--><!--blog_post_metadata-->
+                <div class="u-blog-control u-metadata u-text-black u-metadata-1"><!--blog_post_metadata_date-->
+                  <span class="u-meta-date u-meta-icon"><!--blog_post_metadata_date_content-->Sun Apr 09 2023<!--/blog_post_metadata_date_content--></span><!--/blog_post_metadata_date--><!--blog_post_metadata_category-->
+                  <span class="u-meta-category u-meta-icon"><!--blog_post_metadata_category_content-->Category<!--/blog_post_metadata_category_content--></span><!--/blog_post_metadata_category-->
+                </div><!--/blog_post_metadata--><!--blog_post_readmore-->
+                <a href="/blog/10-tips-for-successful-apex-development-in-salesforce-1.html" class="u-blog-control u-border-none u-btn u-button-style u-custom-color-2 u-hover-custom-color-5 u-btn-1" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-direction="X"><!--blog_post_readmore_content--><!--options_json--><!--{"content":"","defaultValue":"Read More"}--><!--/options_json-->Read More<!--/blog_post_readmore_content--></a><!--/blog_post_readmore-->
+              </div>
+            </div><!--/blog_post-->
+          </div>
+        </div><!--/blog-->
+      </div>
+    </section>
+    
+    
+    <footer class="u-clearfix u-custom-color-2 u-footer" id="sec-3cbe"><div class="u-clearfix u-sheet u-valign-middle-md u-valign-top-sm u-sheet-1">
+        <div class="u-clearfix u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xl u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xs u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+                <div class="u-container-layout u-container-layout-1">
+                  <div class="u-clearfix u-group-elements u-group-elements-1">
+                    <img class="u-image u-image-circle u-image-contain u-opacity u-opacity-90 u-preserve-proportions u-image-1" src="https://firebasestorage.googleapis.com/v0/b/myproject-c0609.appspot.com/o/soql%2FUntitled%20design%20(1).gif?alt=media&amp;token=a60fed89-8702-4b68-8c11-7bebc71811bc" alt="" data-image-width="90" data-image-height="90">
+                    <h4 class="u-custom-font u-font-raleway u-text u-text-1">the Cloud help</h4>
+                    <p class="u-text u-text-2">Get notes, Blogs and Learn with Ease.</p>
+                  </div>
+                  <div class="u-social-icons u-spacing-10 u-social-icons-1">
+                    <a class="u-social-url" title="YouTube" target="_blank" href="https://youtube.com/@sfdchelp?sub_confirmation=1"><span class="u-file-icon u-icon u-social-facebook u-social-icon u-text-white u-icon-1"><img src="/images/717426-11575112.png" alt=""></span>
+                    </a>
+                    <a class="u-social-url" title="Telegram" target="_blank" href="https://t.me/sfdchelps"><span class="u-file-icon u-icon u-social-icon u-social-twitter u-text-white u-icon-2"><img src="/images/1946523-46930ff6.png" alt=""></span>
+                    </a>
+                    <a class="u-social-url" title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/vishugrade"><span class="u-file-icon u-icon u-social-icon u-social-instagram u-text-white u-icon-3"><img src="/images/2111532-9345b781.png" alt=""></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-2">
+                  <div class="u-border-2 u-border-custom-color-4 u-hidden-lg u-hidden-md u-hidden-xl u-line u-line-horizontal u-opacity u-opacity-90 u-line-1"></div>
+                  <div class="u-container-style u-group u-shape-rectangle u-group-1">
+                    <div class="u-container-layout">
+                      <a href="/SOQL.html" class="u-btn u-button-link u-button-style u-none u-text-white u-btn-1">MENU</a>
+                      <p class="u-custom-font u-font-roboto u-text u-text-white u-text-3">
+                        <a href="/SOQL.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-grey-10 u-btn-2"> &nbsp;SOQL</a>
+                      </p>
+                      <p class="u-custom-font u-font-roboto u-text u-text-4">
+                        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-grey-10 u-btn-3" href="/LWC.html"> &nbsp;LWC</a>
+                      </p>
+                      <p class="u-custom-font u-font-roboto u-text u-text-5">
+                        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-grey-15 u-btn-4" href="/Apex-in-Salesforce-.html"> &nbsp;APEX</a>
+                      </p>
+                      <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-grey-15 u-btn-5" href="/Salesforce-Interview-QnA.html"> &nbsp;QNA</a>
+                    </div>
+                  </div>
+                  <div class="u-container-style u-group u-shape-rectangle u-group-2">
+                    <div class="u-container-layout">
+                      <a href="/SOQL.html" class="u-btn u-button-link u-button-style u-none u-text-white u-btn-6">Services</a>
+                      <p class="u-custom-font u-font-roboto u-text u-text-white u-text-6">
+                        <a href="/blog/about.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-grey-10 u-btn-7"> &nbsp;About</a>
+                      </p>
+                      <p class="u-custom-font u-font-roboto u-text u-text-7">
+                        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-grey-10 u-btn-8" href="/blog/privacy-policy.html"> &nbsp;Privacy Policy</a>
+                      </p>
+                      <p class="u-custom-font u-font-roboto u-text u-text-8">
+                        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-grey-10 u-btn-9" href="/blog/disclaimer.html">Disclaimer</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="u-border-3 u-border-custom-color-4 u-hidden-sm u-hidden-xs u-line u-line-vertical u-line-2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div></footer>
+   
+  
+</body></html>
