@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://salesforcetutorials.in/</loc>
+	<lastmod>2023-04-20T07:41:49+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://salesforcetutorials.in/apex.html</loc>
+	<lastmod>2023-04-20T07:41:49+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://salesforcetutorials.in/QnA.html</loc>
+	<lastmod>2023-04-20T07:41:49+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://salesforcetutorials.in/lwc.html</loc>
+	<lastmod>2023-04-20T07:41:49+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://salesforcetutorials.in/blog/privacy-policy.html</loc>
+	<lastmod>2023-04-20T07:41:49+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://salesforcetutorials.in/blog/roadmap-to-learn-lwc.html</loc>
+	<lastmod>2023-04-20T07:41:49+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://salesforcetutorials.in/blog/best-chrome-extensions-for-salesforce.html</loc>
+	<lastmod>2023-04-20T07:41:49+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://salesforcetutorials.in/blog/10-tips-for-successful-apex-development-in-salesforce-1.html</loc>
+	<lastmod>2023-04-20T07:41:49+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://salesforcetutorials.in/blog/step-by-step-guide-to-creating-a-trailhead-account.html</loc>
+	<lastmod>2023-04-20T07:41:49+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://salesforcetutorials.in/disclaimer.html</loc>
+	<lastmod>2023-04-20T07:41:49+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://salesforcetutorials.in/t&amp;c.html</loc>
+	<lastmod>2023-04-20T07:41:49+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://salesforcetutorials.in/QnA</loc>
+	<lastmod>2023-04-20T07:41:52+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+</urlset>
