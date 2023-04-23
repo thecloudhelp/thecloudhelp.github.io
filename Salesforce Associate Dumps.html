@@ -155,7 +155,20 @@ borders: bottom !important; border-color: #000000 !important; border-width: 1px 
                 </div>
                 <div class="u-container-layout u-container-layout-3">
                   <div class="u-align-center u-clearfix u-custom-html u-custom-html-1">
-                    <iframe src="https://app.box.com/embed/s/oc4qfud2p4k9ds26b9r5kl58in4dby91?sortColumn=date" width="800" height="900" frameborder="0" allowfullscreen="" webkitallowfullscreen="" msallowfullscreen=""></iframe>
+			  
+			  <div id="viewer" style="width: 100%; height: 500px;"></div>
+  <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
+  <script>
+    const config = { 
+      documentId: '96ae2cd4-2eb9-40f6-b047-f4017f3e869f',
+      darkMode: true, 
+      token: '' //add your server side generated security token or change your document permission to public
+    };
+    CloudPDF(config, document.getElementById('viewer')).then((instance) => {
+      
+    });
+  </script>
+<!--                     <iframe src="https://app.box.com/embed/s/oc4qfud2p4k9ds26b9r5kl58in4dby91?sortColumn=date" width="800" height="900" frameborder="0" allowfullscreen="" webkitallowfullscreen="" msallowfullscreen=""></iframe> -->
                   </div>
                   <div class="u-black u-radius-10 u-shape u-shape-round u-shape-1"></div>
                 </div>
