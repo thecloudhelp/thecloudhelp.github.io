@@ -60,15 +60,17 @@
 
 @media (max-width: 767px) {
   .u-section-1 .u-sheet-1 {
-    min-height: 835px;
+    min-height: 722px;
   }
 
-  .u-section-1 .u-post-details-1 {
-    margin-bottom: -10px;
+  .u-section-1 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .u-section-1 .u-image-1 {
-    height: 486px;
+    height: 354px;
+    margin-top: 9px;
     margin-left: initial;
   }
 }
@@ -76,11 +78,6 @@
 @media (max-width: 575px) {
   .u-section-1 .u-sheet-1 {
     min-height: 656px;
-  }
-
-  .u-section-1 .u-container-layout-1 {
-    padding-left: 10px;
-    padding-right: 10px;
   }
 
   .u-section-1 .u-image-1 {
