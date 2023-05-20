@@ -607,7 +607,7 @@
 
 @media (max-width: 991px) {
   .u-section-2 .u-sheet-1 {
-    min-height: 1137px;
+    min-height: 1215px;
   }
 
   .u-section-2 .u-text-1 {
@@ -616,131 +616,132 @@
   }
 
   .u-section-2 .u-list-1 {
-    margin-bottom: 35px;
+    margin-top: 17px;
+    margin-bottom: 53px;
   }
 
   .u-section-2 .u-repeater-1 {
-    min-height: 991px;
+    min-height: 1068px;
     grid-template-columns: calc(50% - 9.50003px) calc(50% - 9.50003px);
   }
 
   .u-section-2 .u-image-1 {
     height: 192px;
-    margin-top: 30px;
   }
 
   .u-section-2 .u-text-2 {
-    margin-top: -4px;
+    margin-top: 26px;
     margin-left: 0;
     margin-right: 0;
   }
 
   .u-section-2 .u-text-3 {
-    margin-top: 35px;
+    margin-top: 8px;
     margin-right: 0;
   }
 
   .u-section-2 .u-btn-1 {
+    margin-top: 17px;
     padding-top: 1px;
   }
 
   .u-section-2 .u-image-2 {
     height: 192px;
-    margin-top: 30px;
   }
 
   .u-section-2 .u-text-4 {
-    margin-top: -4px;
+    margin-top: 26px;
     margin-left: 0;
     margin-right: 0;
   }
 
   .u-section-2 .u-text-5 {
-    margin-top: 35px;
+    margin-top: 8px;
     margin-right: 0;
   }
 
   .u-section-2 .u-btn-2 {
+    margin-top: 17px;
     padding-top: 1px;
   }
 
   .u-section-2 .u-image-3 {
     height: 192px;
-    margin-top: 52px;
   }
 
   .u-section-2 .u-text-6 {
-    margin-top: -25px;
+    margin-top: 26px;
     margin-left: 0;
     margin-right: 0;
   }
 
   .u-section-2 .u-text-7 {
-    margin-top: 35px;
+    margin-top: 8px;
     margin-right: 0;
   }
 
   .u-section-2 .u-btn-3 {
+    margin-top: 17px;
     padding-top: 1px;
   }
 
   .u-section-2 .u-image-4 {
     height: 192px;
-    margin-top: 30px;
   }
 
   .u-section-2 .u-text-8 {
-    margin-top: -4px;
+    margin-top: 26px;
     margin-left: 0;
     margin-right: 0;
   }
 
   .u-section-2 .u-text-9 {
-    margin-top: 35px;
+    margin-top: 8px;
     margin-right: 0;
   }
 
   .u-section-2 .u-btn-4 {
+    margin-top: 17px;
     padding-top: 1px;
   }
 
   .u-section-2 .u-image-5 {
     height: 192px;
-    margin-top: 52px;
   }
 
   .u-section-2 .u-text-10 {
-    margin-top: -25px;
+    margin-top: 26px;
     margin-left: 0;
     margin-right: 0;
   }
 
   .u-section-2 .u-text-11 {
-    margin-top: 35px;
+    margin-top: 8px;
     margin-right: 0;
   }
 
   .u-section-2 .u-btn-5 {
+    margin-top: 17px;
     padding-top: 1px;
   }
 
   .u-section-2 .u-image-6 {
     height: 192px;
-    margin-top: 30px;
   }
 
   .u-section-2 .u-text-12 {
-    margin-top: -4px;
+    margin-top: 26px;
     margin-left: 0;
     margin-right: 0;
   }
 
   .u-section-2 .u-text-13 {
-    margin-top: 35px;
+    margin-top: 8px;
     margin-right: 0;
   }
 
   .u-section-2 .u-btn-6 {
+    margin-top: 17px;
     padding-top: 1px;
   }
 }
@@ -804,10 +805,6 @@
 
   .u-section-2 .u-image-3 {
     height: 288px;
-  }
-
-  .u-section-2 .u-text-6 {
-    margin-top: -121px;
   }
 
   .u-section-2 .u-text-7 {
@@ -1494,12 +1491,12 @@
   .u-section-3 .u-image-1 {
     width: 324px;
     height: 182px;
-    margin-top: 7px;
+    margin-top: 2px;
   }
 
   .u-section-3 .u-text-2 {
     width: auto;
-    margin-top: -179px;
+    margin-top: -174px;
     margin-right: 359px;
   }
 
@@ -1521,12 +1518,12 @@
   .u-section-3 .u-image-2 {
     width: 324px;
     height: 182px;
-    margin-top: 7px;
+    margin-top: 2px;
   }
 
   .u-section-3 .u-text-5 {
     width: auto;
-    margin-top: -179px;
+    margin-top: -174px;
     margin-right: 359px;
   }
 
@@ -1548,12 +1545,12 @@
   .u-section-3 .u-image-3 {
     width: 324px;
     height: 182px;
-    margin-top: 7px;
+    margin-top: 2px;
   }
 
   .u-section-3 .u-text-8 {
     width: auto;
-    margin-top: -179px;
+    margin-top: -174px;
     margin-right: 359px;
   }
 
@@ -1575,12 +1572,12 @@
   .u-section-3 .u-image-4 {
     width: 324px;
     height: 182px;
-    margin-top: 7px;
+    margin-top: 2px;
   }
 
   .u-section-3 .u-text-11 {
     width: auto;
-    margin-top: -179px;
+    margin-top: -174px;
     margin-right: 359px;
   }
 
@@ -1602,12 +1599,12 @@
   .u-section-3 .u-image-5 {
     width: 324px;
     height: 182px;
-    margin-top: 7px;
+    margin-top: 2px;
   }
 
   .u-section-3 .u-text-14 {
     width: auto;
-    margin-top: -179px;
+    margin-top: -174px;
     margin-right: 359px;
   }
 
@@ -1629,12 +1626,12 @@
   .u-section-3 .u-image-6 {
     width: 324px;
     height: 182px;
-    margin-top: 7px;
+    margin-top: 2px;
   }
 
   .u-section-3 .u-text-17 {
     width: auto;
-    margin-top: -179px;
+    margin-top: -174px;
     margin-right: 359px;
   }
 
@@ -2448,7 +2445,7 @@
 .u-block-a527-15:not([data-block-selected]):not([data-cell-selected]),
 .u-block-a527-15:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-a527-15:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-container-layout:hover .u-block-a527-15:not([data-block-selected]):not([data-cell-selected]) {
@@ -2462,7 +2459,7 @@
 .u-block-a527-18:not([data-block-selected]):not([data-cell-selected]),
 .u-block-a527-18:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-a527-18:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-container-layout:hover .u-block-a527-18:not([data-block-selected]):not([data-cell-selected]) {
@@ -2476,7 +2473,7 @@
 .u-section-4 .u-text-5,
 .u-section-4 .u-text-5:before,
 .u-section-4 .u-text-5 > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-section-4 .u-container-layout:hover .u-text-5 {
@@ -2490,7 +2487,7 @@
 .u-section-4 .u-text-3,
 .u-section-4 .u-text-3:before,
 .u-section-4 .u-text-3 > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-section-4 .u-container-layout:hover .u-text-3 {
@@ -2504,7 +2501,7 @@
 .u-section-4 .u-text-7,
 .u-section-4 .u-text-7:before,
 .u-section-4 .u-text-7 > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-section-4 .u-container-layout:hover .u-text-7 {
@@ -2518,7 +2515,7 @@
 .u-block-a527-48:not([data-block-selected]):not([data-cell-selected]),
 .u-block-a527-48:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-a527-48:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-container-layout:hover .u-block-a527-48:not([data-block-selected]):not([data-cell-selected]) {
@@ -2532,7 +2529,7 @@
 .u-block-a527-54:not([data-block-selected]):not([data-cell-selected]),
 .u-block-a527-54:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-a527-54:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-container-layout:hover .u-block-a527-54:not([data-block-selected]):not([data-cell-selected]) {
@@ -2546,7 +2543,7 @@
 .u-block-a527-60:not([data-block-selected]):not([data-cell-selected]),
 .u-block-a527-60:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-a527-60:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-container-layout:hover .u-block-a527-60:not([data-block-selected]):not([data-cell-selected]) {
@@ -2560,7 +2557,7 @@
 .u-block-a527-66:not([data-block-selected]):not([data-cell-selected]),
 .u-block-a527-66:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-a527-66:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-container-layout:hover .u-block-a527-66:not([data-block-selected]):not([data-cell-selected]) {
@@ -2574,7 +2571,7 @@
 .u-block-a527-72:not([data-block-selected]):not([data-cell-selected]),
 .u-block-a527-72:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-a527-72:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-container-layout:hover .u-block-a527-72:not([data-block-selected]):not([data-cell-selected]) {
@@ -2588,7 +2585,7 @@
 .u-block-a527-78:not([data-block-selected]):not([data-cell-selected]),
 .u-block-a527-78:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-a527-78:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-container-layout:hover .u-block-a527-78:not([data-block-selected]):not([data-cell-selected]) {
@@ -2602,7 +2599,7 @@
 .u-block-a527-84:not([data-block-selected]):not([data-cell-selected]),
 .u-block-a527-84:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-a527-84:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-container-layout:hover .u-block-a527-84:not([data-block-selected]):not([data-cell-selected]) {
@@ -2616,7 +2613,7 @@
 .u-block-a527-90:not([data-block-selected]):not([data-cell-selected]),
 .u-block-a527-90:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-a527-90:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-container-layout:hover .u-block-a527-90:not([data-block-selected]):not([data-cell-selected]) {
@@ -2630,7 +2627,7 @@
 .u-block-a527-96:not([data-block-selected]):not([data-cell-selected]),
 .u-block-a527-96:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-a527-96:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-container-layout:hover .u-block-a527-96:not([data-block-selected]):not([data-cell-selected]) {
@@ -2644,7 +2641,7 @@
 .u-block-a527-102:not([data-block-selected]):not([data-cell-selected]),
 .u-block-a527-102:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-a527-102:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-container-layout:hover .u-block-a527-102:not([data-block-selected]):not([data-cell-selected]) {
@@ -2658,7 +2655,7 @@
 .u-block-a527-108:not([data-block-selected]):not([data-cell-selected]),
 .u-block-a527-108:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-a527-108:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-container-layout:hover .u-block-a527-108:not([data-block-selected]):not([data-cell-selected]) {
@@ -2672,7 +2669,7 @@
 .u-section-4 .u-list-item-1,
 .u-section-4 .u-list-item-1:before,
 .u-section-4 .u-list-item-1 > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-section-4 .u-container-layout:hover .u-list-item-1 {
@@ -2686,7 +2683,7 @@
 .u-section-4 .u-list-item-2,
 .u-section-4 .u-list-item-2:before,
 .u-section-4 .u-list-item-2 > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-section-4 .u-container-layout:hover .u-list-item-2 {
@@ -2700,7 +2697,7 @@
 .u-section-4 .u-list-item-3,
 .u-section-4 .u-list-item-3:before,
 .u-section-4 .u-list-item-3 > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-section-4 .u-container-layout:hover .u-list-item-3 {
@@ -2714,7 +2711,7 @@
 .u-block-a527-43:not([data-block-selected]):not([data-cell-selected]),
 .u-block-a527-43:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-a527-43:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-block-a527-43:not([data-block-selected]):not([data-cell-selected]).u-block-a527-43:not([data-block-selected]):not([data-cell-selected]).u-block-a527-43:not([data-block-selected]):not([data-cell-selected]):hover:before {
@@ -2746,7 +2743,7 @@
 .u-block-a527-49:not([data-block-selected]):not([data-cell-selected]),
 .u-block-a527-49:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-a527-49:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-block-a527-49:not([data-block-selected]):not([data-cell-selected]).u-block-a527-49:not([data-block-selected]):not([data-cell-selected]).u-block-a527-49:not([data-block-selected]):not([data-cell-selected]):hover:before {
@@ -2778,7 +2775,7 @@
 .u-block-a527-55:not([data-block-selected]):not([data-cell-selected]),
 .u-block-a527-55:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-a527-55:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-block-a527-55:not([data-block-selected]):not([data-cell-selected]).u-block-a527-55:not([data-block-selected]):not([data-cell-selected]).u-block-a527-55:not([data-block-selected]):not([data-cell-selected]):hover:before {
@@ -2810,7 +2807,7 @@
 .u-block-a527-61:not([data-block-selected]):not([data-cell-selected]),
 .u-block-a527-61:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-a527-61:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-block-a527-61:not([data-block-selected]):not([data-cell-selected]).u-block-a527-61:not([data-block-selected]):not([data-cell-selected]).u-block-a527-61:not([data-block-selected]):not([data-cell-selected]):hover:before {
@@ -2842,7 +2839,7 @@
 .u-block-a527-67:not([data-block-selected]):not([data-cell-selected]),
 .u-block-a527-67:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-a527-67:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-block-a527-67:not([data-block-selected]):not([data-cell-selected]).u-block-a527-67:not([data-block-selected]):not([data-cell-selected]).u-block-a527-67:not([data-block-selected]):not([data-cell-selected]):hover:before {
@@ -2874,7 +2871,7 @@
 .u-block-a527-73:not([data-block-selected]):not([data-cell-selected]),
 .u-block-a527-73:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-a527-73:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-block-a527-73:not([data-block-selected]):not([data-cell-selected]).u-block-a527-73:not([data-block-selected]):not([data-cell-selected]).u-block-a527-73:not([data-block-selected]):not([data-cell-selected]):hover:before {
@@ -2906,7 +2903,7 @@
 .u-block-a527-79:not([data-block-selected]):not([data-cell-selected]),
 .u-block-a527-79:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-a527-79:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-block-a527-79:not([data-block-selected]):not([data-cell-selected]).u-block-a527-79:not([data-block-selected]):not([data-cell-selected]).u-block-a527-79:not([data-block-selected]):not([data-cell-selected]):hover:before {
@@ -2938,7 +2935,7 @@
 .u-block-a527-85:not([data-block-selected]):not([data-cell-selected]),
 .u-block-a527-85:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-a527-85:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-block-a527-85:not([data-block-selected]):not([data-cell-selected]).u-block-a527-85:not([data-block-selected]):not([data-cell-selected]).u-block-a527-85:not([data-block-selected]):not([data-cell-selected]):hover:before {
@@ -2970,7 +2967,7 @@
 .u-block-a527-91:not([data-block-selected]):not([data-cell-selected]),
 .u-block-a527-91:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-a527-91:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-block-a527-91:not([data-block-selected]):not([data-cell-selected]).u-block-a527-91:not([data-block-selected]):not([data-cell-selected]).u-block-a527-91:not([data-block-selected]):not([data-cell-selected]):hover:before {
@@ -3002,7 +2999,7 @@
 .u-block-a527-97:not([data-block-selected]):not([data-cell-selected]),
 .u-block-a527-97:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-a527-97:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-block-a527-97:not([data-block-selected]):not([data-cell-selected]).u-block-a527-97:not([data-block-selected]):not([data-cell-selected]).u-block-a527-97:not([data-block-selected]):not([data-cell-selected]):hover:before {
@@ -3034,7 +3031,7 @@
 .u-block-a527-103:not([data-block-selected]):not([data-cell-selected]),
 .u-block-a527-103:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-a527-103:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-block-a527-103:not([data-block-selected]):not([data-cell-selected]).u-block-a527-103:not([data-block-selected]):not([data-cell-selected]).u-block-a527-103:not([data-block-selected]):not([data-cell-selected]):hover:before {
@@ -3352,7 +3349,7 @@
 .u-section-5 .u-image-5,
 .u-section-5 .u-image-5:before,
 .u-section-5 .u-image-5 > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-section-5 .u-container-layout:hover .u-image-5 {
@@ -3366,7 +3363,7 @@
 .u-section-5 .u-image-1,
 .u-section-5 .u-image-1:before,
 .u-section-5 .u-image-1 > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-section-5 .u-container-layout:hover .u-image-1 {
@@ -3380,7 +3377,7 @@
 .u-section-5 .u-image-2,
 .u-section-5 .u-image-2:before,
 .u-section-5 .u-image-2 > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-section-5 .u-container-layout:hover .u-image-2 {
@@ -3394,7 +3391,7 @@
 .u-section-5 .u-image-3,
 .u-section-5 .u-image-3:before,
 .u-section-5 .u-image-3 > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-section-5 .u-container-layout:hover .u-image-3 {
@@ -3408,7 +3405,7 @@
 .u-section-5 .u-image-4,
 .u-section-5 .u-image-4:before,
 .u-section-5 .u-image-4 > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-section-5 .u-container-layout:hover .u-image-4 {
@@ -3422,7 +3419,7 @@
 .u-block-f8a0-39:not([data-block-selected]):not([data-cell-selected]),
 .u-block-f8a0-39:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-f8a0-39:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-container-layout:hover .u-block-f8a0-39:not([data-block-selected]):not([data-cell-selected]) {
@@ -3436,7 +3433,7 @@
 .u-block-f8a0-41:not([data-block-selected]):not([data-cell-selected]),
 .u-block-f8a0-41:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-f8a0-41:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-container-layout:hover .u-block-f8a0-41:not([data-block-selected]):not([data-cell-selected]) {
@@ -3450,7 +3447,7 @@
 .u-block-f8a0-43:not([data-block-selected]):not([data-cell-selected]),
 .u-block-f8a0-43:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-f8a0-43:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-container-layout:hover .u-block-f8a0-43:not([data-block-selected]):not([data-cell-selected]) {
@@ -3464,7 +3461,7 @@
 .u-block-f8a0-45:not([data-block-selected]):not([data-cell-selected]),
 .u-block-f8a0-45:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-f8a0-45:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-container-layout:hover .u-block-f8a0-45:not([data-block-selected]):not([data-cell-selected]) {
@@ -3478,7 +3475,7 @@
 .u-block-f8a0-47:not([data-block-selected]):not([data-cell-selected]),
 .u-block-f8a0-47:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-f8a0-47:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-container-layout:hover .u-block-f8a0-47:not([data-block-selected]):not([data-cell-selected]) {
@@ -3492,7 +3489,7 @@
 .u-block-f8a0-49:not([data-block-selected]):not([data-cell-selected]),
 .u-block-f8a0-49:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-f8a0-49:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-container-layout:hover .u-block-f8a0-49:not([data-block-selected]):not([data-cell-selected]) {
@@ -3506,7 +3503,7 @@
 .u-block-f8a0-51:not([data-block-selected]):not([data-cell-selected]),
 .u-block-f8a0-51:not([data-block-selected]):not([data-cell-selected]):before,
 .u-block-f8a0-51:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, border, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
 .u-container-layout:hover .u-block-f8a0-51:not([data-block-selected]):not([data-cell-selected]) {
