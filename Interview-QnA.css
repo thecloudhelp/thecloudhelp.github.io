@@ -38,7 +38,7 @@
     min-height: 260px;
   }
 }.u-section-2 .u-sheet-1 {
-  min-height: 400px;
+  min-height: 4396px;
 }
 
 .u-section-2 .u-text-1 {
@@ -100,24 +100,24 @@
 }
 
 .u-section-5 .u-sheet-1 {
-  min-height: 400px;
+  min-height: 407px;
 }
 
 @media (max-width: 1199px) {
   .u-section-5 .u-sheet-1 {
-    min-height: 330px;
+    min-height: 336px;
   }
 }
 
 @media (max-width: 991px) {
   .u-section-5 .u-sheet-1 {
-    min-height: 253px;
+    min-height: 257px;
   }
 }
 
 @media (max-width: 767px) {
   .u-section-5 .u-sheet-1 {
-    min-height: 190px;
+    min-height: 193px;
   }
 }
 
@@ -131,4 +131,14 @@
 
 .u-section-6 .u-text-1 {
   margin-bottom: 60px;
+}
+
+@media (max-width: 575px) {
+  .u-section-6 .u-sheet-1 {
+    min-height: 9133px;
+  }
+
+  .u-section-6 .u-text-1 {
+    margin-bottom: 0;
+  }
 }

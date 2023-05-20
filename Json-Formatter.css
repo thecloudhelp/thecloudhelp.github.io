@@ -24,7 +24,7 @@
 }
 
 .u-section-1 .u-container-layout-1 {
-  box-shadow: 5px 5px 20px 0 rgba(0,179,73,0.4);
+  box-shadow: 5px 5px 20px 0 rgba(48,211,94,0.4);
   padding: 16px 9px 5px;
 }
 
@@ -59,7 +59,7 @@
 .u-section-1 .u-btn-2 {
   font-weight: 700;
   letter-spacing: 1px;
-  background-image: linear-gradient(to right, #00b349, #0041ff);
+  background-image: linear-gradient(to right, #30d35e, #0041ff);
   text-transform: none;
   margin: 303px auto 0;
   padding: 0 33px 1px 32px;
